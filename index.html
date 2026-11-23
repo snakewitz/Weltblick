@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weltblick</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+<style>
+  :root { --bg:#0f1720; --panel:#17212c; --text:#e8eef5; --muted:#93a4b5; --accent:#2fbf71; --accent2:#f5b83d; --danger:#e5534b; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+  button { font:inherit; cursor:pointer; border:0; border-radius:8px; padding:10px 18px; background:var(--accent); color:#06140c; font-weight:600; }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  button.secondary { background:#2a3846; color:var(--text); }
+  a { color:var(--accent2); }
+  .screen { position:fixed; inset:0; display:none; }
+  .screen.active { display:block; }
+
+  /* Startbildschirm */
+  #start, #summary { display:none; align-items:center; justify-content:center; padding:16px; overflow:auto; }
+  #start.active, #summary.active { display:flex; }
+  .card { background:var(--panel); border-radius:14px; padding:28px; max-width:460px; width:100%; box-shadow:0 10px 40px #0008; }
+  .card h1 { margin:0 0 4px; font-size:2rem; }
+  .card p { color:var(--muted); margin:0 0 20px; }
+  label { display:block; font-size:.85rem; color:var(--muted); margin:14px 0 6px; }
+  input, select { width:100%; padding:10px 12px; border-radius:8px; border:1px solid #2d3d4d; background:#0f1720; color:var(--text); font:inherit; }
+  .check { display:flex; align-items:center; gap:8px; margin-top:14px; color:var(--text); font-size:.9rem; }
+  .check input { width:auto; }
+  .row { display:flex; gap:10px; margin-top:22px; }
+  .hint { font-size:.8rem; color:var(--muted); margin-top:8px; }
+  #startError { color:var(--danger); font-size:.9rem; margin-top:12px; min-height:1.2em; }
+  #bestScore { font-size:.85rem; color:var(--muted); margin-top:10px; text-align:center; }
+
+  /* Spiel */
+  #pano { position:absolute; inset:0; }
+  #hud { position:absolute; top:12px; right:12px; display:flex; gap:8px; z-index:5; }
+  #compass { position:absolute; top:12px; left:50%; transform:translateX(-50%); width:min(420px, calc(100vw - 420px)); min-width:200px; height:36px; z-index:5;
+             background:#000a; backdrop-filter:blur(4px); border-radius:999px; overflow:hidden; pointer-events:none;
+             -webkit-mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent); mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent); }
+  #compassStrip { position:absolute; top:0; left:0; height:100%; will-change:transform; }
+  #compassStrip .tick { position:absolute; bottom:0; width:1px; height:7px; background:#fff8; }
+  #compassStrip .lbl { position:absolute; top:4px; transform:translateX(-50%); font-size:.8rem; font-weight:600; color:#fff; }
+  #compassStrip .lbl.main { font-size:.95rem; }
+  #compassStrip .lbl.north { color:#ff5a4f; }
+  #compassNeedle { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:8px solid var(--accent2); }
+  .pill { background:#000a; backdrop-filter:blur(4px); padding:8px 14px; border-radius:999px; font-size:.9rem; white-space:nowrap; }
+  #backToStart { position:absolute; top:12px; left:12px; z-index:5; padding:8px 12px; font-size:.85rem; }
+  #returnBtn { position:absolute; left:12px; bottom:28px; z-index:5; font-size:.85rem; padding:8px 12px; }
+  #guessBox { position:absolute; right:16px; bottom:16px; z-index:5; width:320px; height:220px; display:flex; flex-direction:column; gap:6px; transition:width .2s, height .2s; opacity:.85; }
+  #guessBox:hover, #guessBox.pinned { width:min(560px, calc(100vw - 32px)); height:min(420px, 60vh); opacity:1; }
+  #guessMap { flex:1; border-radius:10px; overflow:hidden; border:2px solid #0006; }
+  #guessBtn { width:100%; }
+  #loading { position:absolute; inset:0; display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:center; background:var(--bg); z-index:10; font-size:1.1rem; color:var(--muted); text-align:center; padding:16px; }
+  #loading.hidden { display:none; }
+
+  /* Ergebnis */
+  #result { background:var(--bg); }
+  #resultMap { position:absolute; inset:0 0 180px 0; }
+  #resultPanel { position:absolute; left:0; right:0; bottom:0; height:180px; background:var(--panel); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:12px 16px; text-align:center; }
+  #resultText { font-size:1.15rem; }
+  #resultText b { color:var(--accent2); }
+  #resultCredit { font-size:.8rem; color:var(--muted); }
+  .bar { width:min(500px, 100%); height:10px; background:#0f1720; border-radius:5px; overflow:hidden; }
+  .bar > div { height:100%; background:linear-gradient(90deg,var(--accent2),var(--accent)); width:0; transition:width .6s; }
+
+  /* Endbildschirm */
+  #summary table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.95rem; }
+  #summary td { padding:6px 4px; border-bottom:1px solid #2a3846; }
+  #summary td:last-child { text-align:right; }
+  .big { font-size:2.4rem; font-weight:700; color:var(--accent2); }
+
+  @media (max-width:600px) {
+    #guessBox { left:16px; right:16px; width:auto; height:200px; }
+    #guessBox:hover, #guessBox.pinned { width:auto; height:55vh; }
+    #returnBtn { bottom:auto; top:104px; }
+    #hud { top:56px; right:auto; left:12px; }
+    #compass { width:auto; left:124px; right:12px; transform:none; min-width:0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- START -->
+<section id="start" class="screen active">
+  <div class="card">
+    <h1>🌍 Weltblick</h1>
+    <p>Wo auf der Welt bist du? Schau dich um, lauf ein Stück und setz deinen Tipp.</p>
+
+    <div id="tokenFields">
+    <label for="apiKey">Mapillary Client Token</label>
+    <input id="apiKey" type="password" placeholder="MLY|…" autocomplete="off">
+    <div class="hint">Kostenlos auf mapillary.com/dashboard/developers. Wird nur lokal in deinem Browser gespeichert.</div>
+    </div>
+
+    <label for="region">Region</label>
+    <select id="region">
+      <option value="world">Ganze Welt</option>
+      <option value="europe">Europa</option>
+      <option value="dach">Deutschland, Österreich, Schweiz</option>
+      <option value="germany">Nur Deutschland</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="moveMode">Modus</label>
+    <select id="moveMode">
+      <option value="move">Bewegen erlaubt</option>
+      <option value="nomove">Kein Bewegen (nur umsehen + zoomen)</option>
+      <option value="nmpz">Kein Bewegen, kein Zoomen (nur umsehen)</option>
+    </select>
+
+    <label class="check"><input type="checkbox" id="panoOnly" checked> Nur 360°-Panoramen (dauert evtl. länger beim Laden)</label>
+
+    <div class="row"><button id="startBtn" style="flex:1">Spiel starten (5 Runden)</button></div>
+    <div id="startError"></div>
+    <div id="bestScore"></div>
+  </div>
+</section>
+
+<!-- SPIEL -->
+<section id="game" class="screen">
+  <div id="pano"></div>
+  <button id="backToStart" class="secondary">✕ Beenden</button>
+  <div id="compass"><div id="compassStrip"></div><div id="compassNeedle"></div></div>
+  <div id="hud">
+    <span class="pill" id="hudRound">Runde 1 / 5</span>
+    <span class="pill" id="hudScore">Punkte: 0</span>
+  </div>
+  <button id="returnBtn" class="secondary">⟲ Zurück zum Start</button>
+  <div id="guessBox">
+    <div id="guessMap"></div>
+    <button id="guessBtn" disabled>Pin auf die Karte setzen</button>
+  </div>
+  <div id="loading"><div id="loadingText">Suche einen Ort …</div><button id="retryBtn" class="secondary" style="display:none">Nochmal versuchen</button></div>
+</section>
+
+<!-- RUNDENERGEBNIS -->
+<section id="result" class="screen">
+  <div id="resultMap"></div>
+  <div id="resultPanel">
+    <div id="resultText"></div>
+    <div class="bar"><div id="resultBar"></div></div>
+    <div id="resultCredit"></div>
+    <button id="nextBtn">Nächste Runde</button>
+  </div>
+</section>
+
+<!-- ENDE -->
+<section id="summary" class="screen">
+  <div class="card">
+    <h1>Spiel vorbei!</h1>
+    <div class="big" id="finalScore">0</div>
+    <div style="color:var(--muted)">von 25.000 Punkten</div>
+    <table id="summaryTable"></table>
+    <div class="row">
+      <button id="againBtn" style="flex:1">Nochmal</button>
+      <button id="menuBtn" class="secondary">Menü</button>
+    </div>
+  </div>
+</section>
+
+<script>
+// ===============================================================
+// HIER DEINEN MAPILLARY ACCESS TOKEN EINTRAGEN (zwischen die Anführungszeichen)
+// ===============================================================
+const MAPILLARY_TOKEN = '';
+
+// ---------------------------------------------------------------
+// Konfiguration
+// ---------------------------------------------------------------
+const ROUNDS = 5;
+const MAX_POINTS = 5000;
+const TILES = 'https://tiles.mapillary.com/maps/vtp/mly1_public/2';
+// Ratekarte: mehrere Kartendienste ohne Schlüssel. Liefert einer keine Kacheln, wird automatisch der nächste genommen.
+const MAP_PROVIDERS = [
+  { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+    opts: { maxZoom: 19, attribution: 'Karte © Esri, HERE, Garmin, © OpenStreetMap' } },
+  { url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    opts: { maxZoom: 17, subdomains: 'abc', attribution: '© OpenStreetMap, SRTM · © OpenTopoMap (CC-BY-SA)' } },
+  { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    opts: { maxZoom: 19, attribution: '© OpenStreetMap' } },
+];
+let mapProviderIndex = 0;
+function addBaseLayer(map) {
+  const prov = MAP_PROVIDERS[mapProviderIndex];
+  const layer = L.tileLayer(prov.url, prov.opts).addTo(map);
+  let ok = 0, errors = 0;
+  layer.on('tileload', () => ok++);
+  layer.on('tileerror', () => {
+    errors++;
+    if (ok === 0 && errors >= 3 && mapProviderIndex < MAP_PROVIDERS.length - 1 && MAP_PROVIDERS[mapProviderIndex] === prov) {
+      console.warn('Kartendienst nicht erreichbar, wechsle:', prov.url);
+      mapProviderIndex++;
+      map.removeLayer(layer);
+      addBaseLayer(map);
+    }
+  });
+  return layer;
+}
+
+// Gebiete für zufällige Orte: [latMin, latMax, lngMin, lngMax, Gewicht]
+const REGIONS = {
+  world: [
+    [36, 60, -10, 30, 30],     // Europa
+    [56, 70, 5, 30, 6],        // Skandinavien
+    [26, 49, -124, -68, 22],   // USA
+    [43, 54, -125, -60, 6],    // Kanada (Süden)
+    [15, 32, -110, -87, 6],    // Mexiko
+    [-33, -3, -60, -35, 8],    // Brasilien
+    [-45, -18, -72, -56, 5],   // Argentinien / Chile
+    [-34, -23, 17, 32, 4],     // Südafrika
+    [-38, -16, 114, 153, 7],   // Australien
+    [-46, -35, 166, 178, 2],   // Neuseeland
+    [31, 44, 130, 145, 5],     // Japan
+    [6, 20, 98, 105, 3],       // Thailand
+    [-8, 6, 95, 120, 3],       // Indonesien / Malaysia
+    [50, 60, 30, 60, 4],       // Russland (West)
+    [36, 42, 26, 44, 3],       // Türkei
+    [8, 30, 70, 88, 4],        // Indien
+  ],
+  europe: [[36, 60, -10, 30, 10], [56, 70, 5, 30, 2], [50, 58, -8, 2, 2]],
+  dach:   [[47.3, 55, 6, 15, 6], [46.4, 48.9, 9.6, 17, 2], [45.9, 47.7, 6, 10.4, 1.5]],
+  germany:[[47.3, 55, 6, 15, 1]],
+  usa:    [[26, 49, -124, -68, 10]],
+};
+
+// ---------------------------------------------------------------
+// Zustand
+// ---------------------------------------------------------------
+let token = '';
+let viewer, guessMap, guessMarker, resultMap;
+let round = 0, totalScore = 0, history = [];
+let currentLoc = null, currentGuess = null;
+let settings = { region: 'world', moveMode: 'move', panoOnly: false };
+
+const $ = id => document.getElementById(id);
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  $(id).classList.add('active');
+}
+function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+// gespeicherte Einstellungen
+$('apiKey').value = MAPILLARY_TOKEN || load('weltblick_mly_token') || '';
+if (MAPILLARY_TOKEN) $('tokenFields').style.display = 'none';
+$('region').value = load('weltblick_region') || 'world';
+$('moveMode').value = load('weltblick_mode') || 'move';
+$('panoOnly').checked = load('weltblick_panoOnly') !== '0';
+function updateBest() {
+  const best = load('weltblick_best_' + $('region').value);
+  $('bestScore').textContent = best ? `Bestwert in dieser Region: ${parseInt(best, 10).toLocaleString('de-DE')}` : '';
+}
+$('region').onchange = updateBest;
+updateBest();
+
+// ---------------------------------------------------------------
+// Zufälligen Ort mit Mapillary-Bild finden
+// ---------------------------------------------------------------
+function inRegion(lat, lng, region) {
+  return REGIONS[region].some(b => lat >= b[0] && lat <= b[1] && lng >= b[2] && lng <= b[3]);
+}
+
+function randomPoint(region) {
+  const boxes = REGIONS[region];
+  const total = boxes.reduce((a, b) => a + b[4], 0);
+  let r = Math.random() * total, box = boxes[0];
+  for (const b of boxes) { if ((r -= b[4]) <= 0) { box = b; break; } }
+  return { lat: box[0] + Math.random() * (box[1] - box[0]), lng: box[2] + Math.random() * (box[3] - box[2]) };
+}
+
+class AuthError extends Error {}
+
+// --- Kachel-Mathematik (Web-Mercator) ---
+function tileOf(p, z) {
+  const n = 2 ** z, rad = p.lat * Math.PI / 180;
+  const x = Math.floor((p.lng + 180) / 360 * n);
+  const y = Math.floor((1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2 * n);
+  return { z, x: Math.min(n - 1, Math.max(0, x)), y: Math.min(n - 1, Math.max(0, y)) };
+}
+function tileToLatLng(z, tx, ty, px, py, extent) {
+  const n = 2 ** z, x = tx + px / extent, y = ty + py / extent;
+  return { lat: Math.atan(Math.sinh(Math.PI * (1 - 2 * y / n))) * 180 / Math.PI, lng: x / n * 360 - 180 };
+}
+
+// --- Minimaler Leser für Vektor-Kacheln (Mapbox Vector Tile / Protobuf) ---
+function decodeMVT(buf, z, tx, ty) {
+  let pos = 0;
+  const varint = () => { let r = 0, m = 1, b; do { b = buf[pos++]; r += (b & 0x7f) * m; m *= 128; } while (b & 0x80); return r; };
+  const zz = n => (n % 2 ? -(n + 1) / 2 : n / 2);
+  const skip = t => { if (t === 0) varint(); else if (t === 1) pos += 8; else if (t === 2) { const l = varint(); pos += l; } else if (t === 5) pos += 4; };
+  const str = (end) => new TextDecoder().decode(buf.subarray(pos, end));
+  const layers = {};
+  while (pos < buf.length) {
+    const key = varint(), f = key >> 3, t = key & 7;
+    if (f !== 3 || t !== 2) { skip(t); continue; }
+    const lend = varint() + pos;
+    let name = '', extent = 4096; const keys = [], vals = [], feats = [];
+    while (pos < lend) {
+      const k = varint(), lf = k >> 3, lt = k & 7;
+      if (lf === 1) { const e = varint() + pos; name = str(e); pos = e; }
+      else if (lf === 3) { const e = varint() + pos; keys.push(str(e)); pos = e; }
+      else if (lf === 5) extent = varint();
+      else if (lf === 4) {
+        const ve = varint() + pos; let v = null;
+        while (pos < ve) {
+          const vk = varint(), vf = vk >> 3, vt = vk & 7;
+          if (vf === 1) { const e = varint() + pos; v = str(e); pos = e; }
+          else if (vf === 2) { v = new DataView(buf.buffer, buf.byteOffset + pos, 4).getFloat32(0, true); pos += 4; }
+          else if (vf === 3) { v = new DataView(buf.buffer, buf.byteOffset + pos, 8).getFloat64(0, true); pos += 8; }
+          else if (vf === 4 || vf === 5) v = varint();
+          else if (vf === 6) v = zz(varint());
+          else if (vf === 7) v = !!varint();
+          else skip(vt);
+        }
+        vals.push(v);
+      } else if (lf === 2) {
+        const fe = varint() + pos; let tags = [], geom = [];
+        while (pos < fe) {
+          const fk = varint(), ff = fk >> 3, ft = fk & 7;
+          if ((ff === 2 || ff === 4) && ft === 2) { const e = varint() + pos; const arr = []; while (pos < e) arr.push(varint()); if (ff === 2) tags = arr; else geom = arr; }
+          else skip(ft);
+        }
+        feats.push({ tags, geom });
+      } else skip(lt);
+    }
+    layers[name] = feats.map(ft => {
+      const props = {};
+      for (let i = 0; i + 1 < ft.tags.length; i += 2) props[keys[ft.tags[i]]] = vals[ft.tags[i + 1]];
+      // ersten Punkt der Geometrie nehmen (reicht für Punkte und als Näherung für Linien)
+      const g = ft.geom; let ll = null;
+      if (g.length >= 3) ll = tileToLatLng(z, tx, ty, zz(g[1]), zz(g[2]), extent);
+      return { props, ...ll };
+    }).filter(f => f.lat !== undefined);
+  }
+  return layers;
+}
+
+const tileCache = new Map();
+async function fetchTile(z, x, y) {
+  const k = `${z}/${x}/${y}`;
+  if (tileCache.has(k)) return tileCache.get(k);
+  let res;
+  try { res = await fetch(`${TILES}/${k}?access_token=${encodeURIComponent(token)}`); } catch (e) { return {}; }
+  if (res.status === 401 || res.status === 403) throw new AuthError('Der Mapillary-Token wurde abgelehnt. Bitte prüfe ihn.');
+  if (!res.ok) return {};
+  let buf = new Uint8Array(await res.arrayBuffer());
+  if (buf[0] === 0x1f && buf[1] === 0x8b) { // falls gzip-komprimiert
+    buf = new Uint8Array(await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
+  }
+  let layers = {};
+  try { layers = decodeMVT(buf, z, x, y); } catch (e) { console.warn('Kachel unlesbar', k, e); }
+  if (tileCache.size > 200) tileCache.clear();
+  tileCache.set(k, layers);
+  return layers;
+}
+
+function toLoc(f) {
+  return { id: String(f.props.id), lat: f.lat, lng: f.lng, isPano: !!f.props.is_pano, capturedAt: f.props.captured_at };
+}
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+
+// Ablauf: 1) grobe Kachel (Zoom 5) -> wo gibt es Bilder?  2) Detail-Kachel (Zoom 14) -> konkretes Bild
+async function findLocation() {
+  let fallback = null; // normales Foto, falls lange kein Panorama auftaucht
+  for (let attempt = 1; attempt <= 25; attempt++) {
+    const p = randomPoint(settings.region);
+    const t5 = tileOf(p, 5);
+    const overview = await fetchTile(5, t5.x, t5.y);
+    const spots = Object.values(overview).flat().filter(f => inRegion(f.lat, f.lng, settings.region));
+    for (let i = 0; spots.length && i < 6; i++) {
+      const spot = pick(spots);
+      const t14 = tileOf(spot, 14);
+      const detail = await fetchTile(14, t14.x, t14.y);
+      const images = (detail.image || []).filter(f => f.props.id && inRegion(f.lat, f.lng, settings.region));
+      const panos = images.filter(f => f.props.is_pano === true || f.props.is_pano === 1);
+      console.info(`Kachel 14/${t14.x}/${t14.y}: ${images.length} Bilder, davon ${panos.length} Panoramen`, images[0] && images[0].props);
+      if (panos.length) return toLoc(pick(panos));
+      if (!fallback && images.length) fallback = pick(images);
+    }
+    // ohne "Nur 360°": nach einigen erfolglosen Versuchen ein normales Foto nehmen
+    if (!settings.panoOnly && fallback && attempt >= 4) return toLoc(fallback);
+    $('loadingText').textContent = `Suche ein Panorama … (Versuch ${attempt + 1})`;
+  }
+  if (!settings.panoOnly && fallback) return toLoc(fallback);
+  throw new Error('Kein Ort gefunden. Versuch es nochmal.');
+}
+
+// ---------------------------------------------------------------
+// Viewer
+// ---------------------------------------------------------------
+function createViewer() {
+  if (viewer) { viewer.remove(); viewer = null; }
+  $('pano').innerHTML = '';
+  const canMove = settings.moveMode === 'move';
+  const fixedZoom = settings.moveMode === 'nmpz';
+  viewer = new mapillary.Viewer({
+    accessToken: token,
+    container: 'pano',
+    component: {
+      cover: false,          // Bild sofort laden, ohne Startbild-Knopf
+      attribution: false,    // Name/Datum/Link verstecken (wird im Ergebnis gezeigt)
+      direction: canMove,    // Pfeile zum Laufen
+      sequence: false,       // Abspiel-Leiste aus (Laufen geht über die Pfeile im Bild)
+      keyboard: canMove ? true : { keySequenceNavigation: false, keySpatialNavigation: false, keyZoom: !fixedZoom },
+      zoom: !fixedZoom,
+      mouse: { scrollZoom: !fixedZoom, doubleClickZoom: !fixedZoom },
+      image: true,
+    },
+  });
+  viewer.on('bearing', e => updateCompass(e.bearing));
+  window.addEventListener('resize', () => { if (viewer) viewer.resize(); updateCompass(lastBearing); });
+}
+
+// ---------------------------------------------------------------
+// Kompass-Leiste
+// ---------------------------------------------------------------
+const PX_PER_DEG = 2.5;
+const DIRS = { 0: 'N', 45: 'NO', 90: 'O', 135: 'SO', 180: 'S', 225: 'SW', 270: 'W', 315: 'NW' };
+let lastBearing = 0;
+(function buildCompass() {
+  let html = '';
+  for (let d = -180; d <= 540; d += 15) {
+    const x = (d + 180) * PX_PER_DEG, n = ((d % 360) + 360) % 360;
+    if (DIRS[n] !== undefined) {
+      const cls = 'lbl' + (n % 90 === 0 ? ' main' : '') + (n === 0 ? ' north' : '');
+      html += `<span class="${cls}" style="left:${x}px">${DIRS[n]}</span>`;
+    } else {
+      html += `<span class="tick" style="left:${x}px; height:${n % 45 === 0 ? 10 : 7}px"></span>`;
+    }
+  }
+  $('compassStrip').innerHTML = html;
+})();
+function updateCompass(bearing) {
+  lastBearing = ((bearing % 360) + 360) % 360;
+  const w = $('compass').clientWidth;
+  $('compassStrip').style.transform = `translateX(${w / 2 - (lastBearing + 180) * PX_PER_DEG}px)`;
+}
+
+// ---------------------------------------------------------------
+// Spiel
+// ---------------------------------------------------------------
+async function startGame() {
+  token = $('apiKey').value.trim();
+  $('startError').textContent = '';
+  if (!token) { $('startError').textContent = 'Bitte gib deinen Mapillary-Token ein.'; return; }
+  if (typeof mapillary === 'undefined' || typeof L === 'undefined') {
+    $('startError').textContent = 'Bibliotheken konnten nicht geladen werden. Bist du online?'; return;
+  }
+  settings.region = $('region').value;
+  settings.moveMode = $('moveMode').value;
+  settings.panoOnly = $('panoOnly').checked;
+  if (!MAPILLARY_TOKEN) store('weltblick_mly_token', token);
+  store('weltblick_region', settings.region);
+  store('weltblick_mode', settings.moveMode); store('weltblick_panoOnly', settings.panoOnly ? '1' : '0');
+
+  round = 0; totalScore = 0; history = [];
+  show('game');
+  setupGuessMap();
+  createViewer();
+  $('returnBtn').style.display = settings.moveMode === 'move' ? '' : 'none';
+  await nextRound();
+}
+
+function setupGuessMap() {
+  if (guessMap) return;
+  guessMap = L.map('guessMap', { worldCopyJump: true }).setView([30, 10], 1);
+  addBaseLayer(guessMap);
+  guessMap.on('click', e => {
+    currentGuess = e.latlng.wrap();
+    if (guessMarker) guessMarker.setLatLng(e.latlng);
+    else guessMarker = L.marker(e.latlng).addTo(guessMap);
+    $('guessBtn').disabled = false;
+    $('guessBtn').textContent = 'Tipp abgeben';
+    $('guessBox').classList.add('pinned');
+  });
+}
+
+async function nextRound() {
+  round++;
+  $('hudRound').textContent = `Runde ${round} / ${ROUNDS}`;
+  $('hudScore').textContent = `Punkte: ${totalScore.toLocaleString('de-DE')}`;
+  $('loading').classList.remove('hidden');
+  $('loadingText').textContent = 'Suche einen Ort …';
+  $('retryBtn').style.display = 'none';
+  $('guessBtn').disabled = true;
+  $('guessBtn').textContent = 'Pin auf die Karte setzen';
+  $('guessBox').classList.remove('pinned');
+  if (guessMarker) { guessMap.removeLayer(guessMarker); guessMarker = null; }
+  currentGuess = null;
+
+  const views = { world: [[30, 10], 1], europe: [[52, 12], 3], dach: [[49, 10], 5], germany: [[51.2, 10.4], 5], usa: [[39, -97], 3] };
+  guessMap.setView(...views[settings.region]);
+
+  try {
+    currentLoc = await findLocation();
+    await viewer.moveTo(currentLoc.id);
+    viewer.resize();
+  } catch (e) {
+    if (e instanceof AuthError) { $('startError').textContent = e.message; show('start'); return; }
+    $('loadingText').textContent = e.message || 'Bild konnte nicht geladen werden.';
+    $('retryBtn').style.display = '';
+    round--;
+    return;
+  }
+  $('loading').classList.add('hidden');
+  viewer.getBearing().then(updateCompass).catch(() => {});
+  setTimeout(() => guessMap.invalidateSize(), 50);
+}
+
+// Entfernung in km (Haversine)
+function distanceKm(a, b) {
+  const R = 6371, toRad = d => d * Math.PI / 180;
+  const dLat = toRad(b.lat - a.lat), dLng = toRad(b.lng - a.lng);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+// Punkte: skaliert mit der Größe der Region
+function scoreFor(km) {
+  const scale = { world: 2000, europe: 600, dach: 200, germany: 150, usa: 900 }[settings.region];
+  if (km < 0.05) return MAX_POINTS;
+  return Math.round(MAX_POINTS * Math.exp(-km / scale));
+}
+
+function formatKm(km) {
+  if (km < 1) return Math.round(km * 1000) + ' m';
+  if (km < 100) return km.toFixed(1).replace('.', ',') + ' km';
+  return Math.round(km).toLocaleString('de-DE') + ' km';
+}
+
+function submitGuess() {
+  if (!currentGuess) return;
+  const actual = { lat: currentLoc.lat, lng: currentLoc.lng };
+  const guess = { lat: currentGuess.lat, lng: currentGuess.lng };
+  const km = distanceKm(actual, guess);
+  const pts = scoreFor(km);
+  totalScore += pts;
+  history.push({ km, pts });
+
+  show('result');
+  if (!resultMap) {
+    resultMap = L.map('resultMap', { worldCopyJump: true });
+    addBaseLayer(resultMap);
+  }
+  resultMap.eachLayer(l => { if (!(l instanceof L.TileLayer)) resultMap.removeLayer(l); });
+  setTimeout(() => {
+    resultMap.invalidateSize();
+    const flag = L.divIcon({ html: '<span style="font-size:26px">🚩</span>', className: '', iconSize: [28, 28], iconAnchor: [6, 26] });
+    L.marker([actual.lat, actual.lng], { icon: flag }).addTo(resultMap);
+    L.marker([guess.lat, guess.lng]).addTo(resultMap);
+    L.polyline([[guess.lat, guess.lng], [actual.lat, actual.lng]], { color: '#f5b83d', dashArray: '6 8', weight: 3 }).addTo(resultMap);
+    resultMap.fitBounds(L.latLngBounds([[guess.lat, guess.lng], [actual.lat, actual.lng]]), { padding: [60, 60], maxZoom: 14 });
+  }, 30);
+
+  $('resultText').innerHTML = `Dein Tipp war <b>${formatKm(km)}</b> entfernt – <b>${pts.toLocaleString('de-DE')}</b> Punkte`;
+  const date = currentLoc.capturedAt ? new Date(currentLoc.capturedAt).toLocaleDateString('de-DE') : '';
+    $('resultCredit').innerHTML = `${currentLoc.isPano ? '360°-Panorama' : 'Foto'}${date ? ' vom ' + date : ''} · <a href="https://www.mapillary.com/app/?pKey=${encodeURIComponent(currentLoc.id)}" target="_blank" rel="noopener">auf Mapillary ansehen</a>`;
+  $('resultBar').style.width = '0';
+  setTimeout(() => $('resultBar').style.width = (pts / MAX_POINTS * 100) + '%', 50);
+  $('nextBtn').textContent = round >= ROUNDS ? 'Ergebnis ansehen' : 'Nächste Runde';
+}
+
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])); }
+
+function afterResult() {
+  if (round >= ROUNDS) return showSummary();
+  show('game');
+  nextRound();
+}
+
+function showSummary() {
+  $('finalScore').textContent = totalScore.toLocaleString('de-DE');
+  $('summaryTable').innerHTML = history.map((h, i) =>
+    `<tr><td>Runde ${i + 1}</td><td>${formatKm(h.km)}</td><td>${h.pts.toLocaleString('de-DE')}</td></tr>`).join('');
+  const best = parseInt(load('weltblick_best_' + settings.region) || '0', 10);
+  if (totalScore > best) store('weltblick_best_' + settings.region, String(totalScore));
+  updateBest();
+  show('summary');
+}
+
+// ---------------------------------------------------------------
+// Events
+// ---------------------------------------------------------------
+$('startBtn').onclick = startGame;
+$('guessBtn').onclick = submitGuess;
+$('nextBtn').onclick = afterResult;
+$('retryBtn').onclick = nextRound;
+$('againBtn').onclick = startGame;
+$('menuBtn').onclick = () => show('start');
+$('backToStart').onclick = () => { if (confirm('Spiel wirklich beenden?')) show('start'); };
+$('returnBtn').onclick = () => { if (viewer && currentLoc) viewer.moveTo(currentLoc.id).catch(() => {}); };
+document.addEventListener('keydown', e => {
+  if (e.code !== 'Space') return;
+  if ($('game').classList.contains('active') && currentGuess) { e.preventDefault(); submitGuess(); }
+  else if ($('result').classList.contains('active')) { e.preventDefault(); afterResult(); }
+});
+</script>
+</body>
+</html>
