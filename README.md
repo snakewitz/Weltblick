@@ -4,9 +4,9 @@ Ein eigenes Geo-Ratespiel im Browser: Du landest an einem zufälligen Ort auf de
 
 ## Spielen
 
-1. Kostenlosen Mapillary-Token holen: https://www.mapillary.com/dashboard/developers (App registrieren, nur „Read“, den Token mit `MLY|…` kopieren).
-2. `index.html` im Browser öffnen (oder die GitHub-Pages-Seite des Projekts).
-3. Token auf der Startseite einfügen – er wird nur lokal im Browser gespeichert.
+👉 **https://snakewitz.github.io/Weltblick/**
+
+Der Mapillary-Token (nur Lese-Rechte) steht in `index.html` bei `MAPILLARY_TOKEN`. Einen neuen bekommst du kostenlos auf https://www.mapillary.com/dashboard/developers.
 
 ## Technik
 

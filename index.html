@@ -89,12 +89,6 @@
     <h1>🌍 Weltblick</h1>
     <p>Wo auf der Welt bist du? Schau dich um, lauf ein Stück und setz deinen Tipp.</p>
 
-    <div id="tokenFields">
-    <label for="apiKey">Mapillary Client Token</label>
-    <input id="apiKey" type="password" placeholder="MLY|…" autocomplete="off">
-    <div class="hint">Kostenlos auf mapillary.com/dashboard/developers. Wird nur lokal in deinem Browser gespeichert.</div>
-    </div>
-
     <label for="region">Region</label>
     <select id="region">
       <option value="world">Ganze Welt</option>
@@ -163,7 +157,7 @@
 
 <script>
 // ===============================================================
-// HIER DEINEN MAPILLARY ACCESS TOKEN EINTRAGEN (zwischen die Anführungszeichen)
+// MAPILLARY ACCESS TOKEN (nur Lese-Rechte; neu erzeugen auf mapillary.com/dashboard/developers)
 // ===============================================================
 const MAPILLARY_TOKEN = 'MLY|41501546999444713|b860088cd7f2ff26ad84145fe2cd2807';
 
@@ -244,8 +238,6 @@ function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
 
 // gespeicherte Einstellungen
-$('apiKey').value = MAPILLARY_TOKEN || load('weltblick_mly_token') || '';
-if (MAPILLARY_TOKEN) $('tokenFields').style.display = 'none';
 $('region').value = load('weltblick_region') || 'world';
 $('moveMode').value = load('weltblick_mode') || 'move';
 $('panoOnly').checked = load('weltblick_panoOnly') !== '0';
@@ -344,7 +336,7 @@ async function fetchTile(z, x, y) {
   if (tileCache.has(k)) return tileCache.get(k);
   let res;
   try { res = await fetch(`${TILES}/${k}?access_token=${encodeURIComponent(token)}`); } catch (e) { return {}; }
-  if (res.status === 401 || res.status === 403) throw new AuthError('Der Mapillary-Token wurde abgelehnt. Bitte prüfe ihn.');
+  if (res.status === 401 || res.status === 403) throw new AuthError('Der Mapillary-Token im Code wurde abgelehnt. Bitte in index.html prüfen bzw. einen neuen eintragen.');
   if (!res.ok) return {};
   let buf = new Uint8Array(await res.arrayBuffer());
   if (buf[0] === 0x1f && buf[1] === 0x8b) { // falls gzip-komprimiert
@@ -443,16 +435,15 @@ function updateCompass(bearing) {
 // Spiel
 // ---------------------------------------------------------------
 async function startGame() {
-  token = $('apiKey').value.trim();
+  token = MAPILLARY_TOKEN;
   $('startError').textContent = '';
-  if (!token) { $('startError').textContent = 'Bitte gib deinen Mapillary-Token ein.'; return; }
+  if (!token) { $('startError').textContent = 'Kein Mapillary-Token im Code eingetragen (MAPILLARY_TOKEN in index.html).'; return; }
   if (typeof mapillary === 'undefined' || typeof L === 'undefined') {
     $('startError').textContent = 'Bibliotheken konnten nicht geladen werden. Bist du online?'; return;
   }
   settings.region = $('region').value;
   settings.moveMode = $('moveMode').value;
   settings.panoOnly = $('panoOnly').checked;
-  if (!MAPILLARY_TOKEN) store('weltblick_mly_token', token);
   store('weltblick_region', settings.region);
   store('weltblick_mode', settings.moveMode); store('weltblick_panoOnly', settings.panoOnly ? '1' : '0');
 
