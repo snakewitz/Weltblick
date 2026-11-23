@@ -24,6 +24,9 @@
   #start.active, #summary.active { display:flex; }
   .card { background:var(--panel); border-radius:14px; padding:28px; max-width:460px; width:100%; box-shadow:0 10px 40px #0008; }
   .card h1 { margin:0 0 4px; font-size:2rem; }
+  .titleRow { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .beta { font-size:.75rem; font-weight:700; letter-spacing:.04em; color:#06140c; background:var(--accent2); padding:3px 9px; border-radius:999px; white-space:nowrap; }
+  #versionNote { font-size:.8rem; color:var(--muted); margin:-12px 0 18px; }
   .card p { color:var(--muted); margin:0 0 20px; }
   label { display:block; font-size:.85rem; color:var(--muted); margin:14px 0 6px; }
   input, select { width:100%; padding:10px 12px; border-radius:8px; border:1px solid #2d3d4d; background:#0f1720; color:var(--text); font:inherit; }
@@ -93,8 +96,9 @@
 <!-- START -->
 <section id="start" class="screen active">
   <div class="card">
-    <h1>🌍 Weltblick</h1>
+    <div class="titleRow"><h1>🌍 Weltblick</h1><span class="beta" id="versionBadge"></span></div>
     <p>Wo auf der Welt bist du? Schau dich um, lauf ein Stück und setz deinen Tipp.</p>
+    <div id="versionNote"></div>
 
     <label for="region">Region</label>
     <select id="region">
@@ -178,6 +182,11 @@ const MAPILLARY_TOKEN = 'MLY|41501546999444713|b860088cd7f2ff26ad84145fe2cd2807'
 // ---------------------------------------------------------------
 // Konfiguration
 // ---------------------------------------------------------------
+// Version – wird bei jedem Update hochgezählt, damit man sieht, ob die neue Version schon online ist
+const APP_VERSION = '0.4';
+const APP_DATE = '23.11.2026';
+const APP_CHANGES = 'Versionsanzeige im Hauptmenü';
+
 const ROUNDS = 5;
 const MAX_POINTS = 5000;
 const TILES = 'https://tiles.mapillary.com/maps/vtp/mly1_public/2';
@@ -250,6 +259,9 @@ function show(id) {
 }
 function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+$('versionBadge').textContent = `BETA v${APP_VERSION}`;
+$('versionNote').textContent = `Stand ${APP_DATE} · Neu: ${APP_CHANGES}`;
 
 // gespeicherte Einstellungen
 $('region').value = load('weltblick_region') || 'world';
