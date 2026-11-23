@@ -49,6 +49,12 @@
   .pill { background:#000a; backdrop-filter:blur(4px); padding:8px 14px; border-radius:999px; font-size:.9rem; white-space:nowrap; }
   #backToStart { position:absolute; top:12px; left:12px; z-index:5; padding:8px 12px; font-size:.85rem; }
   #returnBtn { position:absolute; left:12px; bottom:28px; z-index:5; font-size:.85rem; padding:8px 12px; }
+  #walk { position:absolute; left:50%; bottom:28px; transform:translateX(-50%); z-index:5; display:flex; flex-direction:column; align-items:center; gap:6px; }
+  #walk .btns { display:flex; gap:8px; }
+  #walk button { background:#000a; backdrop-filter:blur(4px); color:#fff; font-size:.9rem; padding:8px 14px; }
+  #walk button:hover { background:#000c; }
+  #walkStatus { font-size:.8rem; color:#fff; background:#000a; padding:4px 10px; border-radius:999px; visibility:hidden; }
+  #walkStatus.show { visibility:visible; }
   #guessBox { position:absolute; right:16px; bottom:16px; z-index:5; width:320px; height:220px; display:flex; flex-direction:column; gap:6px; transition:width .2s, height .2s; opacity:.85; }
   #guessBox:hover, #guessBox.pinned { width:min(560px, calc(100vw - 32px)); height:min(420px, 60vh); opacity:1; }
   #guessMap { flex:1; border-radius:10px; overflow:hidden; border:2px solid #0006; }
@@ -76,6 +82,7 @@
     #guessBox { left:16px; right:16px; width:auto; height:200px; }
     #guessBox:hover, #guessBox.pinned { width:auto; height:55vh; }
     #returnBtn { bottom:auto; top:104px; }
+    #walk { bottom:232px; }
     #hud { top:56px; right:auto; left:12px; }
     #compass { width:auto; left:124px; right:12px; transform:none; min-width:0; }
   }
@@ -123,6 +130,13 @@
     <span class="pill" id="hudScore">Punkte: 0</span>
   </div>
   <button id="returnBtn" class="secondary">⟲ Zurück zum Start</button>
+  <div id="walk">
+    <div id="walkStatus">Wege werden geladen …</div>
+    <div class="btns">
+      <button id="stepBack" title="Ein Bild zurück entlang der Aufnahme (Taste S)">◀ Zurück</button>
+      <button id="stepFwd" title="Ein Bild weiter entlang der Aufnahme (Taste W)">Weiter ▶</button>
+    </div>
+  </div>
   <div id="guessBox">
     <div id="guessMap"></div>
     <button id="guessBtn" disabled>Pin auf die Karte setzen</button>
@@ -403,7 +417,35 @@ function createViewer() {
     },
   });
   viewer.on('bearing', e => updateCompass(e.bearing));
-  window.addEventListener('resize', () => { if (viewer) viewer.resize(); updateCompass(lastBearing); });
+  // Ladeanzeige: solange Mapillary Daten nachlädt (danach erscheinen die Pfeile)
+  let loadTimer = null;
+  viewer.on('dataloading', e => {
+    clearTimeout(loadTimer);
+    if (e.loading) loadTimer = setTimeout(() => $('walkStatus').classList.add('show'), 400);
+    else $('walkStatus').classList.remove('show');
+  });
+}
+window.addEventListener('resize', () => { if (viewer) viewer.resize(); updateCompass(lastBearing); });
+
+// Schritt entlang der Aufnahmestrecke – braucht keine Umgebungsdaten, geht daher schneller als die Pfeile
+let stepping = false;
+async function step(forward) {
+  if (!viewer || stepping || settings.moveMode !== 'move') return;
+  stepping = true;
+  try {
+    await viewer.moveDir(forward ? mapillary.NavigationDirection.Next : mapillary.NavigationDirection.Prev);
+  } catch (e) {
+    flashWalk(forward ? 'Hier endet die Aufnahme' : 'Hier beginnt die Aufnahme');
+  } finally {
+    stepping = false;
+  }
+}
+let flashTimer = null;
+function flashWalk(msg) {
+  const el = $('walkStatus');
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => { el.classList.remove('show'); el.textContent = 'Wege werden geladen …'; }, 1500);
 }
 
 // ---------------------------------------------------------------
@@ -452,6 +494,7 @@ async function startGame() {
   setupGuessMap();
   createViewer();
   $('returnBtn').style.display = settings.moveMode === 'move' ? '' : 'none';
+  $('walk').style.display = settings.moveMode === 'move' ? '' : 'none';
   await nextRound();
 }
 
@@ -583,7 +626,13 @@ $('againBtn').onclick = startGame;
 $('menuBtn').onclick = () => show('start');
 $('backToStart').onclick = () => { if (confirm('Spiel wirklich beenden?')) show('start'); };
 $('returnBtn').onclick = () => { if (viewer && currentLoc) viewer.moveTo(currentLoc.id).catch(() => {}); };
+$('stepFwd').onclick = () => step(true);
+$('stepBack').onclick = () => step(false);
 document.addEventListener('keydown', e => {
+  if ($('game').classList.contains('active') && !e.ctrlKey && !e.altKey && !e.metaKey) {
+    if (e.code === 'KeyW') { step(true); return; }
+    if (e.code === 'KeyS') { step(false); return; }
+  }
   if (e.code !== 'Space') return;
   if ($('game').classList.contains('active') && currentGuess) { e.preventDefault(); submitGuess(); }
   else if ($('result').classList.contains('active')) { e.preventDefault(); afterResult(); }
