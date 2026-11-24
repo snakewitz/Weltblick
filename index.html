@@ -60,6 +60,8 @@
   header { display:flex; align-items:center; gap:16px; padding:12px 16px; border-bottom:4px solid var(--pink); background:linear-gradient(180deg,#1a0f3d,#0b0822); flex-wrap:wrap; position:relative; z-index:9; }
   .logo { font-family:'Press Start 2P', monospace; font-size:20px; color:var(--yellow); text-shadow:3px 3px 0 var(--pink), 6px 6px 0 #4a1066; white-space:nowrap; }
   .logo small { display:block; font-size:8px; color:var(--cyan); text-shadow:none; margin-top:6px; letter-spacing:.12em; }
+  .ver { display:inline-block; vertical-align:middle; margin-left:10px; font-family:'Press Start 2P', monospace; font-size:8px; color:var(--bg); background:var(--green); padding:4px 6px; text-shadow:none; box-shadow: inset -2px -2px 0 rgba(0,0,0,.35); cursor:help; }
+  #introVer { color:var(--green); font-size:16px; margin-top:10px; }
   .grow { flex:1; }
   .score { font-family:'Press Start 2P', monospace; font-size:10px; color:var(--green); text-align:right; line-height:1.6; white-space:nowrap; }
   .score b { color:var(--yellow); font-weight:normal; }
@@ -159,7 +161,7 @@
 <body>
 <div id="app">
   <header>
-    <div class="logo">GEO ARCADE<small>LERNKARTE · STREET VIEW LÄNDER</small></div>
+    <div class="logo">GEO ARCADE<span class="ver" id="verBadge"></span><small>LERNKARTE · STREET VIEW LÄNDER</small></div>
     <div class="search">
       <input id="searchInput" placeholder="Land suchen…" autocomplete="off" aria-label="Land suchen">
       <div id="suggest" role="listbox"></div>
@@ -193,6 +195,7 @@
       <p style="color:var(--muted)">Kleine Gebiete sind als Quadrate markiert. Mausrad oder zwei Finger zum Zoomen.</p>
       <p style="color:var(--muted);font-size:16px">Inhalte in eigenen Worten zusammengefasst nach den Länder-Guides von <a href="https://www.plonkit.net/guide" target="_blank" rel="noopener" style="color:var(--cyan)">plonkit.net</a>.</p>
       <button class="btn" id="introBtn">▶ Start</button>
+      <div id="introVer"></div>
     </div>
 
     <aside id="panel" class="frame" aria-live="polite">
@@ -235,6 +238,14 @@ const KONTINENTE = {
   'Südamerika':  { center:[-62, -22], k:2.4 },
   'Ozeanien':    { center:[150, -20], k:2.4 },
 };
+
+// Version – wird bei jedem Update hochgezählt, damit man sieht, ob die neue Version online ist
+const APP_VERSION = '1.2';
+const APP_DATE = '24.11.2026';
+const APP_CHANGES = 'Versionsanzeige';
+document.getElementById('verBadge').textContent = 'BETA v' + APP_VERSION;
+document.getElementById('verBadge').title = 'Stand ' + APP_DATE + ' · Neu: ' + APP_CHANGES;
+document.getElementById('introVer').textContent = 'BETA v' + APP_VERSION + ' · Stand ' + APP_DATE + ' · Neu: ' + APP_CHANGES;
 
 document.getElementById('introBtn').onclick = () => { document.getElementById('intro').style.display = 'none'; };
 
