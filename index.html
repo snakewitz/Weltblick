@@ -3,652 +3,465 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weltblick</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+<title>Geo Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="data/meta.js"></script>
+<script>window.LAENDER = {};</script>
+<script src="data/europa.js"></script>
+<script src="data/asien.js"></script>
+<script src="data/ozeanien.js"></script>
+<script src="data/afrika.js"></script>
+<script src="data/amerika.js"></script>
 <style>
-  :root { --bg:#0f1720; --panel:#17212c; --text:#e8eef5; --muted:#93a4b5; --accent:#2fbf71; --accent2:#f5b83d; --danger:#e5534b; }
-  * { box-sizing:border-box; }
-  html,body { margin:0; height:100%; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
-  button { font:inherit; cursor:pointer; border:0; border-radius:8px; padding:10px 18px; background:var(--accent); color:#06140c; font-weight:600; }
-  button:disabled { opacity:.45; cursor:not-allowed; }
-  button.secondary { background:#2a3846; color:var(--text); }
-  a { color:var(--accent2); }
-  .screen { position:fixed; inset:0; display:none; }
-  .screen.active { display:block; }
-
-  /* Startbildschirm */
-  #start, #summary { display:none; align-items:center; justify-content:center; padding:16px; overflow:auto; }
-  #start.active, #summary.active { display:flex; }
-  .card { background:var(--panel); border-radius:14px; padding:28px; max-width:460px; width:100%; box-shadow:0 10px 40px #0008; }
-  .card h1 { margin:0 0 4px; font-size:2rem; }
-  .titleRow { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-  .beta { font-size:.75rem; font-weight:700; letter-spacing:.04em; color:#06140c; background:var(--accent2); padding:3px 9px; border-radius:999px; white-space:nowrap; }
-  #versionNote { font-size:.8rem; color:var(--muted); margin:-12px 0 18px; }
-  .card p { color:var(--muted); margin:0 0 20px; }
-  label { display:block; font-size:.85rem; color:var(--muted); margin:14px 0 6px; }
-  input, select { width:100%; padding:10px 12px; border-radius:8px; border:1px solid #2d3d4d; background:#0f1720; color:var(--text); font:inherit; }
-  .check { display:flex; align-items:center; gap:8px; margin-top:14px; color:var(--text); font-size:.9rem; }
-  .check input { width:auto; }
-  .row { display:flex; gap:10px; margin-top:22px; }
-  .hint { font-size:.8rem; color:var(--muted); margin-top:8px; }
-  #startError { color:var(--danger); font-size:.9rem; margin-top:12px; min-height:1.2em; }
-  #bestScore { font-size:.85rem; color:var(--muted); margin-top:10px; text-align:center; }
-
-  /* Spiel */
-  #pano { position:absolute; inset:0; }
-  #hud { position:absolute; top:12px; right:12px; display:flex; gap:8px; z-index:5; }
-  #compass { position:absolute; top:12px; left:50%; transform:translateX(-50%); width:min(420px, calc(100vw - 420px)); min-width:200px; height:36px; z-index:5;
-             background:#000a; backdrop-filter:blur(4px); border-radius:999px; overflow:hidden; pointer-events:none;
-             -webkit-mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent); mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent); }
-  #compassStrip { position:absolute; top:0; left:0; height:100%; will-change:transform; }
-  #compassStrip .tick { position:absolute; bottom:0; width:1px; height:7px; background:#fff8; }
-  #compassStrip .lbl { position:absolute; top:4px; transform:translateX(-50%); font-size:.8rem; font-weight:600; color:#fff; }
-  #compassStrip .lbl.main { font-size:.95rem; }
-  #compassStrip .lbl.north { color:#ff5a4f; }
-  #compassNeedle { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:8px solid var(--accent2); }
-  .pill { background:#000a; backdrop-filter:blur(4px); padding:8px 14px; border-radius:999px; font-size:.9rem; white-space:nowrap; }
-  #backToStart { position:absolute; top:12px; left:12px; z-index:5; padding:8px 12px; font-size:.85rem; }
-  #returnBtn { position:absolute; left:12px; bottom:28px; z-index:5; font-size:.85rem; padding:8px 12px; }
-  #walk { position:absolute; left:50%; bottom:28px; transform:translateX(-50%); z-index:5; display:flex; flex-direction:column; align-items:center; gap:6px; }
-  #walk .btns { display:flex; gap:8px; }
-  #walk button { background:#000a; backdrop-filter:blur(4px); color:#fff; font-size:.9rem; padding:8px 14px; }
-  #walk button:hover { background:#000c; }
-  #walkStatus { font-size:.8rem; color:#fff; background:#000a; padding:4px 10px; border-radius:999px; visibility:hidden; }
-  #walkStatus.show { visibility:visible; }
-  #guessBox { position:absolute; right:16px; bottom:16px; z-index:5; width:320px; height:220px; display:flex; flex-direction:column; gap:6px; transition:width .2s, height .2s; opacity:.85; }
-  #guessBox:hover, #guessBox.pinned { width:min(560px, calc(100vw - 32px)); height:min(420px, 60vh); opacity:1; }
-  #guessMap { flex:1; border-radius:10px; overflow:hidden; border:2px solid #0006; }
-  #guessBtn { width:100%; }
-  #loading { position:absolute; inset:0; display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:center; background:var(--bg); z-index:10; font-size:1.1rem; color:var(--muted); text-align:center; padding:16px; }
-  #loading.hidden { display:none; }
-
-  /* Ergebnis */
-  #result { background:var(--bg); }
-  #resultMap { position:absolute; inset:0 0 180px 0; }
-  #resultPanel { position:absolute; left:0; right:0; bottom:0; height:180px; background:var(--panel); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:12px 16px; text-align:center; }
-  #resultText { font-size:1.15rem; }
-  #resultText b { color:var(--accent2); }
-  #resultCredit { font-size:.8rem; color:var(--muted); }
-  .bar { width:min(500px, 100%); height:10px; background:#0f1720; border-radius:5px; overflow:hidden; }
-  .bar > div { height:100%; background:linear-gradient(90deg,var(--accent2),var(--accent)); width:0; transition:width .6s; }
-
-  /* Endbildschirm */
-  #summary table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.95rem; }
-  #summary td { padding:6px 4px; border-bottom:1px solid #2a3846; }
-  #summary td:last-child { text-align:right; }
-  .big { font-size:2.4rem; font-weight:700; color:var(--accent2); }
-
-  @media (max-width:600px) {
-    #guessBox { left:16px; right:16px; width:auto; height:200px; }
-    #guessBox:hover, #guessBox.pinned { width:auto; height:55vh; }
-    #returnBtn { bottom:auto; top:104px; }
-    #walk { bottom:232px; }
-    #hud { top:56px; right:auto; left:12px; }
-    #compass { width:auto; left:124px; right:12px; transform:none; min-width:0; }
+  :root {
+    --bg:#07061a; --bg2:#100d33; --panel:#0d0b2b; --ink:#f4f1ff; --muted:#9b95c9;
+    --yellow:#ffd400; --pink:#ff2e88; --cyan:#00e5ff; --green:#39ff14; --orange:#ff8a00; --purple:#8a5cff;
+    --land:#1b1748; --land-off:#141226; --cover:#1d3f8f; --cover-hi:#2a63d6; --learned:#1f7a4a;
+    --px: 4px;
   }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink); }
+  body { font-family:'VT323', ui-monospace, monospace; font-size:20px; line-height:1.15; overflow:hidden; }
+  button, input { font:inherit; }
+
+  /* Röhrenbildschirm-Effekt */
+  body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:100;
+    background:repeating-linear-gradient(to bottom, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+  body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:99;
+    background:radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,.55) 100%); }
+
+  /* Pixel-Rahmen */
+  .frame { background:var(--panel);
+    box-shadow: 0 calc(-1*var(--px)) 0 0 var(--c,var(--cyan)), 0 var(--px) 0 0 var(--c,var(--cyan)),
+                calc(-1*var(--px)) 0 0 0 var(--c,var(--cyan)), var(--px) 0 0 0 var(--c,var(--cyan)),
+                0 0 24px 0 color-mix(in srgb, var(--c,var(--cyan)) 35%, transparent); }
+
+  .btn { cursor:pointer; border:0; padding:10px 12px; color:var(--bg); background:var(--c,var(--yellow)); font-family:'Press Start 2P', monospace; font-size:10px;
+    box-shadow: inset -4px -4px 0 rgba(0,0,0,.35), inset 4px 4px 0 rgba(255,255,255,.35); text-transform:uppercase; white-space:nowrap; }
+  .btn:hover { filter:brightness(1.15); }
+  .btn:active { box-shadow: inset 4px 4px 0 rgba(0,0,0,.35); transform:translateY(1px); }
+  .btn.ghost { background:#05041acc; color:var(--c,var(--cyan)); box-shadow: inset 0 0 0 2px var(--c,var(--cyan)); }
+  .btn.ghost.on { background:var(--c,var(--cyan)); color:var(--bg); }
+
+  /* Layout */
+  #app { position:fixed; inset:0; display:grid; grid-template-rows:auto 1fr; }
+  header { display:flex; align-items:center; gap:16px; padding:12px 16px; border-bottom:4px solid var(--pink); background:linear-gradient(180deg,#1a0f3d,#0b0822); flex-wrap:wrap; position:relative; z-index:9; }
+  .logo { font-family:'Press Start 2P', monospace; font-size:20px; color:var(--yellow); text-shadow:3px 3px 0 var(--pink), 6px 6px 0 #4a1066; white-space:nowrap; }
+  .logo small { display:block; font-size:8px; color:var(--cyan); text-shadow:none; margin-top:6px; letter-spacing:.12em; }
+  .grow { flex:1; }
+  .score { font-family:'Press Start 2P', monospace; font-size:10px; color:var(--green); text-align:right; line-height:1.6; white-space:nowrap; }
+  .score b { color:var(--yellow); font-weight:normal; }
+  .search { position:relative; }
+  .search input { width:220px; background:#05041a; color:var(--yellow); border:0; padding:8px 12px; box-shadow:inset 0 0 0 2px var(--cyan); outline:none; font-size:20px; }
+  .search input::placeholder { color:#6d66a8; }
+  #suggest { position:absolute; top:100%; left:0; right:0; z-index:20; display:none; max-height:280px; overflow:auto; background:#05041a; box-shadow:inset 0 0 0 2px var(--cyan); }
+  #suggest div { padding:6px 12px; cursor:pointer; }
+  #suggest div:hover, #suggest div.sel { background:var(--pink); color:#fff; }
+
+  main { position:relative; overflow:hidden; }
+  #map { position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab; touch-action:none; background:
+    radial-gradient(ellipse at 50% 120%, #2a0f4f 0%, transparent 55%), linear-gradient(#07061a,#0a0830); }
+  #map:active { cursor:grabbing; }
+  .graticule { fill:none; stroke:#2a2470; stroke-width:.5; vector-effect:non-scaling-stroke; }
+  .sphere { fill:url(#oceanGrid); stroke:var(--purple); stroke-width:2; vector-effect:non-scaling-stroke; }
+  .country { fill:var(--land-off); stroke:#2b2660; stroke-width:.6; vector-effect:non-scaling-stroke; }
+  .country.cov { fill:var(--cover); stroke:var(--cyan); stroke-width:.8; cursor:pointer; }
+  .country.cov.learned { fill:var(--learned); stroke:var(--green); }
+  .country.cov:hover, .marker:hover rect { fill:var(--pink); stroke:#fff; }
+  .country.cov.hidden { fill:#15132e; stroke:#2b2660; cursor:default; }
+  .country.sel, .marker.sel rect { fill:var(--yellow) !important; stroke:#fff !important; }
+  .marker { cursor:pointer; }
+  .marker rect { fill:var(--cyan); stroke:var(--bg); stroke-width:1.5; vector-effect:non-scaling-stroke; }
+  .marker.learned rect { fill:var(--green); }
+  .marker.hidden { display:none; }
+
+  #tooltip { position:absolute; pointer-events:none; z-index:10; padding:4px 8px; background:#05041a; color:var(--yellow); box-shadow:inset 0 0 0 2px var(--pink); font-size:18px; display:none; white-space:nowrap; }
+
+  /* Steuerung auf der Karte */
+  #filters { position:absolute; left:16px; top:16px; z-index:6; display:flex; flex-wrap:wrap; gap:6px; max-width:calc(100% - 32px); }
+  #zoomCtl { position:absolute; left:16px; bottom:16px; z-index:6; display:flex; flex-direction:column; gap:6px; }
+  #zoomCtl .btn { width:40px; height:40px; padding:0; font-size:14px; }
+  #legend { position:absolute; right:16px; bottom:16px; z-index:6; padding:10px 14px; font-size:17px; display:flex; flex-direction:column; gap:4px; --c:var(--purple); }
+  #legend span::before { content:""; display:inline-block; width:12px; height:12px; margin-right:8px; vertical-align:-1px; background:var(--sw); box-shadow:inset 0 0 0 1px #ffffff55; }
+  #insert { position:absolute; left:50%; bottom:22px; transform:translateX(-50%); z-index:6; font-family:'Press Start 2P', monospace; font-size:11px; color:var(--yellow); text-shadow:2px 2px 0 var(--pink); animation:blink 1.1s steps(2) infinite; pointer-events:none; white-space:nowrap; }
+  @keyframes blink { 50% { opacity:0; } }
+
+  /* Info-Panel */
+  #panel { position:absolute; top:16px; right:16px; bottom:16px; width:min(460px, calc(100% - 32px)); z-index:8; display:flex; flex-direction:column; --c:var(--yellow);
+    transform:translateX(calc(100% + 40px)); transition:transform .25s steps(6); }
+  #panel.open { transform:none; }
+  #panelHead { padding:16px 16px 12px; border-bottom:4px dashed #2c2766; position:relative; }
+  #pName { font-family:'Press Start 2P', monospace; font-size:16px; line-height:1.4; color:var(--yellow); text-shadow:2px 2px 0 var(--pink); padding-right:44px; }
+  #pSub { color:var(--cyan); margin-top:6px; font-size:18px; }
+  #closeBtn { position:absolute; top:12px; right:12px; --c:var(--pink); width:36px; height:36px; padding:0; font-size:12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .chip { padding:4px 8px; font-size:18px; box-shadow:inset 0 0 0 2px var(--cc,var(--cyan)); color:var(--cc,var(--cyan)); }
+  .chip b { color:#fff; font-weight:normal; }
+  #panelBody { overflow:auto; padding:14px 16px 20px; flex:1; scrollbar-color:var(--pink) #05041a; }
+  .tip { padding:10px 12px; margin-bottom:14px; background:#2a0d3a; box-shadow:inset 0 0 0 2px var(--pink); }
+  .tip .t { font-family:'Press Start 2P', monospace; font-size:9px; color:var(--pink); margin-bottom:6px; }
+  .sec { margin-bottom:14px; }
+  .sec h3 { margin:0 0 6px; font-family:'Press Start 2P', monospace; font-size:10px; color:var(--green); display:flex; gap:8px; align-items:center; line-height:1.4; }
+  .sec ul { margin:0; padding:0; list-style:none; }
+  .sec li { position:relative; padding-left:18px; margin:3px 0; }
+  .sec li::before { content:"▸"; position:absolute; left:0; color:var(--yellow); }
+  .empty { color:var(--muted); }
+  #panelFoot { padding:12px 16px; border-top:4px dashed #2c2766; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  #panelFoot a { color:var(--cyan); }
+  #learnBtn { --c:var(--green); }
+  #learnBtn.done { --c:#7a7a9a; }
+  .src { font-size:18px; color:var(--muted); margin-left:auto; }
+
+  /* Start-Hinweis */
+  #intro { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:7; width:min(520px, calc(100% - 32px)); padding:22px; text-align:center; --c:var(--pink); }
+  #intro h2 { font-family:'Press Start 2P', monospace; font-size:14px; color:var(--yellow); margin:0 0 14px; line-height:1.6; }
+  #intro p { margin:8px 0; }
+  #intro .btn { margin-top:12px; }
+
+  @media (max-width:760px) {
+    body { font-size:19px; }
+    header { gap:10px; padding:10px 12px; }
+    .logo { font-size:14px; }
+    .logo small { font-size:6px; }
+    .search { order:5; flex-basis:100%; }
+    .search input { width:100%; }
+    #randomBtn { font-size:8px; padding:8px; }
+    .score { font-size:8px; }
+    #filters { top:10px; left:10px; gap:4px; }
+    #filters .btn { font-size:8px; padding:7px 8px; }
+    #legend { display:none; }
+    #insert { bottom:20px; left:auto; right:12px; transform:none; font-size:8px; }
+    #panel { top:auto; left:8px; right:8px; bottom:8px; width:auto; height:56%; transform:translateY(calc(100% + 30px)); }
+    #panel.open { transform:none; }
+    #pName { font-size:13px; }
+  }
+  @media (prefers-reduced-motion: reduce) { #insert { animation:none; } #panel { transition:none; } }
 </style>
 </head>
 <body>
-
-<!-- START -->
-<section id="start" class="screen active">
-  <div class="card">
-    <div class="titleRow"><h1>🌍 Weltblick</h1><span class="beta" id="versionBadge"></span></div>
-    <p>Wo auf der Welt bist du? Schau dich um, lauf ein Stück und setz deinen Tipp.</p>
-    <div id="versionNote"></div>
-
-    <label for="region">Region</label>
-    <select id="region">
-      <option value="world">Ganze Welt</option>
-      <option value="europe">Europa</option>
-      <option value="dach">Deutschland, Österreich, Schweiz</option>
-      <option value="germany">Nur Deutschland</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="moveMode">Modus</label>
-    <select id="moveMode">
-      <option value="move">Bewegen erlaubt</option>
-      <option value="nomove">Kein Bewegen (nur umsehen + zoomen)</option>
-      <option value="nmpz">Kein Bewegen, kein Zoomen (nur umsehen)</option>
-    </select>
-
-    <label class="check"><input type="checkbox" id="panoOnly" checked> Nur 360°-Panoramen (dauert evtl. länger beim Laden)</label>
-
-    <div class="row"><button id="startBtn" style="flex:1">Spiel starten (5 Runden)</button></div>
-    <div id="startError"></div>
-    <div id="bestScore"></div>
-  </div>
-</section>
-
-<!-- SPIEL -->
-<section id="game" class="screen">
-  <div id="pano"></div>
-  <button id="backToStart" class="secondary">✕ Beenden</button>
-  <div id="compass"><div id="compassStrip"></div><div id="compassNeedle"></div></div>
-  <div id="hud">
-    <span class="pill" id="hudRound">Runde 1 / 5</span>
-    <span class="pill" id="hudScore">Punkte: 0</span>
-  </div>
-  <button id="returnBtn" class="secondary">⟲ Zurück zum Start</button>
-  <div id="walk">
-    <div id="walkStatus">Wege werden geladen …</div>
-    <div class="btns">
-      <button id="stepBack" title="Ein Bild zurück entlang der Aufnahme (Taste S)">◀ Zurück</button>
-      <button id="stepFwd" title="Ein Bild weiter entlang der Aufnahme (Taste W)">Weiter ▶</button>
+<div id="app">
+  <header>
+    <div class="logo">GEO ARCADE<small>LERNKARTE · STREET VIEW LÄNDER</small></div>
+    <div class="search">
+      <input id="searchInput" placeholder="Land suchen…" autocomplete="off" aria-label="Land suchen">
+      <div id="suggest" role="listbox"></div>
     </div>
-  </div>
-  <div id="guessBox">
-    <div id="guessMap"></div>
-    <button id="guessBtn" disabled>Pin auf die Karte setzen</button>
-  </div>
-  <div id="loading"><div id="loadingText">Suche einen Ort …</div><button id="retryBtn" class="secondary" style="display:none">Nochmal versuchen</button></div>
-</section>
+    <button class="btn" id="randomBtn" style="--c:var(--pink)">🎲 Zufall</button>
+    <div class="grow"></div>
+    <div class="score">GELERNT <b id="learnedCount">0</b>/<span id="totalCount">0</span><br>FORTSCHRITT <b id="hiScore">0%</b></div>
+  </header>
 
-<!-- RUNDENERGEBNIS -->
-<section id="result" class="screen">
-  <div id="resultMap"></div>
-  <div id="resultPanel">
-    <div id="resultText"></div>
-    <div class="bar"><div id="resultBar"></div></div>
-    <div id="resultCredit"></div>
-    <button id="nextBtn">Nächste Runde</button>
-  </div>
-</section>
-
-<!-- ENDE -->
-<section id="summary" class="screen">
-  <div class="card">
-    <h1>Spiel vorbei!</h1>
-    <div class="big" id="finalScore">0</div>
-    <div style="color:var(--muted)">von 25.000 Punkten</div>
-    <table id="summaryTable"></table>
-    <div class="row">
-      <button id="againBtn" style="flex:1">Nochmal</button>
-      <button id="menuBtn" class="secondary">Menü</button>
+  <main>
+    <svg id="map" role="img" aria-label="Weltkarte"></svg>
+    <div id="tooltip"></div>
+    <div id="filters"></div>
+    <div id="zoomCtl">
+      <button class="btn" id="zoomIn" style="--c:var(--cyan)" aria-label="Hineinzoomen">+</button>
+      <button class="btn" id="zoomOut" style="--c:var(--cyan)" aria-label="Herauszoomen">−</button>
+      <button class="btn" id="zoomReset" style="--c:var(--purple)" aria-label="Ganze Welt">⌂</button>
     </div>
-  </div>
-</section>
+    <div id="legend" class="frame">
+      <span style="--sw:var(--cover)">Street View</span>
+      <span style="--sw:var(--learned)">Gelernt</span>
+      <span style="--sw:var(--land-off)">Keine Abdeckung</span>
+      <span style="--sw:var(--cyan)">Kleine Gebiete</span>
+    </div>
+    <div id="insert">▶ LAND ANKLICKEN ◀</div>
+
+    <div id="intro" class="frame">
+      <h2>PLAYER 1<br>READY?</h2>
+      <p>Klick auf ein <b style="color:var(--cyan)">blaues Land</b>, um zu sehen, woran du es in Street View erkennst.</p>
+      <p style="color:var(--muted)">Kleine Gebiete sind als Quadrate markiert. Mausrad oder zwei Finger zum Zoomen.</p>
+      <button class="btn" id="introBtn">▶ Start</button>
+    </div>
+
+    <aside id="panel" class="frame" aria-live="polite">
+      <div id="panelHead">
+        <div id="pName"></div>
+        <div id="pSub"></div>
+        <div class="chips" id="pChips"></div>
+        <button class="btn" id="closeBtn" aria-label="Schließen">✕</button>
+      </div>
+      <div id="panelBody"></div>
+      <div id="panelFoot">
+        <button class="btn" id="learnBtn">✔ Gelernt</button>
+        <span class="src">Mehr: <a id="srcLink" target="_blank" rel="noopener">Plonkit</a></span>
+      </div>
+    </aside>
+  </main>
+</div>
 
 <script>
-// ===============================================================
-// MAPILLARY ACCESS TOKEN (nur Lese-Rechte; neu erzeugen auf mapillary.com/dashboard/developers)
-// ===============================================================
-const MAPILLARY_TOKEN = 'MLY|41501546999444713|b860088cd7f2ff26ad84145fe2cd2807';
-
 // ---------------------------------------------------------------
 // Konfiguration
 // ---------------------------------------------------------------
-// Version – wird bei jedem Update hochgezählt, damit man sieht, ob die neue Version schon online ist
-const APP_VERSION = '0.4';
-const APP_DATE = '23.11.2026';
-const APP_CHANGES = 'Versionsanzeige im Hauptmenü';
-
-const ROUNDS = 5;
-const MAX_POINTS = 5000;
-const TILES = 'https://tiles.mapillary.com/maps/vtp/mly1_public/2';
-// Ratekarte: mehrere Kartendienste ohne Schlüssel. Liefert einer keine Kacheln, wird automatisch der nächste genommen.
-const MAP_PROVIDERS = [
-  { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
-    opts: { maxZoom: 19, attribution: 'Karte © Esri, HERE, Garmin, © OpenStreetMap' } },
-  { url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-    opts: { maxZoom: 17, subdomains: 'abc', attribution: '© OpenStreetMap, SRTM · © OpenTopoMap (CC-BY-SA)' } },
-  { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-    opts: { maxZoom: 19, attribution: '© OpenStreetMap' } },
+const WORLD_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json';
+const KATEGORIEN = [
+  ['kamera',       '📷', 'Kamera & Google-Auto'],
+  ['schrift',      '🔤', 'Sprache & Schrift'],
+  ['kennzeichen',  '🚗', 'Kennzeichen'],
+  ['poller',       '🚧', 'Poller'],
+  ['markierungen', '🛣️', 'Straßenmarkierungen'],
+  ['masten',       '⚡', 'Masten & Leitungen'],
+  ['schilder',     '🪧', 'Schilder'],
+  ['landschaft',   '🌳', 'Landschaft & Natur'],
+  ['sonstiges',    '⭐', 'Sonstiges'],
 ];
-let mapProviderIndex = 0;
-function addBaseLayer(map) {
-  const prov = MAP_PROVIDERS[mapProviderIndex];
-  const layer = L.tileLayer(prov.url, prov.opts).addTo(map);
-  let ok = 0, errors = 0;
-  layer.on('tileload', () => ok++);
-  layer.on('tileerror', () => {
-    errors++;
-    if (ok === 0 && errors >= 3 && mapProviderIndex < MAP_PROVIDERS.length - 1 && MAP_PROVIDERS[mapProviderIndex] === prov) {
-      console.warn('Kartendienst nicht erreichbar, wechsle:', prov.url);
-      mapProviderIndex++;
-      map.removeLayer(layer);
-      addBaseLayer(map);
-    }
-  });
-  return layer;
-}
-
-// Gebiete für zufällige Orte: [latMin, latMax, lngMin, lngMax, Gewicht]
-const REGIONS = {
-  world: [
-    [36, 60, -10, 30, 30],     // Europa
-    [56, 70, 5, 30, 6],        // Skandinavien
-    [26, 49, -124, -68, 22],   // USA
-    [43, 54, -125, -60, 6],    // Kanada (Süden)
-    [15, 32, -110, -87, 6],    // Mexiko
-    [-33, -3, -60, -35, 8],    // Brasilien
-    [-45, -18, -72, -56, 5],   // Argentinien / Chile
-    [-34, -23, 17, 32, 4],     // Südafrika
-    [-38, -16, 114, 153, 7],   // Australien
-    [-46, -35, 166, 178, 2],   // Neuseeland
-    [31, 44, 130, 145, 5],     // Japan
-    [6, 20, 98, 105, 3],       // Thailand
-    [-8, 6, 95, 120, 3],       // Indonesien / Malaysia
-    [50, 60, 30, 60, 4],       // Russland (West)
-    [36, 42, 26, 44, 3],       // Türkei
-    [8, 30, 70, 88, 4],        // Indien
-  ],
-  europe: [[36, 60, -10, 30, 10], [56, 70, 5, 30, 2], [50, 58, -8, 2, 2]],
-  dach:   [[47.3, 55, 6, 15, 6], [46.4, 48.9, 9.6, 17, 2], [45.9, 47.7, 6, 10.4, 1.5]],
-  germany:[[47.3, 55, 6, 15, 1]],
-  usa:    [[26, 49, -124, -68, 10]],
+const KONTINENTE = {
+  'Alle':        { center:[10, 15],   k:1 },
+  'Europa':      { center:[15, 52],   k:4.2 },
+  'Asien':       { center:[95, 28],   k:2.2 },
+  'Afrika':      { center:[20, 2],    k:2.3 },
+  'Nordamerika': { center:[-95, 40],  k:2.1 },
+  'Südamerika':  { center:[-62, -22], k:2.4 },
+  'Ozeanien':    { center:[150, -20], k:2.4 },
 };
 
-// ---------------------------------------------------------------
-// Zustand
-// ---------------------------------------------------------------
-let token = '';
-let viewer, guessMap, guessMarker, resultMap;
-let round = 0, totalScore = 0, history = [];
-let currentLoc = null, currentGuess = null;
-let settings = { region: 'world', moveMode: 'move', panoOnly: false };
+const META = window.META, LAENDER = window.LAENDER;
+const CODES = Object.keys(META);
+const byNum = {};
+CODES.forEach(c => { if (META[c].num) byNum[META[c].num] = c; });
 
 const $ = id => document.getElementById(id);
-function show(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  $(id).classList.add('active');
-}
 function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-
-$('versionBadge').textContent = `BETA v${APP_VERSION}`;
-$('versionNote').textContent = `Stand ${APP_DATE} · Neu: ${APP_CHANGES}`;
-
-// gespeicherte Einstellungen
-$('region').value = load('weltblick_region') || 'world';
-$('moveMode').value = load('weltblick_mode') || 'move';
-$('panoOnly').checked = load('weltblick_panoOnly') !== '0';
-function updateBest() {
-  const best = load('weltblick_best_' + $('region').value);
-  $('bestScore').textContent = best ? `Bestwert in dieser Region: ${parseInt(best, 10).toLocaleString('de-DE')}` : '';
-}
-$('region').onchange = updateBest;
-updateBest();
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+// **fett** im Text erlauben
+const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b style="color:#fff;font-weight:normal;text-decoration:underline">$1</b>');
 
 // ---------------------------------------------------------------
-// Zufälligen Ort mit Mapillary-Bild finden
+// Fortschritt (Gelernt)
 // ---------------------------------------------------------------
-function inRegion(lat, lng, region) {
-  return REGIONS[region].some(b => lat >= b[0] && lat <= b[1] && lng >= b[2] && lng <= b[3]);
-}
-
-function randomPoint(region) {
-  const boxes = REGIONS[region];
-  const total = boxes.reduce((a, b) => a + b[4], 0);
-  let r = Math.random() * total, box = boxes[0];
-  for (const b of boxes) { if ((r -= b[4]) <= 0) { box = b; break; } }
-  return { lat: box[0] + Math.random() * (box[1] - box[0]), lng: box[2] + Math.random() * (box[3] - box[2]) };
-}
-
-class AuthError extends Error {}
-
-// --- Kachel-Mathematik (Web-Mercator) ---
-function tileOf(p, z) {
-  const n = 2 ** z, rad = p.lat * Math.PI / 180;
-  const x = Math.floor((p.lng + 180) / 360 * n);
-  const y = Math.floor((1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2 * n);
-  return { z, x: Math.min(n - 1, Math.max(0, x)), y: Math.min(n - 1, Math.max(0, y)) };
-}
-function tileToLatLng(z, tx, ty, px, py, extent) {
-  const n = 2 ** z, x = tx + px / extent, y = ty + py / extent;
-  return { lat: Math.atan(Math.sinh(Math.PI * (1 - 2 * y / n))) * 180 / Math.PI, lng: x / n * 360 - 180 };
-}
-
-// --- Minimaler Leser für Vektor-Kacheln (Mapbox Vector Tile / Protobuf) ---
-function decodeMVT(buf, z, tx, ty) {
-  let pos = 0;
-  const varint = () => { let r = 0, m = 1, b; do { b = buf[pos++]; r += (b & 0x7f) * m; m *= 128; } while (b & 0x80); return r; };
-  const zz = n => (n % 2 ? -(n + 1) / 2 : n / 2);
-  const skip = t => { if (t === 0) varint(); else if (t === 1) pos += 8; else if (t === 2) { const l = varint(); pos += l; } else if (t === 5) pos += 4; };
-  const str = (end) => new TextDecoder().decode(buf.subarray(pos, end));
-  const layers = {};
-  while (pos < buf.length) {
-    const key = varint(), f = key >> 3, t = key & 7;
-    if (f !== 3 || t !== 2) { skip(t); continue; }
-    const lend = varint() + pos;
-    let name = '', extent = 4096; const keys = [], vals = [], feats = [];
-    while (pos < lend) {
-      const k = varint(), lf = k >> 3, lt = k & 7;
-      if (lf === 1) { const e = varint() + pos; name = str(e); pos = e; }
-      else if (lf === 3) { const e = varint() + pos; keys.push(str(e)); pos = e; }
-      else if (lf === 5) extent = varint();
-      else if (lf === 4) {
-        const ve = varint() + pos; let v = null;
-        while (pos < ve) {
-          const vk = varint(), vf = vk >> 3, vt = vk & 7;
-          if (vf === 1) { const e = varint() + pos; v = str(e); pos = e; }
-          else if (vf === 2) { v = new DataView(buf.buffer, buf.byteOffset + pos, 4).getFloat32(0, true); pos += 4; }
-          else if (vf === 3) { v = new DataView(buf.buffer, buf.byteOffset + pos, 8).getFloat64(0, true); pos += 8; }
-          else if (vf === 4 || vf === 5) v = varint();
-          else if (vf === 6) v = zz(varint());
-          else if (vf === 7) v = !!varint();
-          else skip(vt);
-        }
-        vals.push(v);
-      } else if (lf === 2) {
-        const fe = varint() + pos; let tags = [], geom = [];
-        while (pos < fe) {
-          const fk = varint(), ff = fk >> 3, ft = fk & 7;
-          if ((ff === 2 || ff === 4) && ft === 2) { const e = varint() + pos; const arr = []; while (pos < e) arr.push(varint()); if (ff === 2) tags = arr; else geom = arr; }
-          else skip(ft);
-        }
-        feats.push({ tags, geom });
-      } else skip(lt);
-    }
-    layers[name] = feats.map(ft => {
-      const props = {};
-      for (let i = 0; i + 1 < ft.tags.length; i += 2) props[keys[ft.tags[i]]] = vals[ft.tags[i + 1]];
-      // ersten Punkt der Geometrie nehmen (reicht für Punkte und als Näherung für Linien)
-      const g = ft.geom; let ll = null;
-      if (g.length >= 3) ll = tileToLatLng(z, tx, ty, zz(g[1]), zz(g[2]), extent);
-      return { props, ...ll };
-    }).filter(f => f.lat !== undefined);
+let learned = new Set();
+try { learned = new Set(JSON.parse(load('geoarcade_learned') || '[]')); } catch (e) {}
+function saveLearned() { store('geoarcade_learned', JSON.stringify([...learned])); updateScore(); }
+function updateScore() {
+  const n = [...learned].filter(c => META[c]).length;
+  $('learnedCount').textContent = n;
+  $('totalCount').textContent = CODES.length;
+  $('hiScore').textContent = Math.round(n / CODES.length * 100) + '%';
+  if (countryPaths) {
+    countryPaths.classed('learned', d => learned.has(byNum[d.id]));
+    markers.classed('learned', c => learned.has(c));
   }
-  return layers;
-}
-
-const tileCache = new Map();
-async function fetchTile(z, x, y) {
-  const k = `${z}/${x}/${y}`;
-  if (tileCache.has(k)) return tileCache.get(k);
-  let res;
-  try { res = await fetch(`${TILES}/${k}?access_token=${encodeURIComponent(token)}`); } catch (e) { return {}; }
-  if (res.status === 401 || res.status === 403) throw new AuthError('Der Mapillary-Token im Code wurde abgelehnt. Bitte in index.html prüfen bzw. einen neuen eintragen.');
-  if (!res.ok) return {};
-  let buf = new Uint8Array(await res.arrayBuffer());
-  if (buf[0] === 0x1f && buf[1] === 0x8b) { // falls gzip-komprimiert
-    buf = new Uint8Array(await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
-  }
-  let layers = {};
-  try { layers = decodeMVT(buf, z, x, y); } catch (e) { console.warn('Kachel unlesbar', k, e); }
-  if (tileCache.size > 200) tileCache.clear();
-  tileCache.set(k, layers);
-  return layers;
-}
-
-function toLoc(f) {
-  return { id: String(f.props.id), lat: f.lat, lng: f.lng, isPano: !!f.props.is_pano, capturedAt: f.props.captured_at };
-}
-const pick = arr => arr[Math.floor(Math.random() * arr.length)];
-
-// Ablauf: 1) grobe Kachel (Zoom 5) -> wo gibt es Bilder?  2) Detail-Kachel (Zoom 14) -> konkretes Bild
-async function findLocation() {
-  let fallback = null; // normales Foto, falls lange kein Panorama auftaucht
-  for (let attempt = 1; attempt <= 25; attempt++) {
-    const p = randomPoint(settings.region);
-    const t5 = tileOf(p, 5);
-    const overview = await fetchTile(5, t5.x, t5.y);
-    const spots = Object.values(overview).flat().filter(f => inRegion(f.lat, f.lng, settings.region));
-    for (let i = 0; spots.length && i < 6; i++) {
-      const spot = pick(spots);
-      const t14 = tileOf(spot, 14);
-      const detail = await fetchTile(14, t14.x, t14.y);
-      const images = (detail.image || []).filter(f => f.props.id && inRegion(f.lat, f.lng, settings.region));
-      const panos = images.filter(f => f.props.is_pano === true || f.props.is_pano === 1);
-      console.info(`Kachel 14/${t14.x}/${t14.y}: ${images.length} Bilder, davon ${panos.length} Panoramen`, images[0] && images[0].props);
-      if (panos.length) return toLoc(pick(panos));
-      if (!fallback && images.length) fallback = pick(images);
-    }
-    // ohne "Nur 360°": nach einigen erfolglosen Versuchen ein normales Foto nehmen
-    if (!settings.panoOnly && fallback && attempt >= 4) return toLoc(fallback);
-    $('loadingText').textContent = `Suche ein Panorama … (Versuch ${attempt + 1})`;
-  }
-  if (!settings.panoOnly && fallback) return toLoc(fallback);
-  throw new Error('Kein Ort gefunden. Versuch es nochmal.');
 }
 
 // ---------------------------------------------------------------
-// Viewer
+// Karte
 // ---------------------------------------------------------------
-function createViewer() {
-  if (viewer) { viewer.remove(); viewer = null; }
-  $('pano').innerHTML = '';
-  const canMove = settings.moveMode === 'move';
-  const fixedZoom = settings.moveMode === 'nmpz';
-  viewer = new mapillary.Viewer({
-    accessToken: token,
-    container: 'pano',
-    component: {
-      cover: false,          // Bild sofort laden, ohne Startbild-Knopf
-      attribution: false,    // Name/Datum/Link verstecken (wird im Ergebnis gezeigt)
-      direction: canMove,    // Pfeile zum Laufen
-      sequence: false,       // Abspiel-Leiste aus (Laufen geht über die Pfeile im Bild)
-      keyboard: canMove ? true : { keySequenceNavigation: false, keySpatialNavigation: false, keyZoom: !fixedZoom },
-      zoom: !fixedZoom,
-      mouse: { scrollZoom: !fixedZoom, doubleClickZoom: !fixedZoom },
-      image: true,
-    },
+const svg = d3.select('#map');
+const projection = d3.geoNaturalEarth1();
+const path = d3.geoPath(projection);
+let zoomLayer, countryPaths, markers, zoom, currentK = 1;
+let selected = null, activeFilter = 'Alle';
+
+svg.append('defs').html(`
+  <pattern id="oceanGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+    <rect width="8" height="8" fill="#0a0930"/>
+    <rect width="1" height="1" fill="#24206a"/>
+  </pattern>`);
+
+async function initMap() {
+  let world;
+  try { world = await (await fetch(WORLD_URL)).json(); }
+  catch (e) { $('insert').textContent = 'KARTE KONNTE NICHT GELADEN WERDEN'; return; }
+  const countries = topojson.feature(world, world.objects.countries).features;
+
+  zoomLayer = svg.append('g');
+  zoomLayer.append('path').datum({ type:'Sphere' }).attr('class', 'sphere');
+  zoomLayer.append('path').datum(d3.geoGraticule10()).attr('class', 'graticule');
+
+  countryPaths = zoomLayer.append('g').selectAll('path').data(countries).join('path')
+    .attr('class', d => 'country' + (byNum[d.id] ? ' cov' : ''))
+    .on('click', (ev, d) => { if (byNum[d.id] && isVisible(byNum[d.id])) select(byNum[d.id]); })
+    .on('mousemove', (ev, d) => showTip(ev, byNum[d.id] ? META[byNum[d.id]].name : null, byNum[d.id] && isVisible(byNum[d.id])))
+    .on('mouseleave', hideTip);
+
+  // Kleine Gebiete bzw. Teilgebiete als Pixel-Quadrate
+  const markerCodes = CODES.filter(c => !META[c].num);
+  markers = zoomLayer.append('g').selectAll('g').data(markerCodes).join('g')
+    .attr('class', 'marker')
+    .on('click', (ev, c) => { ev.stopPropagation(); select(c); })
+    .on('mousemove', (ev, c) => showTip(ev, META[c].name, true))
+    .on('mouseleave', hideTip);
+  markers.append('rect');
+
+  zoom = d3.zoom().scaleExtent([1, 40]).on('zoom', ev => {
+    currentK = ev.transform.k;
+    zoomLayer.attr('transform', ev.transform);
+    sizeMarkers();
   });
-  viewer.on('bearing', e => updateCompass(e.bearing));
-  // Ladeanzeige: solange Mapillary Daten nachlädt (danach erscheinen die Pfeile)
-  let loadTimer = null;
-  viewer.on('dataloading', e => {
-    clearTimeout(loadTimer);
-    if (e.loading) loadTimer = setTimeout(() => $('walkStatus').classList.add('show'), 400);
-    else $('walkStatus').classList.remove('show');
-  });
-}
-window.addEventListener('resize', () => { if (viewer) viewer.resize(); updateCompass(lastBearing); });
+  svg.call(zoom).on('dblclick.zoom', null);
 
-// Schritt entlang der Aufnahmestrecke – braucht keine Umgebungsdaten, geht daher schneller als die Pfeile
-let stepping = false;
-async function step(forward) {
-  if (!viewer || stepping || settings.moveMode !== 'move') return;
-  stepping = true;
-  try {
-    await viewer.moveDir(forward ? mapillary.NavigationDirection.Next : mapillary.NavigationDirection.Prev);
-  } catch (e) {
-    flashWalk(forward ? 'Hier endet die Aufnahme' : 'Hier beginnt die Aufnahme');
-  } finally {
-    stepping = false;
+  layout();
+  updateScore();
+  window.addEventListener('resize', layout);
+}
+
+function layout() {
+  const el = $('map'), w = el.clientWidth, h = el.clientHeight;
+  projection.fitExtent([[10, 10], [w - 10, h - 10]], { type:'Sphere' });
+  zoomLayer.selectAll('.sphere, .graticule').attr('d', path);
+  countryPaths.attr('d', path);
+  markers.attr('transform', c => { const [x, y] = projection([META[c].latlng[1], META[c].latlng[0]]); return `translate(${x},${y})`; });
+  sizeMarkers();
+  zoom.translateExtent([[-w * .5, -h * .5], [w * 1.5, h * 1.5]]);
+}
+function sizeMarkers() {
+  const s = 9 / Math.sqrt(currentK);
+  markers.select('rect').attr('x', -s / 2).attr('y', -s / 2).attr('width', s).attr('height', s);
+}
+
+function zoomTo(lonlat, k, besidePanel) {
+  const el = $('map'), [x, y] = projection(lonlat), w = el.clientWidth, h = el.clientHeight;
+  // Land in den freien Bereich neben bzw. über dem Info-Fenster schieben
+  let cx = w / 2, cy = h / 2;
+  if (besidePanel) {
+    if (w > 760) cx = (w - $('panel').offsetWidth - 32) / 2;
+    else cy = (h - $('panel').offsetHeight - 16) / 2;
   }
+  const t = k === 1 ? d3.zoomIdentity
+    : d3.zoomIdentity.translate(cx, cy).scale(k).translate(-x, -y);
+  svg.transition().duration(700).ease(d3.easeCubicOut).call(zoom.transform, t);
 }
-let flashTimer = null;
-function flashWalk(msg) {
-  const el = $('walkStatus');
-  el.textContent = msg; el.classList.add('show');
-  clearTimeout(flashTimer);
-  flashTimer = setTimeout(() => { el.classList.remove('show'); el.textContent = 'Wege werden geladen …'; }, 1500);
+
+// Tooltip
+function showTip(ev, name, active) {
+  if (!name || !active) return hideTip();
+  const r = $('map').getBoundingClientRect(), t = $('tooltip');
+  t.textContent = name.toUpperCase();
+  t.style.display = 'block';
+  t.style.left = (ev.clientX - r.left + 14) + 'px';
+  t.style.top = (ev.clientY - r.top + 14) + 'px';
+}
+function hideTip() { $('tooltip').style.display = 'none'; }
+
+// ---------------------------------------------------------------
+// Filter nach Kontinent
+// ---------------------------------------------------------------
+function isVisible(code) { return activeFilter === 'Alle' || META[code].kontinent === activeFilter; }
+function buildFilters() {
+  const colors = ['var(--yellow)', 'var(--cyan)', 'var(--pink)', 'var(--green)', 'var(--orange)', 'var(--purple)', 'var(--cyan)'];
+  $('filters').innerHTML = Object.keys(KONTINENTE).map((k, i) =>
+    `<button class="btn ghost${k === 'Alle' ? ' on' : ''}" data-k="${k}" style="--c:${colors[i]}">${k}</button>`).join('');
+  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => setFilter(b.dataset.k));
+}
+function setFilter(k) {
+  activeFilter = k;
+  $('filters').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.k === k));
+  if (!countryPaths) return;
+  countryPaths.classed('hidden', d => byNum[d.id] && !isVisible(byNum[d.id]));
+  markers.classed('hidden', c => !isVisible(c));
+  zoomTo(KONTINENTE[k].center, KONTINENTE[k].k);
 }
 
 // ---------------------------------------------------------------
-// Kompass-Leiste
+// Info-Panel
 // ---------------------------------------------------------------
-const PX_PER_DEG = 2.5;
-const DIRS = { 0: 'N', 45: 'NO', 90: 'O', 135: 'SO', 180: 'S', 225: 'SW', 270: 'W', 315: 'NW' };
-let lastBearing = 0;
-(function buildCompass() {
+function select(code) {
+  selected = code;
+  const m = META[code], data = LAENDER[code];
+  $('intro').style.display = 'none';
+  $('insert').style.display = 'none';
+  countryPaths.classed('sel', d => byNum[d.id] === code);
+  markers.classed('sel', c => c === code);
+
+  $('pName').textContent = m.name.toUpperCase();
+  $('pSub').textContent = m.kontinent;
+  $('pChips').innerHTML = [
+    `<span class="chip" style="--cc:var(--cyan)">Fahrseite: <b>${m.side}</b></span>`,
+    m.tld ? `<span class="chip" style="--cc:var(--pink)">Domain: <b>${esc(m.tld)}</b></span>` : '',
+    data && data.sprache ? `<span class="chip" style="--cc:var(--green)">Sprache: <b>${esc(data.sprache)}</b></span>` : '',
+  ].join('');
+
   let html = '';
-  for (let d = -180; d <= 540; d += 15) {
-    const x = (d + 180) * PX_PER_DEG, n = ((d % 360) + 360) % 360;
-    if (DIRS[n] !== undefined) {
-      const cls = 'lbl' + (n % 90 === 0 ? ' main' : '') + (n === 0 ? ' north' : '');
-      html += `<span class="${cls}" style="left:${x}px">${DIRS[n]}</span>`;
-    } else {
-      html += `<span class="tick" style="left:${x}px; height:${n % 45 === 0 ? 10 : 7}px"></span>`;
+  if (!data) {
+    html = `<p class="empty">Für dieses Gebiet gibt es hier noch keine Zusammenfassung${code === 'PE' ? ' – der Plonkit-Guide war beim Erstellen nicht abrufbar' : ''}. Schau solange direkt bei Plonkit vorbei.</p>`;
+  } else {
+    if (data.kurz) html += `<div class="tip"><div class="t">★ TOP-TIPP</div>${fmt(data.kurz)}</div>`;
+    for (const [key, icon, label] of KATEGORIEN) {
+      const list = data[key];
+      if (!list || !list.length) continue;
+      html += `<div class="sec"><h3><span>${icon}</span>${label.toUpperCase()}</h3><ul>${list.map(x => `<li>${fmt(x)}</li>`).join('')}</ul></div>`;
     }
   }
-  $('compassStrip').innerHTML = html;
-})();
-function updateCompass(bearing) {
-  lastBearing = ((bearing % 360) + 360) % 360;
-  const w = $('compass').clientWidth;
-  $('compassStrip').style.transform = `translateX(${w / 2 - (lastBearing + 180) * PX_PER_DEG}px)`;
+  $('panelBody').innerHTML = html;
+  $('panelBody').scrollTop = 0;
+  $('srcLink').href = `https://www.plonkit.net/${m.slug}`;
+  $('srcLink').textContent = 'Plonkit-Guide ↗';
+  updateLearnBtn();
+  $('panel').classList.add('open');
 }
+function closePanel() {
+  $('panel').classList.remove('open');
+  selected = null;
+  if (countryPaths) { countryPaths.classed('sel', false); markers.classed('sel', false); }
+}
+function updateLearnBtn() {
+  const done = learned.has(selected);
+  $('learnBtn').textContent = done ? '↺ Nicht gelernt' : '✔ Gelernt';
+  $('learnBtn').classList.toggle('done', done);
+}
+$('learnBtn').onclick = () => {
+  if (!selected) return;
+  learned.has(selected) ? learned.delete(selected) : learned.add(selected);
+  saveLearned(); updateLearnBtn();
+};
+$('closeBtn').onclick = closePanel;
 
 // ---------------------------------------------------------------
-// Spiel
+// Suche + Zufall
 // ---------------------------------------------------------------
-async function startGame() {
-  token = MAPILLARY_TOKEN;
-  $('startError').textContent = '';
-  if (!token) { $('startError').textContent = 'Kein Mapillary-Token im Code eingetragen (MAPILLARY_TOKEN in index.html).'; return; }
-  if (typeof mapillary === 'undefined' || typeof L === 'undefined') {
-    $('startError').textContent = 'Bibliotheken konnten nicht geladen werden. Bist du online?'; return;
-  }
-  settings.region = $('region').value;
-  settings.moveMode = $('moveMode').value;
-  settings.panoOnly = $('panoOnly').checked;
-  store('weltblick_region', settings.region);
-  store('weltblick_mode', settings.moveMode); store('weltblick_panoOnly', settings.panoOnly ? '1' : '0');
-
-  round = 0; totalScore = 0; history = [];
-  show('game');
-  setupGuessMap();
-  createViewer();
-  $('returnBtn').style.display = settings.moveMode === 'move' ? '' : 'none';
-  $('walk').style.display = settings.moveMode === 'move' ? '' : 'none';
-  await nextRound();
-}
-
-function setupGuessMap() {
-  if (guessMap) return;
-  guessMap = L.map('guessMap', { worldCopyJump: true }).setView([30, 10], 1);
-  addBaseLayer(guessMap);
-  guessMap.on('click', e => {
-    currentGuess = e.latlng.wrap();
-    if (guessMarker) guessMarker.setLatLng(e.latlng);
-    else guessMarker = L.marker(e.latlng).addTo(guessMap);
-    $('guessBtn').disabled = false;
-    $('guessBtn').textContent = 'Tipp abgeben';
-    $('guessBox').classList.add('pinned');
-  });
-}
-
-async function nextRound() {
-  round++;
-  $('hudRound').textContent = `Runde ${round} / ${ROUNDS}`;
-  $('hudScore').textContent = `Punkte: ${totalScore.toLocaleString('de-DE')}`;
-  $('loading').classList.remove('hidden');
-  $('loadingText').textContent = 'Suche einen Ort …';
-  $('retryBtn').style.display = 'none';
-  $('guessBtn').disabled = true;
-  $('guessBtn').textContent = 'Pin auf die Karte setzen';
-  $('guessBox').classList.remove('pinned');
-  if (guessMarker) { guessMap.removeLayer(guessMarker); guessMarker = null; }
-  currentGuess = null;
-
-  const views = { world: [[30, 10], 1], europe: [[52, 12], 3], dach: [[49, 10], 5], germany: [[51.2, 10.4], 5], usa: [[39, -97], 3] };
-  guessMap.setView(...views[settings.region]);
-
-  try {
-    currentLoc = await findLocation();
-    await viewer.moveTo(currentLoc.id);
-    viewer.resize();
-  } catch (e) {
-    if (e instanceof AuthError) { $('startError').textContent = e.message; show('start'); return; }
-    $('loadingText').textContent = e.message || 'Bild konnte nicht geladen werden.';
-    $('retryBtn').style.display = '';
-    round--;
-    return;
-  }
-  $('loading').classList.add('hidden');
-  viewer.getBearing().then(updateCompass).catch(() => {});
-  setTimeout(() => guessMap.invalidateSize(), 50);
-}
-
-// Entfernung in km (Haversine)
-function distanceKm(a, b) {
-  const R = 6371, toRad = d => d * Math.PI / 180;
-  const dLat = toRad(b.lat - a.lat), dLng = toRad(b.lng - a.lng);
-  const h = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLng / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(h));
-}
-
-// Punkte: skaliert mit der Größe der Region
-function scoreFor(km) {
-  const scale = { world: 2000, europe: 600, dach: 200, germany: 150, usa: 900 }[settings.region];
-  if (km < 0.05) return MAX_POINTS;
-  return Math.round(MAX_POINTS * Math.exp(-km / scale));
-}
-
-function formatKm(km) {
-  if (km < 1) return Math.round(km * 1000) + ' m';
-  if (km < 100) return km.toFixed(1).replace('.', ',') + ' km';
-  return Math.round(km).toLocaleString('de-DE') + ' km';
-}
-
-function submitGuess() {
-  if (!currentGuess) return;
-  const actual = { lat: currentLoc.lat, lng: currentLoc.lng };
-  const guess = { lat: currentGuess.lat, lng: currentGuess.lng };
-  const km = distanceKm(actual, guess);
-  const pts = scoreFor(km);
-  totalScore += pts;
-  history.push({ km, pts });
-
-  show('result');
-  if (!resultMap) {
-    resultMap = L.map('resultMap', { worldCopyJump: true });
-    addBaseLayer(resultMap);
-  }
-  resultMap.eachLayer(l => { if (!(l instanceof L.TileLayer)) resultMap.removeLayer(l); });
-  setTimeout(() => {
-    resultMap.invalidateSize();
-    const flag = L.divIcon({ html: '<span style="font-size:26px">🚩</span>', className: '', iconSize: [28, 28], iconAnchor: [6, 26] });
-    L.marker([actual.lat, actual.lng], { icon: flag }).addTo(resultMap);
-    L.marker([guess.lat, guess.lng]).addTo(resultMap);
-    L.polyline([[guess.lat, guess.lng], [actual.lat, actual.lng]], { color: '#f5b83d', dashArray: '6 8', weight: 3 }).addTo(resultMap);
-    resultMap.fitBounds(L.latLngBounds([[guess.lat, guess.lng], [actual.lat, actual.lng]]), { padding: [60, 60], maxZoom: 14 });
-  }, 30);
-
-  $('resultText').innerHTML = `Dein Tipp war <b>${formatKm(km)}</b> entfernt – <b>${pts.toLocaleString('de-DE')}</b> Punkte`;
-  const date = currentLoc.capturedAt ? new Date(currentLoc.capturedAt).toLocaleDateString('de-DE') : '';
-    $('resultCredit').innerHTML = `${currentLoc.isPano ? '360°-Panorama' : 'Foto'}${date ? ' vom ' + date : ''} · <a href="https://www.mapillary.com/app/?pKey=${encodeURIComponent(currentLoc.id)}" target="_blank" rel="noopener">auf Mapillary ansehen</a>`;
-  $('resultBar').style.width = '0';
-  setTimeout(() => $('resultBar').style.width = (pts / MAX_POINTS * 100) + '%', 50);
-  $('nextBtn').textContent = round >= ROUNDS ? 'Ergebnis ansehen' : 'Nächste Runde';
-}
-
-function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])); }
-
-function afterResult() {
-  if (round >= ROUNDS) return showSummary();
-  show('game');
-  nextRound();
-}
-
-function showSummary() {
-  $('finalScore').textContent = totalScore.toLocaleString('de-DE');
-  $('summaryTable').innerHTML = history.map((h, i) =>
-    `<tr><td>Runde ${i + 1}</td><td>${formatKm(h.km)}</td><td>${h.pts.toLocaleString('de-DE')}</td></tr>`).join('');
-  const best = parseInt(load('weltblick_best_' + settings.region) || '0', 10);
-  if (totalScore > best) store('weltblick_best_' + settings.region, String(totalScore));
-  updateBest();
-  show('summary');
-}
-
-// ---------------------------------------------------------------
-// Events
-// ---------------------------------------------------------------
-$('startBtn').onclick = startGame;
-$('guessBtn').onclick = submitGuess;
-$('nextBtn').onclick = afterResult;
-$('retryBtn').onclick = nextRound;
-$('againBtn').onclick = startGame;
-$('menuBtn').onclick = () => show('start');
-$('backToStart').onclick = () => { if (confirm('Spiel wirklich beenden?')) show('start'); };
-$('returnBtn').onclick = () => { if (viewer && currentLoc) viewer.moveTo(currentLoc.id).catch(() => {}); };
-$('stepFwd').onclick = () => step(true);
-$('stepBack').onclick = () => step(false);
-document.addEventListener('keydown', e => {
-  if ($('game').classList.contains('active') && !e.ctrlKey && !e.altKey && !e.metaKey) {
-    if (e.code === 'KeyW') { step(true); return; }
-    if (e.code === 'KeyS') { step(false); return; }
-  }
-  if (e.code !== 'Space') return;
-  if ($('game').classList.contains('active') && currentGuess) { e.preventDefault(); submitGuess(); }
-  else if ($('result').classList.contains('active')) { e.preventDefault(); afterResult(); }
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+let sugIdx = -1, sugList = [];
+$('searchInput').addEventListener('input', () => {
+  const q = norm($('searchInput').value.trim());
+  sugList = q ? CODES.filter(c => norm(META[c].name).includes(q) || c.toLowerCase() === q || norm(META[c].slug).includes(q)).slice(0, 12) : [];
+  sugIdx = sugList.length ? 0 : -1;
+  renderSug();
 });
+$('searchInput').addEventListener('keydown', e => {
+  if (e.key === 'ArrowDown') { sugIdx = Math.min(sugIdx + 1, sugList.length - 1); renderSug(); e.preventDefault(); }
+  else if (e.key === 'ArrowUp') { sugIdx = Math.max(sugIdx - 1, 0); renderSug(); e.preventDefault(); }
+  else if (e.key === 'Enter' && sugList[sugIdx]) pickSug(sugList[sugIdx]);
+  else if (e.key === 'Escape') { sugList = []; renderSug(); }
+});
+document.addEventListener('click', e => { if (!e.target.closest('.search')) { sugList = []; renderSug(); } });
+function renderSug() {
+  const box = $('suggest');
+  box.style.display = sugList.length ? 'block' : 'none';
+  box.innerHTML = sugList.map((c, i) => `<div class="${i === sugIdx ? 'sel' : ''}" data-c="${c}">${esc(META[c].name)} <span style="opacity:.6">${META[c].kontinent}</span></div>`).join('');
+  box.querySelectorAll('div').forEach(d => d.onclick = () => pickSug(d.dataset.c));
+}
+function pickSug(c) {
+  $('searchInput').value = ''; sugList = []; renderSug();
+  if (!isVisible(c)) setFilter('Alle');
+  focusCountry(c);
+}
+function focusCountry(c) {
+  if (!countryPaths) return;
+  select(c);
+  const m = META[c];
+  zoomTo([m.latlng[1], m.latlng[0]], m.num ? Math.max(currentK, 3) : 8, true);
+}
+$('randomBtn').onclick = () => {
+  const pool = CODES.filter(isVisible);
+  focusCountry(pool[Math.floor(Math.random() * pool.length)]);
+};
+
+// Zoom-Knöpfe
+$('zoomIn').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.6);
+$('zoomOut').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
+$('zoomReset').onclick = () => setFilter('Alle');
+$('introBtn').onclick = () => { $('intro').style.display = 'none'; };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+
+buildFilters();
+initMap();
 </script>
 </body>
 </html>
