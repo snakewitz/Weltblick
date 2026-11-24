@@ -7,8 +7,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+  // Fehler sichtbar machen, statt dass die Seite still nicht reagiert
+  window.addEventListener('error', e => {
+    const box = document.getElementById('errBox');
+    if (box) { box.style.display = 'block'; box.textContent += '⚠ ' + (e.message || 'Datei konnte nicht geladen werden: ' + (e.target && e.target.src)) + '\n'; }
+  }, true);
+</script>
+<script src="lib/d3.min.js"></script>
+<script src="lib/topojson-client.min.js"></script>
+<script src="lib/world-50m.js"></script>
 <script src="data/meta.js"></script>
 <script>window.LAENDER = {};</script>
 <script src="data/europa.js"></script>
@@ -177,6 +185,7 @@
       <span style="--sw:var(--cyan)">Kleine Gebiete</span>
     </div>
     <div id="insert">▶ LAND ANKLICKEN ◀</div>
+    <pre id="errBox" style="display:none;position:absolute;left:16px;right:16px;top:70px;z-index:50;margin:0;padding:10px;background:#3a0010;color:#fff;box-shadow:inset 0 0 0 2px var(--pink);white-space:pre-wrap;font:16px ui-monospace,monospace"></pre>
 
     <div id="intro" class="frame">
       <h2>PLAYER 1<br>READY?</h2>
@@ -206,7 +215,6 @@
 // ---------------------------------------------------------------
 // Konfiguration
 // ---------------------------------------------------------------
-const WORLD_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json';
 const KATEGORIEN = [
   ['kamera',       '📷', 'Kamera & Google-Auto'],
   ['schrift',      '🔤', 'Sprache & Schrift'],
@@ -227,6 +235,8 @@ const KONTINENTE = {
   'Südamerika':  { center:[-62, -22], k:2.4 },
   'Ozeanien':    { center:[150, -20], k:2.4 },
 };
+
+document.getElementById('introBtn').onclick = () => { document.getElementById('intro').style.display = 'none'; };
 
 const META = window.META, LAENDER = window.LAENDER;
 const CODES = Object.keys(META);
@@ -273,9 +283,8 @@ svg.append('defs').html(`
   </pattern>`);
 
 async function initMap() {
-  let world;
-  try { world = await (await fetch(WORLD_URL)).json(); }
-  catch (e) { $('insert').textContent = 'KARTE KONNTE NICHT GELADEN WERDEN'; return; }
+  const world = window.WORLD;
+  if (!world) { $('insert').textContent = 'KARTE KONNTE NICHT GELADEN WERDEN'; return; }
   const countries = topojson.feature(world, world.objects.countries).features;
 
   zoomLayer = svg.append('g');
@@ -464,7 +473,6 @@ $('randomBtn').onclick = () => {
 $('zoomIn').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.6);
 $('zoomOut').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
 $('zoomReset').onclick = () => setFilter('Alle');
-$('introBtn').onclick = () => { $('intro').style.display = 'none'; };
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
 
 buildFilters();
