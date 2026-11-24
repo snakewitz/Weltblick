@@ -1,15 +1,19 @@
-# 🌍 Weltblick
+# 🕹️ Geo Arcade
 
-Ein eigenes Geo-Ratespiel im Browser: Du landest an einem zufälligen Ort auf der Welt, schaust dich im 360°-Panorama um, läufst ein Stück und tippst auf der Karte, wo du bist.
-
-## Spielen
+Interaktive Lernkarte im Arcade-Look: Klick auf ein Land mit Street-View-Abdeckung und sieh, woran du es erkennst – Kamera & Google-Auto, Schrift, Kennzeichen, Poller, Straßenmarkierungen, Masten, Schilder und Landschaft.
 
 👉 **https://snakewitz.github.io/Weltblick/**
 
-Der Mapillary-Token (nur Lese-Rechte) steht in `index.html` bei `MAPILLARY_TOKEN`. Einen neuen bekommst du kostenlos auf https://www.mapillary.com/dashboard/developers.
+- 134 Länder und Gebiete (kleine Gebiete als Quadrate auf der Karte)
+- Suche, Zufallsland, Filter nach Kontinent
+- Fortschritt „Gelernt“ wird im Browser gespeichert
 
-## Technik
+## Quelle
 
-- Straßenbilder: [Mapillary](https://www.mapillary.com) (MapillaryJS 4.1.2, Vektor-Kacheln für die Ortssuche)
-- Ratekarte: [Leaflet](https://leafletjs.com) mit Esri / OpenTopoMap / OpenStreetMap
-- Alles in einer Datei, kein Build-Schritt nötig
+Die Erkennungsmerkmale sind in eigenen Worten auf Deutsch zusammengefasst nach den Länder-Guides von [Plonk It](https://www.plonkit.net/guide). Für Details und Beispielbilder führt jedes Land direkt zum passenden Plonkit-Guide.
+
+## Aufbau
+
+- `index.html` – Karte (D3 + world-atlas) und Oberfläche
+- `data/meta.js` – Grunddaten (Name, Kontinent, Fahrseite, Domain)
+- `data/*.js` – Zusammenfassungen je Kontinent
