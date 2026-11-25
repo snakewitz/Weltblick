@@ -3148,5 +3148,353 @@ window.BILDER = {
 "src": "https://commons.wikimedia.org/wiki/File:A_road_sign_ofr_Baghdad,_Kirkuk,_Duhok,_and_Sulaymaniyah_in_Erbil_DSF2315.jpg"
 }
 ]
+},
+"EG": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/License_plate_Egypt_private.jpg/330px-License_plate_Egypt_private.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/License_plate_Egypt_private.jpg/1280px-License_plate_Egypt_private.jpg",
+"cap": "Ägyptisches Kennzeichen (arabisch/lateinisch)",
+"by": "A elalaily (talk)",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_Egypt_private.jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Egypt_Road_Sign_R01.jpg/330px-Egypt_Road_Sign_R01.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Egypt_Road_Sign_R01.jpg/1280px-Egypt_Road_Sign_R01.jpg",
+"cap": "Blauer Wegweiser auf Arabisch und Englisch",
+"by": "Marc Ryckaert",
+"lic": "CC BY 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Egypt_Road_Sign_R01.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Street_sign_in_Cairo_05.jpg/330px-Street_sign_in_Cairo_05.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Street_sign_in_Cairo_05.jpg/1280px-Street_sign_in_Cairo_05.jpg",
+"cap": "Straßenschild in Kairo",
+"by": "Marsupium",
+"lic": "CC BY 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Street_sign_in_Cairo_05.jpg"
+}
+]
+},
+"BY": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/License_plate_of_Belarus_%28electric_vehicle%29.jpg/330px-License_plate_of_Belarus_%28electric_vehicle%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/License_plate_of_Belarus_%28electric_vehicle%29.jpg/1280px-License_plate_of_Belarus_%28electric_vehicle%29.jpg",
+"cap": "Belarussisches Kennzeichen mit BY-Feld",
+"by": "Walser.FL",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_of_Belarus_(electric_vehicle).jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Minsk_HolySpiritCathedral_001_3644.jpg/330px-Minsk_HolySpiritCathedral_001_3644.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Minsk_HolySpiritCathedral_001_3644.jpg/1280px-Minsk_HolySpiritCathedral_001_3644.jpg",
+"cap": "Heilig-Geist-Kathedrale in Minsk",
+"by": "Ludvig14",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Minsk_HolySpiritCathedral_001_3644.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/2025.09.05_Plaque_Zielienaluhskaja_Street_in_Tsna_Minsk_Belarus.jpg/330px-2025.09.05_Plaque_Zielienaluhskaja_Street_in_Tsna_Minsk_Belarus.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/2025.09.05_Plaque_Zielienaluhskaja_Street_in_Tsna_Minsk_Belarus.jpg/1280px-2025.09.05_Plaque_Zielienaluhskaja_Street_in_Tsna_Minsk_Belarus.jpg",
+"cap": "Straßenschild „вуліца“ (Belarussisch)",
+"by": "Tess Mattew",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:2025.09.05_Plaque_Zielienaluhskaja_Street_in_Tsna_Minsk_Belarus.jpg"
+}
+]
+},
+"SZ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Swaziland_license_plate_JSD_884_BM.jpg/330px-Swaziland_license_plate_JSD_884_BM.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Swaziland_license_plate_JSD_884_BM.jpg/1280px-Swaziland_license_plate_JSD_884_BM.jpg",
+"cap": "Kennzeichen von Eswatini",
+"by": "Dickelbers",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Swaziland_license_plate_JSD_884_BM.jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Signs_in_Eswatini.jpg/330px-Signs_in_Eswatini.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Signs_in_Eswatini.jpg/1280px-Signs_in_Eswatini.jpg",
+"cap": "Wegweiser mit MR-Straßennummern",
+"by": "Bernard Gagnon",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Signs_in_Eswatini.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Unnamed_Road%2C_Swaziland_-_panoramio_%28102%29.jpg/330px-Unnamed_Road%2C_Swaziland_-_panoramio_%28102%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Unnamed_Road%2C_Swaziland_-_panoramio_%28102%29.jpg/1280px-Unnamed_Road%2C_Swaziland_-_panoramio_%28102%29.jpg",
+"cap": "Rote Erde und hohes Gras",
+"by": "Matt Adkins",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Swaziland_-_panoramio_(102).jpg"
+}
+]
+},
+"TZ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Tanzania_private_vehicle_registration_plate_FE-Schrift.jpg/330px-Tanzania_private_vehicle_registration_plate_FE-Schrift.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Tanzania_private_vehicle_registration_plate_FE-Schrift.jpg",
+"cap": "Gelbes Kennzeichen mit Flagge (Tansania)",
+"by": "Peter in s",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Tanzania_private_vehicle_registration_plate_FE-Schrift.jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gombe_Stream_NP_Mutter_und_Kind.jpg/330px-Gombe_Stream_NP_Mutter_und_Kind.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gombe_Stream_NP_Mutter_und_Kind.jpg/1280px-Gombe_Stream_NP_Mutter_und_Kind.jpg",
+"cap": "Schimpansen im Gombe-Nationalpark",
+"by": "Ikiwaner",
+"lic": "GFDL 1.2",
+"src": "https://commons.wikimedia.org/wiki/File:Gombe_Stream_NP_Mutter_und_Kind.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Kilimanjaro_seen_from_Marangu_route_%2816866692488%29.jpg/330px-Kilimanjaro_seen_from_Marangu_route_%2816866692488%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Kilimanjaro_seen_from_Marangu_route_%2816866692488%29.jpg/1280px-Kilimanjaro_seen_from_Marangu_route_%2816866692488%29.jpg",
+"cap": "Blick auf den Kilimandscharo",
+"by": "Christoph Strässler from Oberdorf BL, Schweiz",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_seen_from_Marangu_route_(16866692488).jpg"
+}
+]
+},
+"SJ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Svalbard_23_BG_1.jpg/330px-Svalbard_23_BG_1.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Svalbard_23_BG_1.jpg/1280px-Svalbard_23_BG_1.jpg",
+"cap": "Gelbes Kennzeichen „Svalbard“",
+"by": "Bingar1234",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Svalbard_23_BG_1.jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Road_from_the_city_of_Longyearbyen_to_the_airport_-_buiobuione.jpg/330px-Road_from_the_city_of_Longyearbyen_to_the_airport_-_buiobuione.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Road_from_the_city_of_Longyearbyen_to_the_airport_-_buiobuione.jpg/1280px-Road_from_the_city_of_Longyearbyen_to_the_airport_-_buiobuione.jpg",
+"cap": "Warnschild für Schneemobile, kahle Berge",
+"by": "Buiobuione",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Road_from_the_city_of_Longyearbyen_to_the_airport_-_buiobuione.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Longyearbyen%2C_Hilmar_Rekstens_vei%2C_Svalbard%2C_July_2026.jpg/330px-Longyearbyen%2C_Hilmar_Rekstens_vei%2C_Svalbard%2C_July_2026.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Longyearbyen%2C_Hilmar_Rekstens_vei%2C_Svalbard%2C_July_2026.jpg/1280px-Longyearbyen%2C_Hilmar_Rekstens_vei%2C_Svalbard%2C_July_2026.jpg",
+"cap": "Straße in Longyearbyen",
+"by": "Kawon Kez Sel",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Longyearbyen,_Hilmar_Rekstens_vei,_Svalbard,_July_2026.jpg"
+}
+]
+},
+"FK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Falkland_Island_vehicle_registration_plate_front_and_rear.jpg/330px-Falkland_Island_vehicle_registration_plate_front_and_rear.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/85/Falkland_Island_vehicle_registration_plate_front_and_rear.jpg",
+"cap": "Vorne weiß, hinten gelb – britischer Stil",
+"by": "Quiensabe",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Falkland_Island_vehicle_registration_plate_front_and_rear.jpg"
+}
+],
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Falkland_Islands_road.jpg/330px-Falkland_Islands_road.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Falkland_Islands_road.jpg",
+"cap": "Schotterpiste durch baumlose Hügel",
+"by": "Chris Pearson from Leuchars, Scotland",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Falkland_Islands_road.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ross_Road%2C_Stanley_%28Falkland_Islands%29.jpg/330px-Ross_Road%2C_Stanley_%28Falkland_Islands%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ross_Road%2C_Stanley_%28Falkland_Islands%29.jpg",
+"cap": "Ross Road in Stanley",
+"by": "Alex Petrenko",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Ross_Road,_Stanley_(Falkland_Islands).jpg"
+}
+]
+},
+"PT-AZ": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/On_the_road_to_Ponta_dos_Rosais_%28S%C3%A3o_Jorge%2C_Azores%29_2011.jpg/330px-On_the_road_to_Ponta_dos_Rosais_%28S%C3%A3o_Jorge%2C_Azores%29_2011.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/On_the_road_to_Ponta_dos_Rosais_%28S%C3%A3o_Jorge%2C_Azores%29_2011.jpg/1280px-On_the_road_to_Ponta_dos_Rosais_%28S%C3%A3o_Jorge%2C_Azores%29_2011.jpg",
+"cap": "Weiden mit Mauern aus Vulkanstein",
+"by": "JopkeB",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:On_the_road_to_Ponta_dos_Rosais_(S%C3%A3o_Jorge,_Azores)_2011.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Road_amidst_grazing_fields%2C_Guadalupe%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg/330px-Road_amidst_grazing_fields%2C_Guadalupe%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Road_amidst_grazing_fields%2C_Guadalupe%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg/1280px-Road_amidst_grazing_fields%2C_Guadalupe%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg",
+"cap": "Straße zwischen grünen Weiden",
+"by": "Jules Verne Times Two",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Road_amidst_grazing_fields,_Guadalupe,_Graciosa_Island,_Azores,_Portugal_(PPL1-Corrected)_julesvernex2.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Road_to_Caldeira%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg/330px-Road_to_Caldeira%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Road_to_Caldeira%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg/1280px-Road_to_Caldeira%2C_Graciosa_Island%2C_Azores%2C_Portugal_%28PPL1-Corrected%29_julesvernex2.jpg",
+"cap": "Ortsschild auf Graciosa",
+"by": "Jules Verne Times Two",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Road_to_Caldeira,_Graciosa_Island,_Azores,_Portugal_(PPL1-Corrected)_julesvernex2.jpg"
+}
+]
+},
+"CX": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Christmas_Island_Nat_Park_banner.jpg/330px-Christmas_Island_Nat_Park_banner.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Christmas_Island_Nat_Park_banner.jpg/1280px-Christmas_Island_Nat_Park_banner.jpg",
+"cap": "Rote Weihnachtsinsel-Krabben auf der Straße",
+"by": "ChrisBrayPhotography",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Christmas_Island_Nat_Park_banner.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Flying_Fish_Cove_%2825341355156%29.jpg/330px-Flying_Fish_Cove_%2825341355156%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flying_Fish_Cove_%2825341355156%29.jpg",
+"cap": "Flying Fish Cove",
+"by": "David Stanley from Nanaimo, Canada",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Flying_Fish_Cove_(25341355156).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Christmas_Island_%285775097562%29.jpg/330px-Christmas_Island_%285775097562%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Christmas_Island_%285775097562%29.jpg/1280px-Christmas_Island_%285775097562%29.jpg",
+"cap": "Supermarkt in der Siedlung",
+"by": "DIAC images",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Christmas_Island_(5775097562).jpg"
+}
+]
+},
+"AQ": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Vernadsky_Station_Winter_Island_Antarctica_Gentoo_Penguins_3_%2847284556082%29.jpg/330px-Vernadsky_Station_Winter_Island_Antarctica_Gentoo_Penguins_3_%2847284556082%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Vernadsky_Station_Winter_Island_Antarctica_Gentoo_Penguins_3_%2847284556082%29.jpg/1280px-Vernadsky_Station_Winter_Island_Antarctica_Gentoo_Penguins_3_%2847284556082%29.jpg",
+"cap": "Eselspinguine – die gibt es in der Arktis nicht",
+"by": "Gary Bembridge from London, UK",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Vernadsky_Station_Winter_Island_Antarctica_Gentoo_Penguins_3_(47284556082).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/McMurdo_Station_From_The_Foot_Of_Observation_Hill.jpg/330px-McMurdo_Station_From_The_Foot_Of_Observation_Hill.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/McMurdo_Station_From_The_Foot_Of_Observation_Hill.jpg/1280px-McMurdo_Station_From_The_Foot_Of_Observation_Hill.jpg",
+"cap": "McMurdo-Station auf dunklem Vulkangestein",
+"by": "owamux",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:McMurdo_Station_From_The_Foot_Of_Observation_Hill.jpg"
+}
+]
+},
+"IO": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Diegogarcia.jpg/330px-Diegogarcia.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Diegogarcia.jpg",
+"cap": "Das Atoll Diego Garcia von oben",
+"by": "unbekannt",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Diegogarcia.jpg"
+}
+]
+},
+"CC": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Cocos%28Keeling%29Islands_WestIsland01.jpg/330px-Cocos%28Keeling%29Islands_WestIsland01.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cocos%28Keeling%29Islands_WestIsland01.jpg",
+"cap": "Weißer Sandstrand mit Palmen",
+"by": "MUK",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Cocos(Keeling)Islands_WestIsland01.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg/330px-Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg/1280px-Cocos_%28Keeling%29_Islands_%2832206670676%29.jpg",
+"cap": "Flaches Korallenatoll mit türkisem Wasser",
+"by": "paullymac",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Cocos_(Keeling)_Islands_(32206670676).jpg"
+}
+]
+},
+"UM-MQ": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Laysan_Albatross_colony_on_Midway_Atoll_NWR.jpg/330px-Laysan_Albatross_colony_on_Midway_Atoll_NWR.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Laysan_Albatross_colony_on_Midway_Atoll_NWR.jpg/1280px-Laysan_Albatross_colony_on_Midway_Atoll_NWR.jpg",
+"cap": "Albatros-Kolonie auf Midway",
+"by": "Wieteke Holthuijzen",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Laysan_Albatross_colony_on_Midway_Atoll_NWR.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Laysan_albatross%2C_m%C5%8Dl%C4%AB%2C_on_Midway_Atoll_%2853753639108%29.jpg/330px-Laysan_albatross%2C_m%C5%8Dl%C4%AB%2C_on_Midway_Atoll_%2853753639108%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Laysan_albatross%2C_m%C5%8Dl%C4%AB%2C_on_Midway_Atoll_%2853753639108%29.jpg/1280px-Laysan_albatross%2C_m%C5%8Dl%C4%AB%2C_on_Midway_Atoll_%2853753639108%29.jpg",
+"cap": "Albatrosse, so weit das Auge reicht",
+"by": "USFWS volunteer photo: Dan Rapp – USFWS Pacific",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Laysan_albatross,_m%C5%8Dl%C4%AB,_on_Midway_Atoll_(53753639108).jpg"
+}
+]
+},
+"PN": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Adamstown.jpg/330px-Adamstown.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Adamstown.jpg/1280px-Adamstown.jpg",
+"cap": "Adamstown an den steilen grünen Hängen",
+"by": "doublecnz",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Adamstown.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Pitcairn_-_Church_of_Adamstown.jpg/330px-Pitcairn_-_Church_of_Adamstown.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Pitcairn_-_Church_of_Adamstown.jpg/1280px-Pitcairn_-_Church_of_Adamstown.jpg",
+"cap": "Kirche in Adamstown",
+"by": "Makemake at German Wikipedia",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Pitcairn_-_Church_of_Adamstown.jpg"
+}
+]
+},
+"GS": {
+"landschaft": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/King_Penguin_at_Grytviken_Whaling_Station_%285685973786%29.jpg/330px-King_Penguin_at_Grytviken_Whaling_Station_%285685973786%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/King_Penguin_at_Grytviken_Whaling_Station_%285685973786%29.jpg/1280px-King_Penguin_at_Grytviken_Whaling_Station_%285685973786%29.jpg",
+"cap": "Königspinguin vor der verlassenen Walfangstation Grytviken",
+"by": "Liam Quinn from Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:King_Penguin_at_Grytviken_Whaling_Station_(5685973786).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Grytviken_Whaling_Station.jpg/330px-Grytviken_Whaling_Station.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Grytviken_Whaling_Station.jpg/1280px-Grytviken_Whaling_Station.jpg",
+"cap": "Rostige Reste der Walfangstation",
+"by": "Hbk33",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Grytviken_Whaling_Station.jpg"
+}
+]
 }
 };

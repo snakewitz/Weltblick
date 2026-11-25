@@ -536,5 +536,68 @@
  },
  "IQ": {
   "S0": "Grüne Wegweiser auf Arabisch, Kurdisch und Englisch"
+ },
+ "EG": {
+  "K0": "Ägyptisches Kennzeichen (arabisch/lateinisch)",
+  "L0": "Blauer Wegweiser auf Arabisch und Englisch",
+  "L12": "Straßenschild in Kairo"
+ },
+ "BY": {
+  "K0": "Belarussisches Kennzeichen mit BY-Feld",
+  "L15": "Heilig-Geist-Kathedrale in Minsk",
+  "L3": "Straßenschild „вуліца“ (Belarussisch)"
+ },
+ "SZ": {
+  "K1": "Kennzeichen von Eswatini",
+  "L0": "Wegweiser mit MR-Straßennummern",
+  "L13": "Rote Erde und hohes Gras"
+ },
+ "TZ": {
+  "K3": "Gelbes Kennzeichen mit Flagge (Tansania)",
+  "L3": "Schimpansen im Gombe-Nationalpark",
+  "L15": "Blick auf den Kilimandscharo"
+ },
+ "SJ": {
+  "K1": "Gelbes Kennzeichen „Svalbard“",
+  "L1": "Warnschild für Schneemobile, kahle Berge",
+  "L14": "Straße in Longyearbyen"
+ },
+ "FK": {
+  "K4": "Vorne weiß, hinten gelb – britischer Stil",
+  "L5": "Schotterpiste durch baumlose Hügel",
+  "L0": "Ross Road in Stanley"
+ },
+ "PT-AZ": {
+  "L1": "Weiden mit Mauern aus Vulkanstein",
+  "L11": "Straße zwischen grünen Weiden",
+  "L3": "Ortsschild auf Graciosa"
+ },
+ "CX": {
+  "L0": "Rote Weihnachtsinsel-Krabben auf der Straße",
+  "L12": "Flying Fish Cove",
+  "L17": "Supermarkt in der Siedlung"
+ },
+ "AQ": {
+  "L3": "Eselspinguine – die gibt es in der Arktis nicht",
+  "L15": "McMurdo-Station auf dunklem Vulkangestein"
+ },
+ "IO": {
+  "L2": "Das Atoll Diego Garcia von oben"
+ },
+ "CC": {
+  "L9": "Weißer Sandstrand mit Palmen",
+  "L0": "Flaches Korallenatoll mit türkisem Wasser"
+ },
+ "UM-MQ": {
+  "L0": "Albatros-Kolonie auf Midway",
+  "L10": "Albatrosse, so weit das Auge reicht"
+ },
+ "PN": {
+  "L4": "Adamstown an den steilen grünen Hängen",
+  "L0": "Kirche in Adamstown"
+ },
+ "GS": {
+  "L2": "Königspinguin vor der verlassenen Walfangstation Grytviken",
+  "L1": "Rostige Reste der Walfangstation"
  }
 }

@@ -6,8 +6,8 @@ S = os.path.dirname(os.path.abspath(__file__))
 TH = os.path.join(S, 'thumbs'); os.makedirs(TH, exist_ok=True)
 SH = os.path.join(S, 'sheets'); os.makedirs(SH, exist_ok=True)
 UA = 'GeoArcade-LearningMap/1.0 (educational, low-volume)'
-TOP = ['poller', 'kennzeichen', 'masten', 'schilder', 'markierungen']
-ABBR = {'poller': 'P', 'kennzeichen': 'K', 'masten': 'M', 'schilder': 'S', 'markierungen': 'R'}
+TOP = ['poller', 'kennzeichen', 'masten', 'schilder', 'markierungen', 'landschaft']
+ABBR = {'poller': 'P', 'kennzeichen': 'K', 'masten': 'M', 'schilder': 'S', 'markierungen': 'R', 'landschaft': 'L'}
 last = [0.0]
 
 def thumb(url):
@@ -39,19 +39,24 @@ def font(sz):
     return ImageFont.load_default()
 
 def build(code, per=8):
+    per = int(__import__('os').environ.get('PER', per))
     c = json.load(open(os.path.join(S, 'cands', code + '.json')))
     cell, pad = 200, 6
-    rows = [(t, c.get(t, [])[:per]) for t in TOP if c.get(t)]
+    rows = []
+    for t in TOP:
+        lst = c.get(t, [])
+        for o in range(0, min(len(lst), 24 if t == 'landschaft' else per), per): rows.append((t, o, lst[o:o + per]))
     if not rows: return None
     W = 90 + per * (cell + pad); H = sum(cell + 34 for _ in rows) + 10
     sheet = Image.new('RGB', (W, H), (20, 18, 40)); d = ImageDraw.Draw(sheet)
     f, fs = font(22), font(13)
     y = 6
-    for t, items in rows:
+    for t, off, items in rows:
         d.text((8, y + cell // 2 - 12), ABBR[t], fill=(255, 212, 0), font=font(40))
-        for i, it in enumerate(items):
+        for j, it in enumerate(items):
+            i = j + off
             im = thumb(it['thumb'])
-            x = 90 + i * (cell + pad)
+            x = 90 + j * (cell + pad)
             if im:
                 im = im.copy(); im.thumbnail((cell, cell))
                 sheet.paste(im, (x + (cell - im.width) // 2, y + (cell - im.height) // 2))

@@ -3,7 +3,7 @@ import json, os, re
 
 S = os.path.dirname(os.path.abspath(__file__))
 OUT = '/home/user/weltblick/data/bilder.js'
-TOPIC = {'P': 'poller', 'K': 'kennzeichen', 'M': 'masten', 'S': 'schilder', 'R': 'markierungen'}
+TOPIC = {'P': 'poller', 'K': 'kennzeichen', 'M': 'masten', 'S': 'schilder', 'R': 'markierungen', 'L': 'landschaft'}
 
 def clean(u):
     return re.sub(r'\?utm_[^#]*$', '', u or '')
