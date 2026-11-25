@@ -25,6 +25,8 @@
 <script src="data/ozeanien.js"></script>
 <script src="data/afrika.js"></script>
 <script src="data/amerika.js"></script>
+<script>window.BILDER = {};</script>
+<script src="data/bilder.js"></script>
 <style>
   :root {
     --bg:#07061a; --bg2:#100d33; --panel:#0d0b2b; --ink:#f4f1ff; --muted:#9b95c9;
@@ -133,7 +135,37 @@
   #intro p { margin:8px 0; }
   #intro .btn { margin-top:12px; }
 
+  /* Foto-Galerie im Info-Fenster */
+  .gal { display:grid; grid-template-columns:repeat(auto-fill, minmax(118px, 1fr)); gap:12px; margin:10px 0 4px; }
+  .shot { position:relative; cursor:zoom-in; padding:0; border:0; background:#05041a; display:block; text-align:left; color:inherit; font:inherit;
+    box-shadow:0 -3px 0 0 var(--cc,var(--cyan)), 0 3px 0 0 var(--cc,var(--cyan)), -3px 0 0 0 var(--cc,var(--cyan)), 3px 0 0 0 var(--cc,var(--cyan)), 0 0 14px color-mix(in srgb, var(--cc,var(--cyan)) 45%, transparent);
+    transition:transform .12s steps(3); }
+  .shot:hover, .shot:focus-visible { transform:translateY(-2px) scale(1.03); outline:none; --cc:var(--yellow); }
+  .shot img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; image-rendering:auto; background:#110e2e; }
+  .shot .cap { display:block; padding:4px 6px 5px; font-size:15px; line-height:1.05; color:var(--ink); background:#0b0926; }
+  .shot::after { content:"⤢"; position:absolute; right:4px; top:3px; font-size:14px; color:#fff; text-shadow:0 0 4px #000, 0 0 2px #000; }
+  .shot.ph img { opacity:.35; }
+
+  #lightbox { position:fixed; inset:0; z-index:150; display:none; align-items:center; justify-content:center; padding:24px; background:rgba(4,3,14,.88); backdrop-filter:blur(3px); }
+  #lightbox.open { display:flex; }
+  #lbFrame { position:relative; max-width:min(1100px, 100%); max-height:100%; display:flex; flex-direction:column; --c:var(--yellow); padding:10px; animation:lbIn .18s steps(4); }
+  @keyframes lbIn { from { transform:scale(.85); opacity:0; } }
+  #lbImg { display:block; max-width:100%; max-height:calc(100vh - 190px); object-fit:contain; margin:0 auto; background:#000; box-shadow:0 0 0 3px #000; }
+  #lbCap { margin-top:10px; font-size:20px; color:var(--ink); }
+  #lbCap b { color:var(--yellow); font-weight:normal; }
+  #lbSrc { margin-top:4px; font-size:16px; color:var(--muted); }
+  #lbSrc a { color:var(--cyan); }
+  #lbCount { position:absolute; left:12px; top:-30px; font-family:'Press Start 2P', monospace; font-size:10px; color:var(--pink); text-shadow:2px 2px 0 #000; }
+  #lbClose { position:absolute; right:-6px; top:-44px; --c:var(--pink); width:36px; height:36px; padding:0; font-size:12px; }
+  .lbNav { position:absolute; top:50%; transform:translateY(-50%); --c:var(--cyan); width:42px; height:58px; padding:0; font-size:16px; z-index:2; }
+  #lbPrev { left:-58px; } #lbNext { right:-58px; }
+
   @media (max-width:760px) {
+    .gal { grid-template-columns:repeat(2, 1fr); gap:10px; }
+    #lightbox { padding:56px 8px 12px; }
+    #lbPrev { left:4px; } #lbNext { right:4px; }
+    .lbNav { width:34px; height:46px; opacity:.85; }
+    #lbClose { right:0; }
     body { font-size:19px; }
     header { gap:10px; padding:10px 12px; }
     .logo { font-size:14px; }
@@ -198,6 +230,18 @@
       <p style="color:var(--muted);font-size:16px">Inhalte in eigenen Worten zusammengefasst nach den Länder-Guides von <a href="https://www.plonkit.net/guide" target="_blank" rel="noopener" style="color:var(--cyan)">plonkit.net</a>.</p>
       <button class="btn" id="introBtn">▶ Start</button>
       <div id="introVer"></div>
+    </div>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto-Großansicht">
+      <div id="lbFrame" class="frame">
+        <div id="lbCount"></div>
+        <button class="btn" id="lbClose" aria-label="Schließen">✕</button>
+        <button class="btn lbNav" id="lbPrev" aria-label="Vorheriges Foto">◀</button>
+        <button class="btn lbNav" id="lbNext" aria-label="Nächstes Foto">▶</button>
+        <img id="lbImg" alt="">
+        <div id="lbCap"></div>
+        <div id="lbSrc"></div>
+      </div>
     </div>
 
     <aside id="panel" class="frame" aria-live="polite">
@@ -412,13 +456,25 @@ function select(code) {
     html = `<p class="empty">Für dieses Gebiet gibt es hier noch keine Zusammenfassung${code === 'PE' ? ' – der Plonkit-Guide war beim Erstellen nicht abrufbar' : ''}. Schau solange direkt bei Plonkit vorbei.</p>`;
   } else {
     if (data.kurz) html += `<div class="tip"><div class="t">★ TOP-TIPP</div>${fmt(data.kurz)}</div>`;
+    galleryList = [];
+    const bilder = BILDER[code] || {};
+    const colors = ['var(--cyan)', 'var(--pink)', 'var(--green)', 'var(--orange)', 'var(--purple)'];
     for (const [key, icon, label] of KATEGORIEN) {
-      const list = data[key];
-      if (!list || !list.length) continue;
-      html += `<div class="sec"><h3><span>${icon}</span>${label.toUpperCase()}</h3><ul>${list.map(x => `<li>${fmt(x)}</li>`).join('')}</ul></div>`;
+      const list = data[key] || [], pics = bilder[key] || [];
+      if (!list.length && !pics.length) continue;
+      let gal = '';
+      if (pics.length) {
+        gal = '<div class="gal">' + pics.map((b, i) => {
+          const idx = galleryList.push(Object.assign({ sec: label }, b)) - 1;
+          return `<button class="shot" style="--cc:${colors[i % colors.length]}" data-i="${idx}" aria-label="Foto vergrößern: ${esc(b.cap)}">` +
+                 `<img loading="lazy" src="${esc(b.th)}" alt="${esc(b.cap)}"><span class="cap">${fmt(b.cap)}</span></button>`;
+        }).join('') + '</div>';
+      }
+      html += `<div class="sec"><h3><span>${icon}</span>${label.toUpperCase()}</h3>${list.length ? `<ul>${list.map(x => `<li>${fmt(x)}</li>`).join('')}</ul>` : ''}${gal}</div>`;
     }
   }
   $('panelBody').innerHTML = html;
+  $('panelBody').querySelectorAll('.shot').forEach(b => b.onclick = () => openLightbox(+b.dataset.i));
   $('panelBody').scrollTop = 0;
   $('srcLink').href = `https://www.plonkit.net/${m.slug}`;
   $('srcLink').textContent = 'Plonkit-Guide ↗';
@@ -486,7 +542,40 @@ $('randomBtn').onclick = () => {
 $('zoomIn').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.6);
 $('zoomOut').onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
 $('zoomReset').onclick = () => setFilter('Alle');
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+// ---------------------------------------------------------------
+// Foto-Großansicht
+// ---------------------------------------------------------------
+let galleryList = [], lbIndex = 0;
+document.body.appendChild($('lightbox'));   // über den Röhren-Streifen der Seite, damit Fotos klar sind
+function openLightbox(i) {
+  if (!galleryList.length) return;
+  lbIndex = (i + galleryList.length) % galleryList.length;
+  const b = galleryList[lbIndex];
+  $('lbImg').src = b.big || b.th;
+  $('lbImg').alt = b.cap;
+  $('lbCap').innerHTML = `<b>${esc(b.sec)}:</b> ${fmt(b.cap)}`;
+  $('lbSrc').innerHTML = `Foto: ${esc(b.by || 'unbekannt')} · ${esc(b.lic || '')} · <a href="${esc(b.src)}" target="_blank" rel="noopener">Wikimedia Commons ↗</a>`;
+  $('lbCount').textContent = `FOTO ${lbIndex + 1}/${galleryList.length}`;
+  const multi = galleryList.length > 1;
+  $('lbPrev').style.display = $('lbNext').style.display = multi ? '' : 'none';
+  $('lightbox').classList.add('open');
+}
+function closeLightbox() { $('lightbox').classList.remove('open'); $('lbImg').src = ''; }
+const lbOpen = () => $('lightbox').classList.contains('open');
+$('lbClose').onclick = closeLightbox;
+$('lbPrev').onclick = e => { e.stopPropagation(); openLightbox(lbIndex - 1); };
+$('lbNext').onclick = e => { e.stopPropagation(); openLightbox(lbIndex + 1); };
+$('lightbox').onclick = e => { if (e.target.id === 'lightbox') closeLightbox(); };
+
+document.addEventListener('keydown', e => {
+  if (lbOpen()) {
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') openLightbox(lbIndex - 1);
+    else if (e.key === 'ArrowRight') openLightbox(lbIndex + 1);
+    return;
+  }
+  if (e.key === 'Escape') closePanel();
+});
 
 buildFilters();
 initMap();
