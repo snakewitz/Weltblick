@@ -82,5 +82,104 @@
  },
  "BM": {
   "K0": "Bermuda-Kennzeichen: weiß, Ziffern in der Mitte"
+ },
+ "BR": {
+  "K0": "Älteres weißes Kennzeichen mit Stadt und Bundesstaat oben",
+  "M1": "Betonmast mit vielen Leitungen in Curitiba"
+ },
+ "BT": {
+  "K4": "Rotes Kennzeichen – in Asien nur in Bhutan",
+  "S1": "Kilometerstein: oben gelb, unten weiß",
+  "S2": "Kilometerstein mit Ortsnamen und Entfernungen"
+ },
+ "BW": {
+  "K0": "Gelbes Heckkennzeichen",
+  "K4": "Weißes Frontkennzeichen",
+  "S4": "Grüner Wegweiser mit A-Straßennummer"
+ },
+ "TR": {
+  "K0": "Türkisches Kennzeichen mit blauem TR-Feld",
+  "S5": "Blaues Straßenschild: „Sokak“ = Gasse",
+  "M6": "Metall-Gittermasten entlang der Straße",
+  "R1": "Gelbe Fahrbahnmarkierungen"
+ },
+ "TW": {
+  "K4": "Taiwanisches Kennzeichen",
+  "S3": "Kreuzung mit gelben Markierungen und Zebrastreifen"
+ },
+ "UA": {
+  "K6": "Kennzeichen mit blau-gelbem Flaggenfeld links",
+  "S1": "Straßenschild „вул.“ (вулиця = Straße)",
+  "P1": "Schwarz-weiß gestreifte Begrenzungspfosten"
+ },
+ "SM": {
+  "K0": "San-Marino-Kennzeichen: weiß mit blauer Schrift und Wappen",
+  "K5": "Hohes Kennzeichen mit blauer Schrift"
+ },
+ "TH": {
+  "K2": "Gelbes Kennzeichen für Gewerbefahrzeuge",
+  "K4": "Weißes Kennzeichen mit Thai-Schrift und Provinzname",
+  "M4": "Landstraße mit gelber Mittellinie und Betonmasten",
+  "S2": "Straßenschild in Thai und Englisch"
+ },
+ "CA": {
+  "R5": "Trans-Canada Highway mit gelber Mittellinie",
+  "M3": "Holzmasten in Neufundland"
+ },
+ "CH": {
+  "R3": "Gelber Fußgängerstreifen in Grindelwald",
+  "R4": "Gelbe Zebrastreifen – in Europa fast nur Schweiz und Liechtenstein"
+ },
+ "CL": {
+  "S2": "Gelbes Schild mit schwarzen Pfeilen"
+ },
+ "CN": {
+  "K2": "Blaues Kennzeichen mit weißer Schrift",
+  "S4": "Straßenschild in vereinfachtem Chinesisch mit Pinyin"
+ },
+ "CO": {
+  "K5": "Gelbes kolumbianisches Kennzeichen mit Ortsname",
+  "S0": "Kilometerstein mit schwarzer Schrift",
+  "S6": "Stoppschild „PARE“"
+ },
+ "MY": {
+  "K1": "Schwarzes Kennzeichen mit weißer Schrift",
+  "S0": "Kilometerstein mit blauer Kappe",
+  "R2": "Dicke gelbe Querbalken auf der Fahrbahn"
+ },
+ "NL": {
+  "K0": "Gelbes Kennzeichen mit blauem NL-Feld",
+  "P1": "Weißer Pfosten mit rotem Reflektor und grünem Hektometerschild",
+  "R0": "Grüne Mittellinie",
+  "S1": "„Paddenstoel“: pilzförmiger Wegweiser für Radfahrer"
+ },
+ "RS": {
+  "K4": "Serbisches Kennzeichen mit blauem SRB-Feld und Wappen",
+  "S0": "Straßenschild „улица“ in Kyrillisch",
+  "M6": "Dorfstraße mit Betonmasten"
+ },
+ "RU": {
+  "K1": "Russisches Kennzeichen: weiß, Regionsnummer rechts",
+  "M3": "Straße mit Betonmasten in Ischewsk",
+  "R0": "Breite Ausfallstraße bei Moskau"
+ },
+ "RW": {
+  "K0": "Vorne weißes Kennzeichen",
+  "K1": "Hinten gelbes Kennzeichen",
+  "S2": "Grüner Wegweiser an gepflegter Straße"
+ },
+ "SE": {
+  "K2": "Schwedisches Kennzeichen mit blauem S-Feld",
+  "M0": "Holzmast vor falunroter Scheune",
+  "S0": "Historischer Meilenstein mit Krone"
+ },
+ "SI": {
+  "K3": "EU-Feld „SLO“",
+  "M2": "Dorf mit Holz- und Betonmasten"
+ },
+ "SK": {
+  "K7": "Slowakisches Kennzeichen mit SK-Feld und Wappen",
+  "S5": "Straßenschild „Ulica“ mit rotem Rand",
+  "M3": "Dorfstraße mit runden Betonmasten"
  }
 }

@@ -480,5 +480,603 @@ window.BILDER = {
 "src": "https://commons.wikimedia.org/wiki/File:License_plate_Bermuda_1975.jpg"
 }
 ]
+},
+"BR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Placa_de_ve%C3%ADculo_Brasil_Pernambuco-Jaboat%C3%A3o_dos_Guararapes_KLV-8465_atr%C3%A1s.jpg/330px-Placa_de_ve%C3%ADculo_Brasil_Pernambuco-Jaboat%C3%A3o_dos_Guararapes_KLV-8465_atr%C3%A1s.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Placa_de_ve%C3%ADculo_Brasil_Pernambuco-Jaboat%C3%A3o_dos_Guararapes_KLV-8465_atr%C3%A1s.jpg/1280px-Placa_de_ve%C3%ADculo_Brasil_Pernambuco-Jaboat%C3%A3o_dos_Guararapes_KLV-8465_atr%C3%A1s.jpg",
+"cap": "Älteres weißes Kennzeichen mit Stadt und Bundesstaat oben",
+"by": "Ralf1963",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Placa_de_ve%C3%ADculo_Brasil_Pernambuco-Jaboat%C3%A3o_dos_Guararapes_KLV-8465_atr%C3%A1s.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Utility_pole_in_Curitiba.JPG/330px-Utility_pole_in_Curitiba.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Utility_pole_in_Curitiba.JPG/1280px-Utility_pole_in_Curitiba.JPG",
+"cap": "Betonmast mit vielen Leitungen in Curitiba",
+"by": "Leonardo.stabile",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Utility_pole_in_Curitiba.JPG"
+}
+]
+},
+"BT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/License_plate_Bhutan_private._%28BP_Bhutan_Private%29.jpg/330px-License_plate_Bhutan_private._%28BP_Bhutan_Private%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/License_plate_Bhutan_private._%28BP_Bhutan_Private%29.jpg/1280px-License_plate_Bhutan_private._%28BP_Bhutan_Private%29.jpg",
+"cap": "Rotes Kennzeichen – in Asien nur in Bhutan",
+"by": "Cfynn",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_Bhutan_private._(BP_Bhutan_Private).jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Phuentsholing_and_Chapcha_milestone.jpg/330px-Phuentsholing_and_Chapcha_milestone.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Phuentsholing_and_Chapcha_milestone.jpg/1280px-Phuentsholing_and_Chapcha_milestone.jpg",
+"cap": "Kilometerstein: oben gelb, unten weiß",
+"by": "Bernard Gagnon",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Phuentsholing_and_Chapcha_milestone.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Thimphu_and_Watsa_milestone.jpg/330px-Thimphu_and_Watsa_milestone.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Thimphu_and_Watsa_milestone.jpg/1280px-Thimphu_and_Watsa_milestone.jpg",
+"cap": "Kilometerstein mit Ortsnamen und Entfernungen",
+"by": "Bernard Gagnon",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Thimphu_and_Watsa_milestone.jpg"
+}
+]
+},
+"BW": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Botswana-rear-plate.jpg/330px-Botswana-rear-plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/04/Botswana-rear-plate.jpg",
+"cap": "Gelbes Heckkennzeichen",
+"by": "Vicbrumby",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Botswana-rear-plate.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Botswana_plate_01.JPG/330px-Botswana_plate_01.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Botswana_plate_01.JPG/1280px-Botswana_plate_01.JPG",
+"cap": "Weißes Frontkennzeichen",
+"by": "Dickelbers",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Botswana_plate_01.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Nedaleko_hranic_Botswana_-_Zambie_-_Zimbabwe_-_panoramio.jpg/330px-Nedaleko_hranic_Botswana_-_Zambie_-_Zimbabwe_-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Nedaleko_hranic_Botswana_-_Zambie_-_Zimbabwe_-_panoramio.jpg/1280px-Nedaleko_hranic_Botswana_-_Zambie_-_Zimbabwe_-_panoramio.jpg",
+"cap": "Grüner Wegweiser mit A-Straßennummer",
+"by": "Pavel Špindler",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Nedaleko_hranic_Botswana_-_Zambie_-_Zimbabwe_-_panoramio.jpg"
+}
+]
+},
+"TR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Turkeylicenseplate.jpg/330px-Turkeylicenseplate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Turkeylicenseplate.jpg",
+"cap": "Türkisches Kennzeichen mit blauem TR-Feld",
+"by": "User:Dantadd",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Turkeylicenseplate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/K%C3%B6pr%C3%BCl%C3%BC_Mehmet_Pa%C5%9Fa_Sokak_tabelas%C4%B1%2C_Samsun.jpg/330px-K%C3%B6pr%C3%BCl%C3%BC_Mehmet_Pa%C5%9Fa_Sokak_tabelas%C4%B1%2C_Samsun.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/K%C3%B6pr%C3%BCl%C3%BC_Mehmet_Pa%C5%9Fa_Sokak_tabelas%C4%B1%2C_Samsun.jpg/1280px-K%C3%B6pr%C3%BCl%C3%BC_Mehmet_Pa%C5%9Fa_Sokak_tabelas%C4%B1%2C_Samsun.jpg",
+"cap": "Blaues Straßenschild: „Sokak“ = Gasse",
+"by": "Vikiçizer",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:K%C3%B6pr%C3%BCl%C3%BC_Mehmet_Pa%C5%9Fa_Sokak_tabelas%C4%B1,_Samsun.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/D816_Road%2C_Sar%C4%B1%C3%A7am_-_Adana.JPG/330px-D816_Road%2C_Sar%C4%B1%C3%A7am_-_Adana.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/D816_Road%2C_Sar%C4%B1%C3%A7am_-_Adana.JPG/1280px-D816_Road%2C_Sar%C4%B1%C3%A7am_-_Adana.JPG",
+"cap": "Metall-Gittermasten entlang der Straße",
+"by": "Zeynel Cebeci",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:D816_Road,_Sar%C4%B1%C3%A7am_-_Adana.JPG"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Tedes_%281%29.jpg/330px-Tedes_%281%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Tedes_%281%29.jpg/1280px-Tedes_%281%29.jpg",
+"cap": "Gelbe Fahrbahnmarkierungen",
+"by": "CeeGee",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Tedes_(1).jpg"
+}
+]
+},
+"TW": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Taipei_City_License_Plate_%280156%29.JPG/330px-Taipei_City_License_Plate_%280156%29.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Taipei_City_License_Plate_%280156%29.JPG/1280px-Taipei_City_License_Plate_%280156%29.JPG",
+"cap": "Taiwanisches Kennzeichen",
+"by": "Jiang",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Taipei_City_License_Plate_(0156).JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Longan_Street_and_Guochiang_11th_Street_intersection%2C_Taoyuan_City_20100709a.jpg/330px-Longan_Street_and_Guochiang_11th_Street_intersection%2C_Taoyuan_City_20100709a.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Longan_Street_and_Guochiang_11th_Street_intersection%2C_Taoyuan_City_20100709a.jpg/1280px-Longan_Street_and_Guochiang_11th_Street_intersection%2C_Taoyuan_City_20100709a.jpg",
+"cap": "Kreuzung mit gelben Markierungen und Zebrastreifen",
+"by": "Lord Koxinga",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Longan_Street_and_Guochiang_11th_Street_intersection,_Taoyuan_City_20100709a.jpg"
+}
+]
+},
+"UA": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/License_plate_of_Ukraine_AK9265AK.png/330px-License_plate_of_Ukraine_AK9265AK.png",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/License_plate_of_Ukraine_AK9265AK.png/1280px-License_plate_of_Ukraine_AK9265AK.png",
+"cap": "Kennzeichen mit blau-gelbem Flaggenfeld links",
+"by": "G777KJ",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_of_Ukraine_AK9265AK.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_1.jpg/330px-%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_1.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_1.jpg/1280px-%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_1.jpg",
+"cap": "Straßenschild „вул.“ (вулиця = Straße)",
+"by": "AnatolyPm",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%BB%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_1.jpg"
+}
+],
+"poller": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Industrial%27nyi_District%2C_Kharkiv%2C_Kharkiv_Oblast%2C_Ukraine_-_panoramio_%281%29.jpg/330px-Industrial%27nyi_District%2C_Kharkiv%2C_Kharkiv_Oblast%2C_Ukraine_-_panoramio_%281%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Industrial%27nyi_District%2C_Kharkiv%2C_Kharkiv_Oblast%2C_Ukraine_-_panoramio_%281%29.jpg/1280px-Industrial%27nyi_District%2C_Kharkiv%2C_Kharkiv_Oblast%2C_Ukraine_-_panoramio_%281%29.jpg",
+"cap": "Schwarz-weiß gestreifte Begrenzungspfosten",
+"by": "Oleg Seliverstov",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Industrial%27nyi_District,_Kharkiv,_Kharkiv_Oblast,_Ukraine_-_panoramio_(1).jpg"
+}
+]
+},
+"SM": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Targa_automobilistica_San_Marino_1993_J0484.jpg/330px-Targa_automobilistica_San_Marino_1993_J0484.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Targa_automobilistica_San_Marino_1993_J0484.jpg/1280px-Targa_automobilistica_San_Marino_1993_J0484.jpg",
+"cap": "San-Marino-Kennzeichen: weiß mit blauer Schrift und Wappen",
+"by": "San_Marino_license_plate.jpg: Seth Schoen derivative work: TheFlyingDutchman (ta",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Targa_automobilistica_San_Marino_1993_J0484.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Targa_automobilistica_San_Marino_1993_L531_motocicletta.jpg/330px-Targa_automobilistica_San_Marino_1993_L531_motocicletta.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Targa_automobilistica_San_Marino_1993_L531_motocicletta.jpg/1280px-Targa_automobilistica_San_Marino_1993_L531_motocicletta.jpg",
+"cap": "Hohes Kennzeichen mit blauer Schrift",
+"by": "Kontrollstellekundl",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Targa_automobilistica_San_Marino_1993_L531_motocicletta.jpg"
+}
+]
+},
+"TH": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/TH_songthaew_plate.jpg/330px-TH_songthaew_plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/2c/TH_songthaew_plate.jpg",
+"cap": "Gelbes Kennzeichen für Gewerbefahrzeuge",
+"by": "Love Krittaya",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:TH_songthaew_plate.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Thai_truck_plate.jpg/330px-Thai_truck_plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Thai_truck_plate.jpg",
+"cap": "Weißes Kennzeichen mit Thai-Schrift und Provinzname",
+"by": "This user loves Krittaya.",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Thai_truck_plate.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ban_PongKhong_road._-_panoramio_-_CHAMRAT_CHAROENKHET.jpg/330px-Ban_PongKhong_road._-_panoramio_-_CHAMRAT_CHAROENKHET.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ban_PongKhong_road._-_panoramio_-_CHAMRAT_CHAROENKHET.jpg/1280px-Ban_PongKhong_road._-_panoramio_-_CHAMRAT_CHAROENKHET.jpg",
+"cap": "Landstraße mit gelber Mittellinie und Betonmasten",
+"by": "CHAMRAT CHAROENKHET",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Ban_PongKhong_road._-_panoramio_-_CHAMRAT_CHAROENKHET.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/The_street_sign_showing_the_name_of_the_street_in_Uttaradit_municipality.jpg/330px-The_street_sign_showing_the_name_of_the_street_in_Uttaradit_municipality.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/55/The_street_sign_showing_the_name_of_the_street_in_Uttaradit_municipality.jpg",
+"cap": "Straßenschild in Thai und Englisch",
+"by": "ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส ม",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:The_street_sign_showing_the_name_of_the_street_in_Uttaradit_municipality.jpg"
+}
+]
+},
+"CA": {
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Malakwa_%28BC%2C_Canada%29%2C_Trans-Canada_Highway_--_2022_--_112701.jpg/330px-Malakwa_%28BC%2C_Canada%29%2C_Trans-Canada_Highway_--_2022_--_112701.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Malakwa_%28BC%2C_Canada%29%2C_Trans-Canada_Highway_--_2022_--_112701.jpg/1280px-Malakwa_%28BC%2C_Canada%29%2C_Trans-Canada_Highway_--_2022_--_112701.jpg",
+"cap": "Trans-Canada Highway mit gelber Mittellinie",
+"by": "Dietmar Rabich",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Malakwa_(BC,_Canada),_Trans-Canada_Highway_--_2022_--_112701.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Newfoundland_2012_%288208081207%29.jpg/330px-Newfoundland_2012_%288208081207%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Newfoundland_2012_%288208081207%29.jpg/1280px-Newfoundland_2012_%288208081207%29.jpg",
+"cap": "Holzmasten in Neufundland",
+"by": "Jeremy T. Hetzel from Boston, USA",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Newfoundland_2012_(8208081207).jpg"
+}
+]
+},
+"CH": {
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/5326_-_Grindelwald_-_Bahnhof_%28street%29.JPG/330px-5326_-_Grindelwald_-_Bahnhof_%28street%29.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/5326_-_Grindelwald_-_Bahnhof_%28street%29.JPG/1280px-5326_-_Grindelwald_-_Bahnhof_%28street%29.JPG",
+"cap": "Gelber Fußgängerstreifen in Grindelwald",
+"by": "Andrew Bossi",
+"lic": "CC BY-SA 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:5326_-_Grindelwald_-_Bahnhof_(street).JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/6140_-_Innertkirchen_-_Hof-Sustenstrasse_at_%C3%84ppigenstrasse-Grimselstrasse.JPG/330px-6140_-_Innertkirchen_-_Hof-Sustenstrasse_at_%C3%84ppigenstrasse-Grimselstrasse.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/6140_-_Innertkirchen_-_Hof-Sustenstrasse_at_%C3%84ppigenstrasse-Grimselstrasse.JPG/1280px-6140_-_Innertkirchen_-_Hof-Sustenstrasse_at_%C3%84ppigenstrasse-Grimselstrasse.JPG",
+"cap": "Gelbe Zebrastreifen – in Europa fast nur Schweiz und Liechtenstein",
+"by": "Thisisbossi",
+"lic": "CC BY-SA 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:6140_-_Innertkirchen_-_Hof-Sustenstrasse_at_%C3%84ppigenstrasse-Grimselstrasse.JPG"
+}
+]
+},
+"CL": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Frei_esq_Aguirre_21_8_2011.jpg/330px-Frei_esq_Aguirre_21_8_2011.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Frei_esq_Aguirre_21_8_2011.jpg",
+"cap": "Gelbes Schild mit schwarzen Pfeilen",
+"by": "Penarc",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Frei_esq_Aguirre_21_8_2011.jpg"
+}
+]
+},
+"CN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E4%B8%9C%E8%8E%9E%E5%B8%82%2C_%E4%B8%AD%E5%9B%BD_Mar_14%2C_2023_03-50-20_PM.jpeg/330px-%E4%B8%9C%E8%8E%9E%E5%B8%82%2C_%E4%B8%AD%E5%9B%BD_Mar_14%2C_2023_03-50-20_PM.jpeg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E4%B8%9C%E8%8E%9E%E5%B8%82%2C_%E4%B8%AD%E5%9B%BD_Mar_14%2C_2023_03-50-20_PM.jpeg/1280px-%E4%B8%9C%E8%8E%9E%E5%B8%82%2C_%E4%B8%AD%E5%9B%BD_Mar_14%2C_2023_03-50-20_PM.jpeg",
+"cap": "Blaues Kennzeichen mit weißer Schrift",
+"by": "unbekannt",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:%E4%B8%9C%E8%8E%9E%E5%B8%82,_%E4%B8%AD%E5%9B%BD_Mar_14,_2023_03-50-20_PM.jpeg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/201604_Baohua_Avenue.JPG/330px-201604_Baohua_Avenue.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/201604_Baohua_Avenue.JPG/1280px-201604_Baohua_Avenue.JPG",
+"cap": "Straßenschild in vereinfachtem Chinesisch mit Pinyin",
+"by": "MNXANL",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:201604_Baohua_Avenue.JPG"
+}
+]
+},
+"CO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Matr%C3%ADcula_automovil%C3%ADstica_Colombia_2001_Purificaci%C3%B3n%2C_Tolima_PFA%E2%80%A2270.jpg/330px-Matr%C3%ADcula_automovil%C3%ADstica_Colombia_2001_Purificaci%C3%B3n%2C_Tolima_PFA%E2%80%A2270.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Matr%C3%ADcula_automovil%C3%ADstica_Colombia_2001_Purificaci%C3%B3n%2C_Tolima_PFA%E2%80%A2270.jpg",
+"cap": "Gelbes kolumbianisches Kennzeichen mit Ortsname",
+"by": "Jorge Montoya from Bello, Colombia",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Matr%C3%ADcula_automovil%C3%ADstica_Colombia_2001_Purificaci%C3%B3n,_Tolima_PFA%E2%80%A2270.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/FOTO_55_CN_02.JPG/330px-FOTO_55_CN_02.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/FOTO_55_CN_02.JPG/1280px-FOTO_55_CN_02.JPG",
+"cap": "Kilometerstein mit schwarzer Schrift",
+"by": "Nemequene",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:FOTO_55_CN_02.JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Kol-e058-.jpg/330px-Kol-e058-.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Kol-e058-.jpg/1280px-Kol-e058-.jpg",
+"cap": "Stoppschild „PARE“",
+"by": "Wojciech Kocot",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Kol-e058-.jpg"
+}
+]
+},
+"MY": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Malaysia_malacca_license_plate.JPG/330px-Malaysia_malacca_license_plate.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Malaysia_malacca_license_plate.JPG/1280px-Malaysia_malacca_license_plate.JPG",
+"cap": "Schwarzes Kennzeichen mit weißer Schrift",
+"by": "Slleong",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Malaysia_malacca_license_plate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/District-Tambunan-Sabah_Milestone-at-Jalan-Tambunan-Ranau-01.jpg/330px-District-Tambunan-Sabah_Milestone-at-Jalan-Tambunan-Ranau-01.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/District-Tambunan-Sabah_Milestone-at-Jalan-Tambunan-Ranau-01.jpg/1280px-District-Tambunan-Sabah_Milestone-at-Jalan-Tambunan-Ranau-01.jpg",
+"cap": "Kilometerstein mit blauer Kappe",
+"by": "CEphoto, Uwe Aranas",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:District-Tambunan-Sabah_Milestone-at-Jalan-Tambunan-Ranau-01.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Persiaran_1%2C_Bandar_Baru_Selayang_20240307_145200.jpg/330px-Persiaran_1%2C_Bandar_Baru_Selayang_20240307_145200.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Persiaran_1%2C_Bandar_Baru_Selayang_20240307_145200.jpg/1280px-Persiaran_1%2C_Bandar_Baru_Selayang_20240307_145200.jpg",
+"cap": "Dicke gelbe Querbalken auf der Fahrbahn",
+"by": "Wiki Farazi",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Persiaran_1,_Bandar_Baru_Selayang_20240307_145200.jpg"
+}
+]
+},
+"NL": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lastplate.jpg/330px-Lastplate.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lastplate.jpg/1280px-Lastplate.jpg",
+"cap": "Gelbes Kennzeichen mit blauem NL-Feld",
+"by": "Gert Kalkman",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Lastplate.jpg"
+}
+],
+"poller": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hectoreflecto_12k6.jpg/330px-Hectoreflecto_12k6.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Hectoreflecto_12k6.jpg/1280px-Hectoreflecto_12k6.jpg",
+"cap": "Weißer Pfosten mit rotem Reflektor und grünem Hektometerschild",
+"by": "Pudding4brains",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Hectoreflecto_12k6.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Wegmarkering100groen.jpg/330px-Wegmarkering100groen.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Wegmarkering100groen.jpg/1280px-Wegmarkering100groen.jpg",
+"cap": "Grüne Mittellinie",
+"by": "M.Minderhoud",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Wegmarkering100groen.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Paddenstoel_003.jpg/330px-Paddenstoel_003.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Paddenstoel_003.jpg/1280px-Paddenstoel_003.jpg",
+"cap": "„Paddenstoel“: pilzförmiger Wegweiser für Radfahrer",
+"by": "Andre Engels",
+"lic": "CC BY 1.0",
+"src": "https://commons.wikimedia.org/wiki/File:Paddenstoel_003.jpg"
+}
+]
+},
+"RS": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Serbian_license_plate_2011.jpg/330px-Serbian_license_plate_2011.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/9/96/Serbian_license_plate_2011.jpg",
+"cap": "Serbisches Kennzeichen mit blauem SRB-Feld und Wappen",
+"by": "SerbianNumberPlates.jpg: Mycontrails derivative work: TheFlyingDutchman (talk)",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Serbian_license_plate_2011.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Sremska_Kamenica%2C_%C4%8Cardak%2C_carinska_ulica.jpg/330px-Sremska_Kamenica%2C_%C4%8Cardak%2C_carinska_ulica.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Sremska_Kamenica%2C_%C4%8Cardak%2C_carinska_ulica.jpg/1280px-Sremska_Kamenica%2C_%C4%8Cardak%2C_carinska_ulica.jpg",
+"cap": "Straßenschild „улица“ in Kyrillisch",
+"by": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Sremska_Kamenica,_%C4%8Cardak,_carinska_ulica.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Gornja_Vranjska.JPG/330px-Gornja_Vranjska.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Gornja_Vranjska.JPG/1280px-Gornja_Vranjska.JPG",
+"cap": "Dorfstraße mit Betonmasten",
+"by": "Djurdjevicsrdjan4 at Serbian Wikipedia",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Gornja_Vranjska.JPG"
+}
+]
+},
+"RU": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/185%D1%80%D1%83%D1%81.webp/330px-185%D1%80%D1%83%D1%81.webp",
+"big": "https://upload.wikimedia.org/wikipedia/commons/4/48/185%D1%80%D1%83%D1%81.webp",
+"cap": "Russisches Kennzeichen: weiß, Regionsnummer rechts",
+"by": "Maksymabykh",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:185%D1%80%D1%83%D1%81.webp"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%D0%A1%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%28%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%29_03.jpg/330px-%D0%A1%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%28%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%29_03.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%D0%A1%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%28%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%29_03.jpg/1280px-%D0%A1%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_%28%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%29_03.jpg",
+"cap": "Straße mit Betonmasten in Ischewsk",
+"by": "Clever Life",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F_%D1%83%D0%BB%D0%B8%D1%86%D0%B0_(%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA)_03.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Aminyevskoye_Highway_16.08.2013.jpg/330px-Aminyevskoye_Highway_16.08.2013.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Aminyevskoye_Highway_16.08.2013.jpg/1280px-Aminyevskoye_Highway_16.08.2013.jpg",
+"cap": "Breite Ausfallstraße bei Moskau",
+"by": "Max_Ryazanov",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Aminyevskoye_Highway_16.08.2013.jpg"
+}
+]
+},
+"RW": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Rwanda_License_Plate_-_Front.png/330px-Rwanda_License_Plate_-_Front.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/af/Rwanda_License_Plate_-_Front.png",
+"cap": "Vorne weißes Kennzeichen",
+"by": "BasilLeaf",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Rwanda_License_Plate_-_Front.png"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Rwanda_License_Plate_-_Back.png/330px-Rwanda_License_Plate_-_Back.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rwanda_License_Plate_-_Back.png",
+"cap": "Hinten gelbes Kennzeichen",
+"by": "BasilLeaf",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Rwanda_License_Plate_-_Back.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2013-06-05_06-45-01_Rwanda_Southern_Province_-_Kavumu.JPG/330px-2013-06-05_06-45-01_Rwanda_Southern_Province_-_Kavumu.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2013-06-05_06-45-01_Rwanda_Southern_Province_-_Kavumu.JPG/1280px-2013-06-05_06-45-01_Rwanda_Southern_Province_-_Kavumu.JPG",
+"cap": "Grüner Wegweiser an gepflegter Straße",
+"by": "Hansueli Krapf This file was uploaded with Commonist.",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:2013-06-05_06-45-01_Rwanda_Southern_Province_-_Kavumu.JPG"
+}
+]
+},
+"SE": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Swedish_euro_license_plate.jpg/330px-Swedish_euro_license_plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Swedish_euro_license_plate.jpg",
+"cap": "Schwedisches Kennzeichen mit blauem S-Feld",
+"by": "TheFlyingDutchman",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Swedish_euro_license_plate.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Swedish_local_transformer_on_pole.JPG/330px-Swedish_local_transformer_on_pole.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Swedish_local_transformer_on_pole.JPG/1280px-Swedish_local_transformer_on_pole.JPG",
+"cap": "Holzmast vor falunroter Scheune",
+"by": "Riggwelter",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Swedish_local_transformer_on_pole.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/V%C3%A4gm%C3%A4rke_%28Ume%C3%A5_stad_265.2%29.JPG/330px-V%C3%A4gm%C3%A4rke_%28Ume%C3%A5_stad_265.2%29.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/V%C3%A4gm%C3%A4rke_%28Ume%C3%A5_stad_265.2%29.JPG/1280px-V%C3%A4gm%C3%A4rke_%28Ume%C3%A5_stad_265.2%29.JPG",
+"cap": "Historischer Meilenstein mit Krone",
+"by": "Jssfrk",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:V%C3%A4gm%C3%A4rke_(Ume%C3%A5_stad_265.2).JPG"
+}
+]
+},
+"SI": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Slovenian-euroband.png/330px-Slovenian-euroband.png",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Slovenian-euroband.png/1280px-Slovenian-euroband.png",
+"cap": "EU-Feld „SLO“",
+"by": "Mateipro2021",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Slovenian-euroband.png"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Village_Briga.jpg/330px-Village_Briga.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Village_Briga.jpg/1280px-Village_Briga.jpg",
+"cap": "Dorf mit Holz- und Betonmasten",
+"by": "User:Xyxyx",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Village_Briga.jpg"
+}
+]
+},
+"SK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Slovakian_license_plate.JPG/330px-Slovakian_license_plate.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Slovakian_license_plate.JPG/1280px-Slovakian_license_plate.JPG",
+"cap": "Slowakisches Kennzeichen mit SK-Feld und Wappen",
+"by": "High Contrast",
+"lic": "CC BY 3.0 de",
+"src": "https://commons.wikimedia.org/wiki/File:Slovakian_license_plate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hviezdoslavova_ulica.jpg/330px-Hviezdoslavova_ulica.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hviezdoslavova_ulica.jpg/1280px-Hviezdoslavova_ulica.jpg",
+"cap": "Straßenschild „Ulica“ mit rotem Rand",
+"by": "Marian Gladis",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Hviezdoslavova_ulica.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/B%C3%BAcs09.JPG/330px-B%C3%BAcs09.JPG",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/6e/B%C3%BAcs09.JPG",
+"cap": "Dorfstraße mit runden Betonmasten",
+"by": "Szeder László",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:B%C3%BAcs09.JPG"
+}
+]
 }
 };
