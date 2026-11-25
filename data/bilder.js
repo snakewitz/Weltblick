@@ -2706,5 +2706,447 @@ window.BILDER = {
 "src": "https://commons.wikimedia.org/wiki/File:Meilenstein_baobaballee_2019-10-06.jpg"
 }
 ]
+},
+"IT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Targa_automobilistica_Italia_1999_BG%E2%80%A2122_SN_Reggio_nell%27Emilia_posteriore.jpg/330px-Targa_automobilistica_Italia_1999_BG%E2%80%A2122_SN_Reggio_nell%27Emilia_posteriore.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Targa_automobilistica_Italia_1999_BG%E2%80%A2122_SN_Reggio_nell%27Emilia_posteriore.jpg/1280px-Targa_automobilistica_Italia_1999_BG%E2%80%A2122_SN_Reggio_nell%27Emilia_posteriore.jpg",
+"cap": "Italienisches Kennzeichen mit blauen Streifen links und rechts",
+"by": "Krokodyl",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Targa_automobilistica_Italia_1999_BG%E2%80%A2122_SN_Reggio_nell%27Emilia_posteriore.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Media_tensione_Italia.jpg/330px-Media_tensione_Italia.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Media_tensione_Italia.jpg",
+"cap": "Betonmast mit Isolatoren (Mittelspannung)",
+"by": "Gianfranco at Italian Wikipedia",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Media_tensione_Italia.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Napoli_Sora_miglio_61.jpg/330px-Napoli_Sora_miglio_61.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Napoli_Sora_miglio_61.jpg/1280px-Napoli_Sora_miglio_61.jpg",
+"cap": "Kilometerstein an der Strada Statale",
+"by": "it:Utente:Wento Original uploader was Wento at it.wikipedia",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Napoli_Sora_miglio_61.jpg"
+}
+]
+},
+"KR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Plak-Shakhsi-440x220-KOR.png/330px-Plak-Shakhsi-440x220-KOR.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Plak-Shakhsi-440x220-KOR.png",
+"cap": "Weißes Kennzeichen mit Hangul",
+"by": "Nima Farid",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Plak-Shakhsi-440x220-KOR.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Namdaemunsijang-gil_street_sign.JPG/330px-Namdaemunsijang-gil_street_sign.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Namdaemunsijang-gil_street_sign.JPG/1280px-Namdaemunsijang-gil_street_sign.JPG",
+"cap": "Blaues Straßenschild in Hangul, Englisch, Chinesisch und Japanisch",
+"by": "Abasaa",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Namdaemunsijang-gil_street_sign.JPG"
+}
+]
+},
+"KZ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/License_plate_Kazakhstan.jpg/330px-License_plate_Kazakhstan.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/License_plate_Kazakhstan.jpg/1280px-License_plate_Kazakhstan.jpg",
+"cap": "Kasachisches Kennzeichen",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_Kazakhstan.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/ALASarsenbaevStreet.jpg/330px-ALASarsenbaevStreet.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/ALASarsenbaevStreet.jpg/1280px-ALASarsenbaevStreet.jpg",
+"cap": "Straßenschild „көшесі“ (Kasachisch)",
+"by": "Ds02006",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:ALASarsenbaevStreet.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_-_panoramio.jpg/330px-%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_-_panoramio.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/1e/%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_-_panoramio.jpg",
+"cap": "Breite Dorfstraße mit Betonmasten",
+"by": "Uralsk Review",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%95%D0%B2%D1%80%D0%B0%D0%B7%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_-_panoramio.jpg"
+}
+]
+},
+"LT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Lithuanian_registration_3092.JPG/330px-Lithuanian_registration_3092.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Lithuanian_registration_3092.JPG/1280px-Lithuanian_registration_3092.JPG",
+"cap": "Litauisches Kennzeichen mit LT-Feld",
+"by": "Krokodyl",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Lithuanian_registration_3092.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tablo%2C_Miskininku_Street-Jonava.jpg/330px-Tablo%2C_Miskininku_Street-Jonava.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tablo%2C_Miskininku_Street-Jonava.jpg/1280px-Tablo%2C_Miskininku_Street-Jonava.jpg",
+"cap": "Straßenschild mit „g.“ (gatvė)",
+"by": "Forestphotograph",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Tablo,_Miskininku_Street-Jonava.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/2010_05_08Kra%C5%A1tai70.JPG/330px-2010_05_08Kra%C5%A1tai70.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/2010_05_08Kra%C5%A1tai70.JPG/1280px-2010_05_08Kra%C5%A1tai70.JPG",
+"cap": "Feldweg mit Betonmasten",
+"by": "Rimantas Lazdynas",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:2010_05_08Kra%C5%A1tai70.JPG"
+}
+]
+},
+"LV": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Latvia_licenseplate_EU.JPG/330px-Latvia_licenseplate_EU.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Latvia_licenseplate_EU.JPG/1280px-Latvia_licenseplate_EU.JPG",
+"cap": "Lettisches Kennzeichen mit LV-Feld",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Latvia_licenseplate_EU.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ventspils_stacija_05.jpg/330px-Ventspils_stacija_05.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ventspils_stacija_05.jpg/1280px-Ventspils_stacija_05.jpg",
+"cap": "Straßenschild mit „iela“",
+"by": "ScAvenger (Jānis Vilniņš)",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Ventspils_stacija_05.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Cels_Ciruli_-_Lone.JPG/330px-Cels_Ciruli_-_Lone.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Cels_Ciruli_-_Lone.JPG/1280px-Cels_Ciruli_-_Lone.JPG",
+"cap": "Schotterstraße mit Holzmasten",
+"by": "Aleksandrs Timofejevs",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Cels_Ciruli_-_Lone.JPG"
+}
+]
+},
+"KH": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Kambodzanska_rejestracja3bus.jpg/330px-Kambodzanska_rejestracja3bus.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Kambodzanska_rejestracja3bus.jpg",
+"cap": "Kennzeichen mit Khmer-Schrift (Phnom Penh)",
+"by": "Acubens",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Kambodzanska_rejestracja3bus.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mile_stone_Sihanoukville.jpg/330px-Mile_stone_Sihanoukville.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/d/da/Mile_stone_Sihanoukville.jpg",
+"cap": "Kilometerstein mit roter Kappe und Khmer-Schrift",
+"by": "Wikirictor",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Mile_stone_Sihanoukville.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/02-Utilities_Cabling_Phnom_Penh-nX-5.jpg/330px-02-Utilities_Cabling_Phnom_Penh-nX-5.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/02-Utilities_Cabling_Phnom_Penh-nX-5.jpg/1280px-02-Utilities_Cabling_Phnom_Penh-nX-5.jpg",
+"cap": "Kabelgewirr am Mast",
+"by": "PsamatheM",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:02-Utilities_Cabling_Phnom_Penh-nX-5.jpg"
+}
+]
+},
+"LK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Plaque_d%27immatriculation-Sri_Lanka_%282%29.jpg/330px-Plaque_d%27immatriculation-Sri_Lanka_%282%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Plaque_d%27immatriculation-Sri_Lanka_%282%29.jpg/1280px-Plaque_d%27immatriculation-Sri_Lanka_%282%29.jpg",
+"cap": "Kennzeichen mit Provinzkürzel",
+"by": "Ji-Elle",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Plaque_d%27immatriculation-Sri_Lanka_(2).jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Marker_on_Highway_B147_in_Sri_Lanka.JPG/330px-Marker_on_Highway_B147_in_Sri_Lanka.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Marker_on_Highway_B147_in_Sri_Lanka.JPG/1280px-Marker_on_Highway_B147_in_Sri_Lanka.JPG",
+"cap": "Weißer Kilometerstein",
+"by": "Adbar",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Marker_on_Highway_B147_in_Sri_Lanka.JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Adams_peak.jpg/330px-Adams_peak.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Adams_peak.jpg",
+"cap": "Wegweiser auf Singhalesisch, Tamil und Englisch",
+"by": "No machine-readable author provided. Jolle~commonswiki assumed (based on copyrig",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Adams_peak.jpg"
+}
+]
+},
+"LU": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Luxemburg_plate.JPG/330px-Luxemburg_plate.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Luxemburg_plate.JPG/1280px-Luxemburg_plate.JPG",
+"cap": "Gelbes luxemburgisches Kennzeichen mit L-Feld",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Luxemburg_plate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Capellen_Voie_de_la_Libert%C3%A9_N6_40_Parc_d%27Activit%C3%A9s_%28102%29.jpg/330px-Capellen_Voie_de_la_Libert%C3%A9_N6_40_Parc_d%27Activit%C3%A9s_%28102%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Capellen_Voie_de_la_Libert%C3%A9_N6_40_Parc_d%27Activit%C3%A9s_%28102%29.jpg/1280px-Capellen_Voie_de_la_Libert%C3%A9_N6_40_Parc_d%27Activit%C3%A9s_%28102%29.jpg",
+"cap": "Grenzstein der „Voie de la Liberté“",
+"by": "GilPe",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Capellen_Voie_de_la_Libert%C3%A9_N6_40_Parc_d%27Activit%C3%A9s_(102).jpg"
+}
+]
+},
+"SG": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Joo_Chiat_Place_road_sign.JPG/330px-Joo_Chiat_Place_road_sign.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Joo_Chiat_Place_road_sign.JPG/1280px-Joo_Chiat_Place_road_sign.JPG",
+"cap": "Grünes Straßenschild mit abgerundeten Ecken",
+"by": "Terence Ong",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Joo_Chiat_Place_road_sign.JPG"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Nanyang_Walk_slow_lettering_20060317.JPG/330px-Nanyang_Walk_slow_lettering_20060317.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Nanyang_Walk_slow_lettering_20060317.JPG/1280px-Nanyang_Walk_slow_lettering_20060317.JPG",
+"cap": "„SLOW“ in großen Buchstaben auf der Fahrbahn",
+"by": "Kimchi.sg.",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Nanyang_Walk_slow_lettering_20060317.JPG"
+}
+],
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Singapore_licence_plate_2000_rear_SDD_6781X.jpg/330px-Singapore_licence_plate_2000_rear_SDD_6781X.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Singapore_licence_plate_2000_rear_SDD_6781X.jpg/1280px-Singapore_licence_plate_2000_rear_SDD_6781X.jpg",
+"cap": "Schwarzes Kennzeichen mit weißer Schrift",
+"by": "Jerry \"Woody\" from Edmonton, Alberta, Canada.",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Singapore_licence_plate_2000_rear_SDD_6781X.jpg"
+}
+]
+},
+"CY": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Cyprus_license_plate_2004_temporary.jpg/330px-Cyprus_license_plate_2004_temporary.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Cyprus_license_plate_2004_temporary.jpg/1280px-Cyprus_license_plate_2004_temporary.jpg",
+"cap": "Gelbes Heckkennzeichen mit CY-Feld",
+"by": "CCecilia",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Cyprus_license_plate_2004_temporary.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Street_name_sign_in_Cyprus.png/330px-Street_name_sign_in_Cyprus.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/61/Street_name_sign_in_Cyprus.png",
+"cap": "Straßenschild auf Griechisch und Englisch",
+"by": "Andrikkos",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Street_name_sign_in_Cyprus.png"
+}
+]
+},
+"JO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Jordan_Licenceplate_3.JPG/330px-Jordan_Licenceplate_3.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Jordan_Licenceplate_3.JPG/1280px-Jordan_Licenceplate_3.JPG",
+"cap": "Jordanisches Kennzeichen (arabisch/englisch)",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Jordan_Licenceplate_3.JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Jordan_-_License_Plate_-_Commercial.png/330px-Jordan_-_License_Plate_-_Commercial.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jordan_-_License_Plate_-_Commercial.png",
+"cap": "Gewerbliches Kennzeichen mit grünem Streifen links",
+"by": "Nima Farid",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Jordan_-_License_Plate_-_Commercial.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/20100924_madaba38.JPG/330px-20100924_madaba38.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/20100924_madaba38.JPG/1280px-20100924_madaba38.JPG",
+"cap": "Zweisprachiges Straßenschild",
+"by": "Jean Housen",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:20100924_madaba38.JPG"
+}
+]
+},
+"LB": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/2017_Lebanon_License_Plate.jpg/330px-2017_Lebanon_License_Plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/30/2017_Lebanon_License_Plate.jpg",
+"cap": "Libanesisches Kennzeichen mit blauem Streifen",
+"by": "Rare tiger",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:2017_Lebanon_License_Plate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Tyre-Sour_Lebanon_RashidKaramiSquareSign_RomanDeckert06112018.jpg/330px-Tyre-Sour_Lebanon_RashidKaramiSquareSign_RomanDeckert06112018.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Tyre-Sour_Lebanon_RashidKaramiSquareSign_RomanDeckert06112018.jpg/1280px-Tyre-Sour_Lebanon_RashidKaramiSquareSign_RomanDeckert06112018.jpg",
+"cap": "Blaues Straßenschild auf Arabisch und Französisch",
+"by": "RomanDeckert",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Tyre-Sour_Lebanon_RashidKaramiSquareSign_RomanDeckert06112018.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/AA180494%28pearl%29.JPG/330px-AA180494%28pearl%29.JPG",
+"big": "https://upload.wikimedia.org/wikipedia/commons/9/97/AA180494%28pearl%29.JPG",
+"cap": "Landstraße mit Betonmasten",
+"by": "Charbel2010",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:AA180494(pearl).JPG"
+}
+]
+},
+"LI": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Liechtenstein_licenceplate.JPG/330px-Liechtenstein_licenceplate.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Liechtenstein_licenceplate.JPG/1280px-Liechtenstein_licenceplate.JPG",
+"cap": "Schwarzes Kennzeichen mit Wappen (FL)",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Liechtenstein_licenceplate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/LIE_Mauren%2C_Schellenbergerstrasse_0008.jpg/330px-LIE_Mauren%2C_Schellenbergerstrasse_0008.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/LIE_Mauren%2C_Schellenbergerstrasse_0008.jpg/1280px-LIE_Mauren%2C_Schellenbergerstrasse_0008.jpg",
+"cap": "Straßenschild mit Metallrahmen",
+"by": "-wuppertaler",
+"lic": "CC BY 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:LIE_Mauren,_Schellenbergerstrasse_0008.jpg"
+}
+]
+},
+"LS": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Kfz-Lesotho.jpg/330px-Kfz-Lesotho.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Kfz-Lesotho.jpg/1280px-Kfz-Lesotho.jpg",
+"cap": "Kennzeichen mit Mokorotlo-Hut-Symbol",
+"by": "No machine-readable author provided. RokerHRO assumed (based on copyright claims",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Kfz-Lesotho.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Moteng_pass.jpg/330px-Moteng_pass.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Moteng_pass.jpg",
+"cap": "Kahle Berge am Moteng-Pass",
+"by": "User:Jacovt",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Moteng_pass.jpg"
+}
+]
+},
+"ST": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Panneau_de_signalisation_%C3%A0_Monte_Caf%C3%A9_%28S%C3%A3oTom%C3%A9%29.jpg/330px-Panneau_de_signalisation_%C3%A0_Monte_Caf%C3%A9_%28S%C3%A3oTom%C3%A9%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Panneau_de_signalisation_%C3%A0_Monte_Caf%C3%A9_%28S%C3%A3oTom%C3%A9%29.jpg/1280px-Panneau_de_signalisation_%C3%A0_Monte_Caf%C3%A9_%28S%C3%A3oTom%C3%A9%29.jpg",
+"cap": "Wegweiser auf Portugiesisch im Regenwald",
+"by": "Ji-Elle",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Panneau_de_signalisation_%C3%A0_Monte_Caf%C3%A9_(S%C3%A3oTom%C3%A9).jpg"
+}
+]
+},
+"VU": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Vanuatu_license_plate_graphic.png/330px-Vanuatu_license_plate_graphic.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Vanuatu_license_plate_graphic.png",
+"cap": "Kennzeichen „Republic of Vanuatu“",
+"by": "unbekannt",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Vanuatu_license_plate_graphic.png"
+}
+]
+},
+"MQ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/License_plates_of_Martinique_2041.jpg/330px-License_plates_of_Martinique_2041.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/License_plates_of_Martinique_2041.jpg/1280px-License_plates_of_Martinique_2041.jpg",
+"cap": "Französisches Kennzeichen mit Regionsnummer 972",
+"by": "19petra",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plates_of_Martinique_2041.jpg"
+}
+]
+},
+"IQ": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/A_road_sign_ofr_Baghdad%2C_Kirkuk%2C_Duhok%2C_and_Sulaymaniyah_in_Erbil_DSF2315.jpg/330px-A_road_sign_ofr_Baghdad%2C_Kirkuk%2C_Duhok%2C_and_Sulaymaniyah_in_Erbil_DSF2315.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/A_road_sign_ofr_Baghdad%2C_Kirkuk%2C_Duhok%2C_and_Sulaymaniyah_in_Erbil_DSF2315.jpg/1280px-A_road_sign_ofr_Baghdad%2C_Kirkuk%2C_Duhok%2C_and_Sulaymaniyah_in_Erbil_DSF2315.jpg",
+"cap": "Grüne Wegweiser auf Arabisch, Kurdisch und Englisch",
+"by": "Levi Meir Clancy",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:A_road_sign_ofr_Baghdad,_Kirkuk,_Duhok,_and_Sulaymaniyah_in_Erbil_DSF2315.jpg"
+}
+]
 }
 };

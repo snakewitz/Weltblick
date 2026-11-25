@@ -459,5 +459,82 @@
   "K3": "Madagassisches Kennzeichen mit Flagge",
   "S0": "Kilometerstein mit roter Kappe (N7)",
   "S4": "Kilometerstein an der Baobab-Allee"
+ },
+ "IT": {
+  "K1": "Italienisches Kennzeichen mit blauen Streifen links und rechts",
+  "M3": "Betonmast mit Isolatoren (Mittelspannung)",
+  "S0": "Kilometerstein an der Strada Statale"
+ },
+ "KR": {
+  "K5": "Weißes Kennzeichen mit Hangul",
+  "S7": "Blaues Straßenschild in Hangul, Englisch, Chinesisch und Japanisch"
+ },
+ "KZ": {
+  "K2": "Kasachisches Kennzeichen",
+  "S1": "Straßenschild „көшесі“ (Kasachisch)",
+  "M3": "Breite Dorfstraße mit Betonmasten"
+ },
+ "LT": {
+  "K1": "Litauisches Kennzeichen mit LT-Feld",
+  "S0": "Straßenschild mit „g.“ (gatvė)",
+  "M1": "Feldweg mit Betonmasten"
+ },
+ "LV": {
+  "K5": "Lettisches Kennzeichen mit LV-Feld",
+  "S4": "Straßenschild mit „iela“",
+  "M0": "Schotterstraße mit Holzmasten"
+ },
+ "KH": {
+  "K0": "Kennzeichen mit Khmer-Schrift (Phnom Penh)",
+  "S0": "Kilometerstein mit roter Kappe und Khmer-Schrift",
+  "M4": "Kabelgewirr am Mast"
+ },
+ "LK": {
+  "K5": "Kennzeichen mit Provinzkürzel",
+  "S3": "Weißer Kilometerstein",
+  "S2": "Wegweiser auf Singhalesisch, Tamil und Englisch"
+ },
+ "LU": {
+  "K7": "Gelbes luxemburgisches Kennzeichen mit L-Feld",
+  "S7": "Grenzstein der „Voie de la Liberté“"
+ },
+ "SG": {
+  "S1": "Grünes Straßenschild mit abgerundeten Ecken",
+  "R0": "„SLOW“ in großen Buchstaben auf der Fahrbahn",
+  "K2": "Schwarzes Kennzeichen mit weißer Schrift"
+ },
+ "CY": {
+  "K2": "Gelbes Heckkennzeichen mit CY-Feld",
+  "S1": "Straßenschild auf Griechisch und Englisch"
+ },
+ "JO": {
+  "K4": "Jordanisches Kennzeichen (arabisch/englisch)",
+  "K7": "Gewerbliches Kennzeichen mit grünem Streifen links",
+  "S1": "Zweisprachiges Straßenschild"
+ },
+ "LB": {
+  "K7": "Libanesisches Kennzeichen mit blauem Streifen",
+  "S5": "Blaues Straßenschild auf Arabisch und Französisch",
+  "M2": "Landstraße mit Betonmasten"
+ },
+ "LI": {
+  "K0": "Schwarzes Kennzeichen mit Wappen (FL)",
+  "S0": "Straßenschild mit Metallrahmen"
+ },
+ "LS": {
+  "K0": "Kennzeichen mit Mokorotlo-Hut-Symbol",
+  "S0": "Kahle Berge am Moteng-Pass"
+ },
+ "ST": {
+  "S0": "Wegweiser auf Portugiesisch im Regenwald"
+ },
+ "VU": {
+  "K4": "Kennzeichen „Republic of Vanuatu“"
+ },
+ "MQ": {
+  "K3": "Französisches Kennzeichen mit Regionsnummer 972"
+ },
+ "IQ": {
+  "S0": "Grüne Wegweiser auf Arabisch, Kurdisch und Englisch"
  }
 }
