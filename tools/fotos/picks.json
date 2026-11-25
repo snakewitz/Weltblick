@@ -1,0 +1,86 @@
+{
+ "DE": {
+  "P5": "Schwarz-weißer Leitpfosten an der Leitplanke mit weißem Reflektor und Kilometer-Schild",
+  "P6": "Typischer deutscher Leitpfosten: weiß, schwarzes Band, rechteckiger weißer Reflektor",
+  "P2": "Stationszeichen mit Straßennummer (K 20) – solche Schilder sitzen oft an Pollern",
+  "K3": "Blaues EU-Feld mit „D“ am linken Rand des Kennzeichens",
+  "M2": "Holzmast mit Leitungen auf dem Land"
+ },
+ "AD": {
+  "K5": "Kennzeichen mit dem farbigen Wappen links – verpixelt wirkt es wie ein oranger Punkt",
+  "S1": "Straßenschild auf Katalanisch: „Camí“ = Weg"
+ },
+ "AR": {
+  "M3": "Runde Betonmasten entlang einer Landstraße",
+  "R2": "Doppelte gelbe Mittellinie, weiße Fahrstreifen"
+ },
+ "AE": {
+  "S6": "Wegweiser grün, zweisprachig Arabisch und Englisch",
+  "S4": "Blauer Wegweiser mit arabischer und englischer Schrift"
+ },
+ "AL": {
+  "K7": "Älteres Kennzeichen mit rotem Streifen links – in Europa nur in Albanien",
+  "K2": "Neues Kennzeichen mit blauen Streifen links und rechts",
+  "S1": "Straßenschild mit „Rruga“ = Straße"
+ },
+ "AS": {
+  "K0": "Kennzeichen mit Palme und „American Samoa“"
+ },
+ "ZA": {
+  "S2": "Grüner Wegweiser mit Routennummer",
+  "M1": "Holzmast mit Querträgern und Isolatoren",
+  "K0": "Kennzeichen aus der Region Westkap (Endung „WP“)"
+ },
+ "VI": {
+  "S0": "Dänische Straßennamen („Gade“) neben einem US-Einbahnstraßenschild",
+  "K4": "Kennzeichen „U.S. Virgin Islands“ in Blau"
+ },
+ "AT": {
+  "P3": "Weißer Leitpflock mit schwarzem Kopf und rotem Reflektor, dazu Schneestange",
+  "P1": "Leitpflock an einer Bundesstraße",
+  "K1": "EU-Feld mit „A“ am Kennzeichen",
+  "M1": "Runde Holzmasten auf dem Feld"
+ },
+ "AU": {
+  "M3": "Holzmast mit Querträger in Sydney",
+  "M5": "Strommast aus Beton",
+  "R0": "Nur weiße Fahrbahnmarkierungen"
+ },
+ "US": {
+  "M2": "Holzmast mit Querträgern und Leitungen",
+  "R2": "Grüne Wegweiser und Markierungen an einer Kreuzung"
+ },
+ "UY": {
+  "K2": "Neues Mercosur-Kennzeichen mit blauem Balken und „URUGUAY“"
+ },
+ "BD": {
+  "K2": "Kennzeichen in bengalischer Schrift",
+  "S4": "Gelber Kilometerstein am Straßenrand",
+  "S0": "Ortsschild in bengalischer Schrift"
+ },
+ "BE": {
+  "K1": "Belgisches Kennzeichen mit roter Schrift",
+  "K5": "Rote Schrift auch am Auto gut erkennbar",
+  "M3": "Betonmast in einem Dorf in der Wallonie"
+ },
+ "BG": {
+  "K0": "Bulgarisches EU-Kennzeichen (BG)",
+  "S1": "Straßenschild in Kyrillisch: „улица“ = Straße",
+  "M4": "Dorfstraße mit runden Betonmasten"
+ },
+ "BO": {
+  "K5": "Bolivianisches Kennzeichen: weiß mit blauer Schrift",
+  "M7": "Holzmast mit mehreren Querträgern"
+ },
+ "US-AK": {
+  "K0": "Gelbes Alaska-Kennzeichen „The Last Frontier“",
+  "K4": "Gelbes Kennzeichen mit blauer Schrift"
+ },
+ "US-HI": {
+  "K3": "Hawaii-Kennzeichen mit Regenbogen",
+  "M0": "Holzmasten zwischen Palmen"
+ },
+ "BM": {
+  "K0": "Bermuda-Kennzeichen: weiß, Ziffern in der Mitte"
+ }
+}
