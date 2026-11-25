@@ -311,5 +311,153 @@
  "PK": {
   "K4": "Punjab-Kennzeichen mit grünem Streifen links",
   "M7": "Holzmast an der Gilgit-Straße"
+ },
+ "IL": {
+  "K1": "Gelbes Kennzeichen mit blauem IL-Feld",
+  "R0": "Rot-weiß gestreifter Bordstein"
+ },
+ "PA": {
+  "S3": "Grüne Wegweiser an der Landstraße",
+  "M3": "Betonmasten mit vielen Leitungen"
+ },
+ "FO": {
+  "K1": "Färöisches Kennzeichen mit FO-Feld",
+  "S7": "Gelber Wegweiser mit Straßennummer"
+ },
+ "FR": {
+  "S0": "Kilometerstein mit roter Kappe",
+  "S3": "Weißer Poller mit rotem Band (Route Nationale)",
+  "M6": "Betonmast mit Metallbändern",
+  "R0": "Lange, weit auseinanderliegende Striche"
+ },
+ "GB": {
+  "K0": "Gelbes Heckkennzeichen",
+  "M3": "Holzmast mit Isolatoren",
+  "R6": "Lange Mittelstriche auf der Landstraße"
+ },
+ "IE": {
+  "K2": "Irisches Kennzeichen mit IRL-Feld und County-Name",
+  "R3": "Fahrbahnaufschrift zweisprachig (Englisch/Irisch)",
+  "R5": "Irische Fahrbahnaufschrift"
+ },
+ "NO": {
+  "K4": "Norwegisches Kennzeichen mit N-Feld",
+  "R3": "Gelbe Mittellinie mit Orangestich",
+  "R4": "Tunnel mit gelber Mittellinie"
+ },
+ "MX": {
+  "M4": "Holzmast mit vielen Querbalken",
+  "R2": "Durchgezogene gelbe Mittellinie",
+  "S0": "Grünes Straßenschild an der Ampel"
+ },
+ "NZ": {
+  "S6": "Vorfahrt-achten-Schild mit roter Schrift",
+  "M4": "Betonmast mit Transformator",
+  "R5": "Doppelte gelbe Mittellinie"
+ },
+ "HR": {
+  "K2": "Kroatisches Kennzeichen mit HR-Feld und Wappen",
+  "M2": "Dorfstraße mit runden Masten"
+ },
+ "KE": {
+  "K6": "Gelbe Heckkennzeichen",
+  "M4": "Holzmast mit Totenkopf-Warnschild",
+  "M2": "Landstraße mit Holzmasten"
+ },
+ "GH": {
+  "K0": "Gelbes Kennzeichen für Gewerbefahrzeuge",
+  "S0": "Blaues Straßenschild in Accra"
+ },
+ "NG": {
+  "K0": "Nigerianisches Kennzeichen mit Bundesstaat (Lagos)",
+  "M5": "Betonmasten"
+ },
+ "NA": {
+  "K2": "Gelbes namibisches Kennzeichen",
+  "S4": "Deutsche Straßennamen in Windhoek"
+ },
+ "TN": {
+  "K5": "Schwarzes tunesisches Kennzeichen mit arabischer Schrift",
+  "S3": "Zweisprachiges Straßenschild (Arabisch/Französisch)"
+ },
+ "HK": {
+  "K4": "Vorne weißes, hinten gelbes Kennzeichen",
+  "R7": "„Look Right“ zweisprachig auf der Fahrbahn",
+  "R3": "Gelbe Randlinien"
+ },
+ "NP": {
+  "K0": "Rotes Kennzeichen mit Devanagari-Ziffern",
+  "S4": "Grünes Straßenschild in Devanagari und Latein",
+  "M5": "Kabelgewirr an Masten in Kathmandu"
+ },
+ "MT": {
+  "K0": "Maltesisches Kennzeichen mit M-Feld",
+  "R1": "Gelbe Mittellinie und „STOP“ auf der Fahrbahn",
+  "S1": "Kalksteinmauern am Straßenrand"
+ },
+ "GT": {
+  "K4": "Kennzeichen „Guatemala – Centro América“",
+  "S0": "Einbahnstraßenschild „UNA VIA“"
+ },
+ "ID": {
+  "K5": "Schwarzes Kennzeichen mit weißer Schrift",
+  "S1": "Kilometerstein mit roter Kappe",
+  "S6": "Grünes Straßenschild „Jl.“ mit javanischer Schrift"
+ },
+ "IS": {
+  "K6": "Isländisches Kennzeichen: weiß mit blauer Schrift",
+  "S0": "Straßenschild in Reykjavík"
+ },
+ "ME": {
+  "K0": "Montenegrinisches Kennzeichen mit rotem Wappen-Kreis",
+  "S3": "Straßenschild „Ulica“"
+ },
+ "KG": {
+  "K2": "Kirgisisches Kennzeichen mit rotem Feld links",
+  "M1": "Dorfstraße mit Betonmasten",
+  "S2": "Straßenschild in Kirgisisch (kyrillisch)"
+ },
+ "GI": {
+  "K4": "Gelbes Gibraltar-Kennzeichen mit GBZ-Feld",
+  "R1": "„Look Left“ auf der Fahrbahn"
+ },
+ "IM": {
+  "K0": "Kennzeichen mit rotem Streifen und Triskele (GBM)",
+  "S4": "Schwarz-weißer Meilenstein mit Triskele"
+ },
+ "GU": {
+  "K4": "Kennzeichen „Guam U.S.A.“",
+  "S2": "Highway-Schilder im US-Stil"
+ },
+ "MO": {
+  "S1": "Kachel-Straßenschild auf Portugiesisch und Chinesisch",
+  "S6": "Straßenschild „Beco da Sorte“"
+ },
+ "GL": {
+  "K2": "Grönländisches Kennzeichen",
+  "S5": "Warnschild für Hundeschlitten",
+  "M0": "Bunte Häuser in Nuuk"
+ },
+ "IN": {
+  "K1": "Gelbes Kennzeichen für Taxis/Gewerbe",
+  "S1": "Kilometerstein (State Highway) mit grüner Kappe",
+  "S6": "Kilometerstein mit gelber Kappe in Devanagari",
+  "M0": "Betonmast mit Transformator"
+ },
+ "LA": {
+  "K4": "Gelbes laotisches Kennzeichen",
+  "S6": "Grünes Schild „Welcome to Lao PDR“"
+ },
+ "MC": {
+  "K1": "Monegassisches Kennzeichen mit Wappen",
+  "S0": "Zweisprachiges Straßenschild (Französisch/Monegassisch)"
+ },
+ "MP": {
+  "K1": "Kennzeichen „Northern Mariana Is.“"
+ },
+ "MG": {
+  "K3": "Madagassisches Kennzeichen mit Flagge",
+  "S0": "Kilometerstein mit roter Kappe (N7)",
+  "S4": "Kilometerstein an der Baobab-Allee"
  }
 }

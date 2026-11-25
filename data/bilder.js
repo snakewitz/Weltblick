@@ -1838,5 +1838,873 @@ window.BILDER = {
 "src": "https://commons.wikimedia.org/wiki/File:Gilgit_Road.jpg"
 }
 ]
+},
+"IL": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Israeli_reg_6876.jpg/330px-Israeli_reg_6876.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Israeli_reg_6876.jpg/1280px-Israeli_reg_6876.jpg",
+"cap": "Gelbes Kennzeichen mit blauem IL-Feld",
+"by": "Krokodyl",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Israeli_reg_6876.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Shikor.jpg/330px-Shikor.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/82/Shikor.jpg",
+"cap": "Rot-weiß gestreifter Bordstein",
+"by": "אביש רוט. Original uploader was יהודה מלאכי at he.wikipedia",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Shikor.jpg"
+}
+]
+},
+"PA": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Carretera-Pedas%C3%AD_La_Mochila.jpg/330px-Carretera-Pedas%C3%AD_La_Mochila.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Carretera-Pedas%C3%AD_La_Mochila.jpg/1280px-Carretera-Pedas%C3%AD_La_Mochila.jpg",
+"cap": "Grüne Wegweiser an der Landstraße",
+"by": "Joseom",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Carretera-Pedas%C3%AD_La_Mochila.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/El_Mara%C3%B1%C3%B3n%2C_Panam%C3%A1%2C_Panama_-_panoramio.jpg/330px-El_Mara%C3%B1%C3%B3n%2C_Panam%C3%A1%2C_Panama_-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/El_Mara%C3%B1%C3%B3n%2C_Panam%C3%A1%2C_Panama_-_panoramio.jpg/1280px-El_Mara%C3%B1%C3%B3n%2C_Panam%C3%A1%2C_Panama_-_panoramio.jpg",
+"cap": "Betonmasten mit vielen Leitungen",
+"by": "Fernandofrancisco",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:El_Mara%C3%B1%C3%B3n,_Panam%C3%A1,_Panama_-_panoramio.jpg"
+}
+]
+},
+"FO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Licenseplate_of_Faroe_Islands.JPG/330px-Licenseplate_of_Faroe_Islands.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Licenseplate_of_Faroe_Islands.JPG/1280px-Licenseplate_of_Faroe_Islands.JPG",
+"cap": "Färöisches Kennzeichen mit FO-Feld",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Licenseplate_of_Faroe_Islands.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Bor%C3%B0oy%2C_road_to_Vi%C3%B0oy.jpg/330px-Bor%C3%B0oy%2C_road_to_Vi%C3%B0oy.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Bor%C3%B0oy%2C_road_to_Vi%C3%B0oy.jpg/1280px-Bor%C3%B0oy%2C_road_to_Vi%C3%B0oy.jpg",
+"cap": "Gelber Wegweiser mit Straßennummer",
+"by": "DavideGorla",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Bor%C3%B0oy,_road_to_Vi%C3%B0oy.jpg"
+}
+]
+},
+"FR": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Castelnau_le_Lez_Borne_kilo_Place_Ch_de_Gaulle_27122006.JPG/330px-Castelnau_le_Lez_Borne_kilo_Place_Ch_de_Gaulle_27122006.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Castelnau_le_Lez_Borne_kilo_Place_Ch_de_Gaulle_27122006.JPG/1280px-Castelnau_le_Lez_Borne_kilo_Place_Ch_de_Gaulle_27122006.JPG",
+"cap": "Kilometerstein mit roter Kappe",
+"by": "User:Sebjarod",
+"lic": "CC BY-SA 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Castelnau_le_Lez_Borne_kilo_Place_Ch_de_Gaulle_27122006.JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Koufrabadon.JPG/330px-Koufrabadon.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Koufrabadon.JPG/1280px-Koufrabadon.JPG",
+"cap": "Weißer Poller mit rotem Band (Route Nationale)",
+"by": "Bertranfenne",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Koufrabadon.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_3.jpg/330px-Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_3.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_3.jpg/1280px-Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_3.jpg",
+"cap": "Betonmast mit Metallbändern",
+"by": "Lionel Allorge",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_3.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Ligne_d%27annonce_non_rectiligne.JPG/330px-Ligne_d%27annonce_non_rectiligne.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Ligne_d%27annonce_non_rectiligne.JPG/1280px-Ligne_d%27annonce_non_rectiligne.JPG",
+"cap": "Lange, weit auseinanderliegende Striche",
+"by": "Roulex 45",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Ligne_d%27annonce_non_rectiligne.JPG"
+}
+]
+},
+"GB": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/British_vehicle_registration_plate_EU.PNG/330px-British_vehicle_registration_plate_EU.PNG",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/51/British_vehicle_registration_plate_EU.PNG",
+"cap": "Gelbes Heckkennzeichen",
+"by": "Endrick Shellycoat",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:British_vehicle_registration_plate_EU.PNG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG/330px-Utility_pole%2C_Saul_Road%2C_January_2010.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG/1280px-Utility_pole%2C_Saul_Road%2C_January_2010.JPG",
+"cap": "Holzmast mit Isolatoren",
+"by": "Ardfern",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Utility_pole,_Saul_Road,_January_2010.JPG"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Dragon%27s_teeth_-_geograph.org.uk_-_600319.jpg/330px-Dragon%27s_teeth_-_geograph.org.uk_-_600319.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Dragon%27s_teeth_-_geograph.org.uk_-_600319.jpg",
+"cap": "Lange Mittelstriche auf der Landstraße",
+"by": "Stanley Howe",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Dragon%27s_teeth_-_geograph.org.uk_-_600319.jpg"
+}
+]
+},
+"IE": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/IRELAND_1989_-_COUNTY_CAVAN_-_Flickr_-_woody1778a.jpg/330px-IRELAND_1989_-_COUNTY_CAVAN_-_Flickr_-_woody1778a.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/IRELAND_1989_-_COUNTY_CAVAN_-_Flickr_-_woody1778a.jpg/1280px-IRELAND_1989_-_COUNTY_CAVAN_-_Flickr_-_woody1778a.jpg",
+"cap": "Irisches Kennzeichen mit IRL-Feld und County-Name",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:IRELAND_1989_-_COUNTY_CAVAN_-_Flickr_-_woody1778a.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Road_Marking-1090304%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/330px-Road_Marking-1090304%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Road_Marking-1090304%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/1280px-Road_Marking-1090304%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg",
+"cap": "Fahrbahnaufschrift zweisprachig (Englisch/Irisch)",
+"by": "Mucklagh",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Road_Marking-1090304,_Dingle_Peninsula,_Co._Kerry,_Ireland.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Road_Marking-1100162%2C_Dingle%2C_Co._Kerry%2C_Ireland.jpg/330px-Road_Marking-1100162%2C_Dingle%2C_Co._Kerry%2C_Ireland.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Road_Marking-1100162%2C_Dingle%2C_Co._Kerry%2C_Ireland.jpg/1280px-Road_Marking-1100162%2C_Dingle%2C_Co._Kerry%2C_Ireland.jpg",
+"cap": "Irische Fahrbahnaufschrift",
+"by": "Mucklagh",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Road_Marking-1100162,_Dingle,_Co._Kerry,_Ireland.jpg"
+}
+]
+},
+"NO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Hvitt%2C_standard_skilt.jpg/330px-Hvitt%2C_standard_skilt.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/33/Hvitt%2C_standard_skilt.jpg",
+"cap": "Norwegisches Kennzeichen mit N-Feld",
+"by": "Olavsplates",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Hvitt,_standard_skilt.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Bilvei%2C_Karin_Beate_Nosterud.jpg/330px-Bilvei%2C_Karin_Beate_Nosterud.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Bilvei%2C_Karin_Beate_Nosterud.jpg/1280px-Bilvei%2C_Karin_Beate_Nosterud.jpg",
+"cap": "Gelbe Mittellinie mit Orangestich",
+"by": "Karin Beate Nøsterud",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Bilvei,_Karin_Beate_Nosterud.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/%C3%98yertunnelenE6.jpg/330px-%C3%98yertunnelenE6.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/%C3%98yertunnelenE6.jpg/1280px-%C3%98yertunnelenE6.jpg",
+"cap": "Tunnel mit gelber Mittellinie",
+"by": "Peter Fiskerstrand",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:%C3%98yertunnelenE6.jpg"
+}
+]
+},
+"MX": {
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/AntiqueUtilityPoleOcoyoacac01.JPG/330px-AntiqueUtilityPoleOcoyoacac01.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/AntiqueUtilityPoleOcoyoacac01.JPG/1280px-AntiqueUtilityPoleOcoyoacac01.JPG",
+"cap": "Holzmast mit vielen Querbalken",
+"by": "AlejandroLinaresGarcia",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:AntiqueUtilityPoleOcoyoacac01.JPG"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/CARRETERA.jpg/330px-CARRETERA.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/37/CARRETERA.jpg",
+"cap": "Durchgezogene gelbe Mittellinie",
+"by": "Fabián X. Castillo",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:CARRETERA.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/PaseoColon_Calle.jpg/330px-PaseoColon_Calle.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/PaseoColon_Calle.jpg/1280px-PaseoColon_Calle.jpg",
+"cap": "Grünes Straßenschild an der Ampel",
+"by": "Natalia134C",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:PaseoColon_Calle.jpg"
+}
+]
+},
+"NZ": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2011vmv_Giveway2.jpg/330px-2011vmv_Giveway2.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/2011vmv_Giveway2.jpg/1280px-2011vmv_Giveway2.jpg",
+"cap": "Vorfahrt-achten-Schild mit roter Schrift",
+"by": "Virtualmv",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:2011vmv_Giveway2.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/PoleMountedDistributionTransformerNZ.jpg/330px-PoleMountedDistributionTransformerNZ.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/3c/PoleMountedDistributionTransformerNZ.jpg",
+"cap": "Betonmast mit Transformator",
+"by": "Tiles at English Wikipedia",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:PoleMountedDistributionTransformerNZ.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/No_Entry_Street_Near_Khyber_Pass_Road.jpg/330px-No_Entry_Street_Near_Khyber_Pass_Road.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/No_Entry_Street_Near_Khyber_Pass_Road.jpg/1280px-No_Entry_Street_Near_Khyber_Pass_Road.jpg",
+"cap": "Doppelte gelbe Mittellinie",
+"by": "Ingolfson",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:No_Entry_Street_Near_Khyber_Pass_Road.jpg"
+}
+]
+},
+"HR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Croatian_License_plate_with_unofficial_euro_sticker.JPG/330px-Croatian_License_plate_with_unofficial_euro_sticker.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Croatian_License_plate_with_unofficial_euro_sticker.JPG/1280px-Croatian_License_plate_with_unofficial_euro_sticker.JPG",
+"cap": "Kroatisches Kennzeichen mit HR-Feld und Wappen",
+"by": "TheFlyingDutchman",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Croatian_License_plate_with_unofficial_euro_sticker.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Valpova%C4%8Dka_ul._-_panoramio.jpg/330px-Valpova%C4%8Dka_ul._-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Valpova%C4%8Dka_ul._-_panoramio.jpg/1280px-Valpova%C4%8Dka_ul._-_panoramio.jpg",
+"cap": "Dorfstraße mit runden Masten",
+"by": "Alen Ištoković",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Valpova%C4%8Dka_ul._-_panoramio.jpg"
+}
+]
+},
+"KE": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/New_Kenyan_license_plates.jpg/330px-New_Kenyan_license_plates.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/01/New_Kenyan_license_plates.jpg",
+"cap": "Gelbe Heckkennzeichen",
+"by": "kenyanmagazine",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:New_Kenyan_license_plates.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg/330px-Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg/1280px-Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg",
+"cap": "Holzmast mit Totenkopf-Warnschild",
+"by": "Matti Blume",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Wikimania_Photowalk_2025,_Nairobi_(20250808-P1048960).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A104_in_Nairobi_2017.jpg/330px-A104_in_Nairobi_2017.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A104_in_Nairobi_2017.jpg/1280px-A104_in_Nairobi_2017.jpg",
+"cap": "Landstraße mit Holzmasten",
+"by": "flightlog",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:A104_in_Nairobi_2017.jpg"
+}
+]
+},
+"GH": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Commercial_license_plate_from_Ghana.jpg/330px-Commercial_license_plate_from_Ghana.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/25/Commercial_license_plate_from_Ghana.jpg",
+"cap": "Gelbes Kennzeichen für Gewerbefahrzeuge",
+"by": "Ghana_street_scene.jpg: Ben Sutherland from Forest Hill, London, European Union ",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Commercial_license_plate_from_Ghana.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Oshu_Asante_Street_Ghana.jpg/330px-Oshu_Asante_Street_Ghana.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Oshu_Asante_Street_Ghana.jpg/1280px-Oshu_Asante_Street_Ghana.jpg",
+"cap": "Blaues Straßenschild in Accra",
+"by": "Minette Lontsie",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Oshu_Asante_Street_Ghana.jpg"
+}
+]
+},
+"NG": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Matricula_de_Lagos_Nigeria_1992.jpg/330px-Matricula_de_Lagos_Nigeria_1992.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Matricula_de_Lagos_Nigeria_1992.jpg/1280px-Matricula_de_Lagos_Nigeria_1992.jpg",
+"cap": "Nigerianisches Kennzeichen mit Bundesstaat (Lagos)",
+"by": "Gons",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Matricula_de_Lagos_Nigeria_1992.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/A_broken_electricity_pillar.jpg/330px-A_broken_electricity_pillar.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/A_broken_electricity_pillar.jpg/1280px-A_broken_electricity_pillar.jpg",
+"cap": "Betonmasten",
+"by": "Alexander achie004",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:A_broken_electricity_pillar.jpg"
+}
+]
+},
+"NA": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Namibia_plate.JPG/330px-Namibia_plate.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Namibia_plate.JPG/1280px-Namibia_plate.JPG",
+"cap": "Gelbes namibisches Kennzeichen",
+"by": "Dickelbers",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Namibia_plate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Windhuk_Bahnhofstra%C3%9Fe.jpg/330px-Windhuk_Bahnhofstra%C3%9Fe.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Windhuk_Bahnhofstra%C3%9Fe.jpg/1280px-Windhuk_Bahnhofstra%C3%9Fe.jpg",
+"cap": "Deutsche Straßennamen in Windhoek",
+"by": "Zairon",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Windhuk_Bahnhofstra%C3%9Fe.jpg"
+}
+]
+},
+"TN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Standard_Tunisian_licence_plate.jpg/330px-Standard_Tunisian_licence_plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Standard_Tunisian_licence_plate.jpg",
+"cap": "Schwarzes tunesisches Kennzeichen mit arabischer Schrift",
+"by": "DrFO.Jr.Tn",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Standard_Tunisian_licence_plate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Rue_du_Commandant_Med_Bejaoui.jpg/330px-Rue_du_Commandant_Med_Bejaoui.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Rue_du_Commandant_Med_Bejaoui.jpg/1280px-Rue_du_Commandant_Med_Bejaoui.jpg",
+"cap": "Zweisprachiges Straßenschild (Arabisch/Französisch)",
+"by": "Emna Mizouni",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Rue_du_Commandant_Med_Bejaoui.jpg"
+}
+]
+},
+"HK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Hong_Kong_number_plates_2009.png/330px-Hong_Kong_number_plates_2009.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/59/Hong_Kong_number_plates_2009.png",
+"cap": "Vorne weißes, hinten gelbes Kennzeichen",
+"by": "Woodennature",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Hong_Kong_number_plates_2009.png"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Look_Right_%285292019629%29.jpg/330px-Look_Right_%285292019629%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Look_Right_%285292019629%29.jpg",
+"cap": "„Look Right“ zweisprachig auf der Fahrbahn",
+"by": "InSapphoWeTrust from Los Angeles, California, USA",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Look_Right_(5292019629).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/HK_Tseung_Kwan_O_Po_Lam_Yan_King_Road_Marking_2.JPG/330px-HK_Tseung_Kwan_O_Po_Lam_Yan_King_Road_Marking_2.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/HK_Tseung_Kwan_O_Po_Lam_Yan_King_Road_Marking_2.JPG/1280px-HK_Tseung_Kwan_O_Po_Lam_Yan_King_Road_Marking_2.JPG",
+"cap": "Gelbe Randlinien",
+"by": "Hungmiauzhe",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:HK_Tseung_Kwan_O_Po_Lam_Yan_King_Road_Marking_2.JPG"
+}
+]
+},
+"NP": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nepali_motorcycle_license_plate.jpg/330px-Nepali_motorcycle_license_plate.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nepali_motorcycle_license_plate.jpg/1280px-Nepali_motorcycle_license_plate.jpg",
+"cap": "Rotes Kennzeichen mit Devanagari-Ziffern",
+"by": "Brian Dell",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Nepali_motorcycle_license_plate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Maru_tol_street_sign.jpg/330px-Maru_tol_street_sign.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Maru_tol_street_sign.jpg/1280px-Maru_tol_street_sign.jpg",
+"cap": "Grünes Straßenschild in Devanagari und Latein",
+"by": "Uray1130",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Maru_tol_street_sign.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Powerpole_Kathmandu.jpg/330px-Powerpole_Kathmandu.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Powerpole_Kathmandu.jpg/1280px-Powerpole_Kathmandu.jpg",
+"cap": "Kabelgewirr an Masten in Kathmandu",
+"by": "Wittylama",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Powerpole_Kathmandu.jpg"
+}
+]
+},
+"MT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/ACF_110.jpg/330px-ACF_110.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/7/72/ACF_110.jpg",
+"cap": "Maltesisches Kennzeichen mit M-Feld",
+"by": "Predavatel",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:ACF_110.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mgarr%2C_Malta_-_panoramio_%2845%29.jpg/330px-Mgarr%2C_Malta_-_panoramio_%2845%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mgarr%2C_Malta_-_panoramio_%2845%29.jpg/1280px-Mgarr%2C_Malta_-_panoramio_%2845%29.jpg",
+"cap": "Gelbe Mittellinie und „STOP“ auf der Fahrbahn",
+"by": "Alan C. Bonnici",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Mgarr,_Malta_-_panoramio_(45).jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Malta_-_Mellieha_-_Triq_Selmun_04_ies.jpg/330px-Malta_-_Mellieha_-_Triq_Selmun_04_ies.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Malta_-_Mellieha_-_Triq_Selmun_04_ies.jpg/1280px-Malta_-_Mellieha_-_Triq_Selmun_04_ies.jpg",
+"cap": "Kalksteinmauern am Straßenrand",
+"by": "Frank Vincentz",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Malta_-_Mellieha_-_Triq_Selmun_04_ies.jpg"
+}
+]
+},
+"GT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/2021_Guatemala_passenger_License_Plate_P765LBY.jpg/330px-2021_Guatemala_passenger_License_Plate_P765LBY.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/02/2021_Guatemala_passenger_License_Plate_P765LBY.jpg",
+"cap": "Kennzeichen „Guatemala – Centro América“",
+"by": "CA81enjoyer",
+"lic": "CC BY 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:2021_Guatemala_passenger_License_Plate_P765LBY.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Una_Via.jpg/330px-Una_Via.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Una_Via.jpg/1280px-Una_Via.jpg",
+"cap": "Einbahnstraßenschild „UNA VIA“",
+"by": "Flickr user: David Dennis",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Una_Via.jpg"
+}
+]
+},
+"ID": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Current_vehicle_plate_number_design_of_Indonesia.jpg/330px-Current_vehicle_plate_number_design_of_Indonesia.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Current_vehicle_plate_number_design_of_Indonesia.jpg",
+"cap": "Schwarzes Kennzeichen mit weißer Schrift",
+"by": "User:AWG97",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Current_vehicle_plate_number_design_of_Indonesia.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Sarinagen%2C_Cipongkor%2C_West_Bandung_Regency%2C_West_Java%2C_Indonesia_-_panoramio.jpg/330px-Sarinagen%2C_Cipongkor%2C_West_Bandung_Regency%2C_West_Java%2C_Indonesia_-_panoramio.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/86/Sarinagen%2C_Cipongkor%2C_West_Bandung_Regency%2C_West_Java%2C_Indonesia_-_panoramio.jpg",
+"cap": "Kilometerstein mit roter Kappe",
+"by": "Devitapra",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Sarinagen,_Cipongkor,_West_Bandung_Regency,_West_Java,_Indonesia_-_panoramio.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Straatnaambord_AksaraBali2.jpg/330px-Straatnaambord_AksaraBali2.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Straatnaambord_AksaraBali2.jpg",
+"cap": "Grünes Straßenschild „Jl.“ mit javanischer Schrift",
+"by": "Aafke de Jong",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Straatnaambord_AksaraBali2.jpg"
+}
+]
+},
+"IS": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Iceland_license_plate_%281%29.jpg/330px-Iceland_license_plate_%281%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Iceland_license_plate_%281%29.jpg/1280px-Iceland_license_plate_%281%29.jpg",
+"cap": "Isländisches Kennzeichen: weiß mit blauer Schrift",
+"by": "Dickelbers",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Iceland_license_plate_(1).jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Frakkast%C3%ADgur_sign.jpg/330px-Frakkast%C3%ADgur_sign.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Frakkast%C3%ADgur_sign.jpg/1280px-Frakkast%C3%ADgur_sign.jpg",
+"cap": "Straßenschild in Reykjavík",
+"by": "Maarten Visser from Capelle aan den IJssel, Nederland",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Frakkast%C3%ADgur_sign.jpg"
+}
+]
+},
+"ME": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/License_plate_of_Montenegro_since_2008.jpg/330px-License_plate_of_Montenegro_since_2008.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/b/b4/License_plate_of_Montenegro_since_2008.jpg",
+"cap": "Montenegrinisches Kennzeichen mit rotem Wappen-Kreis",
+"by": "Own work / D. Schneider",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_of_Montenegro_since_2008.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Oktobarske_Podgorica_1.jpg/330px-Oktobarske_Podgorica_1.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Oktobarske_Podgorica_1.jpg/1280px-Oktobarske_Podgorica_1.jpg",
+"cap": "Straßenschild „Ulica“",
+"by": "BiiJii",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Oktobarske_Podgorica_1.jpg"
+}
+]
+},
+"KG": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kyrgyzstan_company_license_plate.png/330px-Kyrgyzstan_company_license_plate.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kyrgyzstan_company_license_plate.png",
+"cap": "Kirgisisches Kennzeichen mit rotem Feld links",
+"by": "Chekist",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Kyrgyzstan_company_license_plate.png"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/E8002-Milyanfan-Lenin-St.jpg/330px-E8002-Milyanfan-Lenin-St.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/E8002-Milyanfan-Lenin-St.jpg/1280px-E8002-Milyanfan-Lenin-St.jpg",
+"cap": "Dorfstraße mit Betonmasten",
+"by": "Vmenkov",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:E8002-Milyanfan-Lenin-St.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Street_sign_in_Yrdyk%2C_Kyrgyzstan.jpg/330px-Street_sign_in_Yrdyk%2C_Kyrgyzstan.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Street_sign_in_Yrdyk%2C_Kyrgyzstan.jpg/1280px-Street_sign_in_Yrdyk%2C_Kyrgyzstan.jpg",
+"cap": "Straßenschild in Kirgisisch (kyrillisch)",
+"by": "Bgag",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Street_sign_in_Yrdyk,_Kyrgyzstan.jpg"
+}
+]
+},
+"GI": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/G_3624_C_-_Gibraltar_plate_seen_in_FL.jpg/330px-G_3624_C_-_Gibraltar_plate_seen_in_FL.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/9/93/G_3624_C_-_Gibraltar_plate_seen_in_FL.jpg",
+"cap": "Gelbes Gibraltar-Kennzeichen mit GBZ-Feld",
+"by": "Walser123",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:G_3624_C_-_Gibraltar_plate_seen_in_FL.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/LookLeftGibraltar.jpg/330px-LookLeftGibraltar.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/LookLeftGibraltar.jpg/1280px-LookLeftGibraltar.jpg",
+"cap": "„Look Left“ auf der Fahrbahn",
+"by": "DMY",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:LookLeftGibraltar.jpg"
+}
+]
+},
+"IM": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/ManxCarRegistrationPlate.jpg/330px-ManxCarRegistrationPlate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/0d/ManxCarRegistrationPlate.jpg",
+"cap": "Kennzeichen mit rotem Streifen und Triskele (GBM)",
+"by": "User:Kaihsu",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:ManxCarRegistrationPlate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Milepost_at_Ballaskyr_on_the_Isle_of_Man_TT_Course_-_geograph.org.uk_-_482069.jpg/330px-Milepost_at_Ballaskyr_on_the_Isle_of_Man_TT_Course_-_geograph.org.uk_-_482069.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Milepost_at_Ballaskyr_on_the_Isle_of_Man_TT_Course_-_geograph.org.uk_-_482069.jpg",
+"cap": "Schwarz-weißer Meilenstein mit Triskele",
+"by": "Phil Catterall",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Milepost_at_Ballaskyr_on_the_Isle_of_Man_TT_Course_-_geograph.org.uk_-_482069.jpg"
+}
+]
+},
+"GU": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/GUAM_1999_COMMERCIAL_TRUCK_license_plate_Flickr_-_woody1778a.jpg/330px-GUAM_1999_COMMERCIAL_TRUCK_license_plate_Flickr_-_woody1778a.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/GUAM_1999_COMMERCIAL_TRUCK_license_plate_Flickr_-_woody1778a.jpg/1280px-GUAM_1999_COMMERCIAL_TRUCK_license_plate_Flickr_-_woody1778a.jpg",
+"cap": "Kennzeichen „Guam U.S.A.“",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:GUAM_1999_COMMERCIAL_TRUCK_license_plate_Flickr_-_woody1778a.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/DSC_0243_%283908596720%29.jpg/330px-DSC_0243_%283908596720%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/e/e0/DSC_0243_%283908596720%29.jpg",
+"cap": "Highway-Schilder im US-Stil",
+"by": "Janine from South Korea, United States",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:DSC_0243_(3908596720).jpg"
+}
+]
+},
+"MO": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Avenida_de_Wikipedia.png/330px-Avenida_de_Wikipedia.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Avenida_de_Wikipedia.png",
+"cap": "Kachel-Straßenschild auf Portugiesisch und Chinesisch",
+"by": "The original uploader was Sdee at Chinese Wikipedia.",
+"lic": "CC BY-SA 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Avenida_de_Wikipedia.png"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Street_signs_in_Macau.jpg/330px-Street_signs_in_Macau.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Street_signs_in_Macau.jpg/1280px-Street_signs_in_Macau.jpg",
+"cap": "Straßenschild „Beco da Sorte“",
+"by": "Pauloleong2002",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Street_signs_in_Macau.jpg"
+}
+]
+},
+"GL": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Greenland_license_plate.jpg/330px-Greenland_license_plate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/20/Greenland_license_plate.jpg",
+"cap": "Grönländisches Kennzeichen",
+"by": "Walser123",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Greenland_license_plate.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Dog_sled_road_sign_ilulissat_2007-08-23.jpg/330px-Dog_sled_road_sign_ilulissat_2007-08-23.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Dog_sled_road_sign_ilulissat_2007-08-23.jpg/1280px-Dog_sled_road_sign_ilulissat_2007-08-23.jpg",
+"cap": "Warnschild für Hundeschlitten",
+"by": "Kim Hansen",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Dog_sled_road_sign_ilulissat_2007-08-23.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Nuuk-centrum.jpg/330px-Nuuk-centrum.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Nuuk-centrum.jpg/1280px-Nuuk-centrum.jpg",
+"cap": "Bunte Häuser in Nuuk",
+"by": "Algkalv (talk)",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Nuuk-centrum.jpg"
+}
+]
+},
+"IN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Indian_registration_1906.jpg/330px-Indian_registration_1906.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Indian_registration_1906.jpg/1280px-Indian_registration_1906.jpg",
+"cap": "Gelbes Kennzeichen für Taxis/Gewerbe",
+"by": "Krokodyl",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Indian_registration_1906.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Magadalla.jpg/330px-Magadalla.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Magadalla.jpg/1280px-Magadalla.jpg",
+"cap": "Kilometerstein (State Highway) mit grüner Kappe",
+"by": "Marwada",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Magadalla.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Purana_Kangra_milestone.JPG/330px-Purana_Kangra_milestone.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Purana_Kangra_milestone.JPG/1280px-Purana_Kangra_milestone.JPG",
+"cap": "Kilometerstein mit gelber Kappe in Devanagari",
+"by": "Vssun",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Purana_Kangra_milestone.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Manosapota_WBSEB_Transformer_-_Simurali1020291.JPG/330px-Manosapota_WBSEB_Transformer_-_Simurali1020291.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Manosapota_WBSEB_Transformer_-_Simurali1020291.JPG/1280px-Manosapota_WBSEB_Transformer_-_Simurali1020291.JPG",
+"cap": "Betonmast mit Transformator",
+"by": "Biswarup Ganguly",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Manosapota_WBSEB_Transformer_-_Simurali1020291.JPG"
+}
+]
+},
+"LA": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Laotian_yellow_plate_8811.jpg/330px-Laotian_yellow_plate_8811.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/55/Laotian_yellow_plate_8811.jpg",
+"cap": "Gelbes laotisches Kennzeichen",
+"by": "gridkr",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Laotian_yellow_plate_8811.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Route_450_Year_Road_AH12_Welcoming_Sign.jpg/330px-Route_450_Year_Road_AH12_Welcoming_Sign.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Route_450_Year_Road_AH12_Welcoming_Sign.jpg/1280px-Route_450_Year_Road_AH12_Welcoming_Sign.jpg",
+"cap": "Grünes Schild „Welcome to Lao PDR“",
+"by": "RenWikiLA",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Route_450_Year_Road_AH12_Welcoming_Sign.jpg"
+}
+]
+},
+"MC": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Monaco_registration_7450.jpg/330px-Monaco_registration_7450.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Monaco_registration_7450.jpg/1280px-Monaco_registration_7450.jpg",
+"cap": "Monegassisches Kennzeichen mit Wappen",
+"by": "Krokodyl",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Monaco_registration_7450.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Street_sign_in_Mon%C3%A9gasc-French_in_MonacoVille.jpg/330px-Street_sign_in_Mon%C3%A9gasc-French_in_MonacoVille.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Street_sign_in_Mon%C3%A9gasc-French_in_MonacoVille.jpg/1280px-Street_sign_in_Mon%C3%A9gasc-French_in_MonacoVille.jpg",
+"cap": "Zweisprachiges Straßenschild (Französisch/Monegassisch)",
+"by": "J. Pérez Soriano (Pepetps)",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Street_sign_in_Mon%C3%A9gasc-French_in_MonacoVille.jpg"
+}
+]
+},
+"MP": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/NORTHERN_MARIANA_ISLANDS_passenger_license_plate_1978_Flickr_-_woody1778a.jpg/330px-NORTHERN_MARIANA_ISLANDS_passenger_license_plate_1978_Flickr_-_woody1778a.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/d/da/NORTHERN_MARIANA_ISLANDS_passenger_license_plate_1978_Flickr_-_woody1778a.jpg",
+"cap": "Kennzeichen „Northern Mariana Is.“",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:NORTHERN_MARIANA_ISLANDS_passenger_license_plate_1978_Flickr_-_woody1778a.jpg"
+}
+]
+},
+"MG": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Madagascar_Gendarmerie_Licenseplate.JPG/330px-Madagascar_Gendarmerie_Licenseplate.JPG",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/03/Madagascar_Gendarmerie_Licenseplate.JPG",
+"cap": "Madagassisches Kennzeichen mit Flagge",
+"by": "Diorit",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Madagascar_Gendarmerie_Licenseplate.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Madagascar_milestones.jpg/330px-Madagascar_milestones.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Madagascar_milestones.jpg/1280px-Madagascar_milestones.jpg",
+"cap": "Kilometerstein mit roter Kappe (N7)",
+"by": "Bernard Gagnon",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Madagascar_milestones.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Meilenstein_baobaballee_2019-10-06.jpg/330px-Meilenstein_baobaballee_2019-10-06.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Meilenstein_baobaballee_2019-10-06.jpg/1280px-Meilenstein_baobaballee_2019-10-06.jpg",
+"cap": "Kilometerstein an der Baobab-Allee",
+"by": "Z thomas",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Meilenstein_baobaballee_2019-10-06.jpg"
+}
+]
 }
 };
