@@ -181,5 +181,135 @@
   "K7": "Slowakisches Kennzeichen mit SK-Feld und Wappen",
   "S5": "Straßenschild „Ulica“ mit rotem Rand",
   "M3": "Dorfstraße mit runden Betonmasten"
+ },
+ "CZ": {
+  "K1": "Tschechisches Kennzeichen mit CZ-Feld",
+  "M1": "Betonmast mit kurzen Metallarmen für die Isolatoren",
+  "M3": "Feldweg mit Betonmasten"
+ },
+ "RO": {
+  "K5": "Rumänisches Kennzeichen mit RO-Feld",
+  "S3": "Kilometerstein mit blauer Kappe",
+  "S6": "Kilometerstein mit roter Kappe",
+  "M6": "Betonmast mit Storchennest"
+ },
+ "VN": {
+  "K7": "Vietnamesisches Kennzeichen",
+  "S7": "Blaue Straßenschilder an rot-weiß gestreiftem Pfosten",
+  "M4": "Dorfstraße mit Betonmasten und vielen Kabeln"
+ },
+ "CR": {
+  "K3": "Kennzeichen „Costa Rica“ mit blauer Schrift",
+  "M3": "Holzmast mit Querträgern",
+  "S0": "Gelber Kilometerstein"
+ },
+ "MK": {
+  "K4": "Nordmazedonisches Kennzeichen mit rotem Block links",
+  "S0": "Gelber Wegweiser, zweischriftig (Kyrillisch und Latein)"
+ },
+ "OM": {
+  "K2": "Gelbes Kennzeichen mit arabischer Schrift",
+  "S2": "Blauer Wegweiser auf Arabisch und Englisch",
+  "S4": "Schwarz-weiß gestreifte Schilderpfosten"
+ },
+ "QA": {
+  "K0": "Katarisches Kennzeichen",
+  "S0": "Zweisprachiges Straßenschild Arabisch/Englisch"
+ },
+ "CW": {
+  "K7": "Kennzeichen „Curaçao – Bon Bini“"
+ },
+ "RE": {
+  "S3": "Französische Wegweiser mit roter D-Straßennummer",
+  "S0": "Kilometerstein im französischen Stil"
+ },
+ "UG": {
+  "K3": "Kennzeichen „UAG“ mit Flagge, vorne weiß",
+  "S0": "Weißer Kilometerstein"
+ },
+ "ML": {
+  "S0": "Wegweiser in der trockenen Sahel-Landschaft"
+ },
+ "DK": {
+  "K3": "Dänisches Kennzeichen mit rotem Rand und DK-Feld",
+  "R1": "Randlinie aus kleinen weißen Blöcken",
+  "M2": "Rote Backsteinhäuser auf Bornholm"
+ },
+ "GR": {
+  "K1": "Griechisches Kennzeichen mit GR-Feld",
+  "M4": "Holzmast mit Metallrahmen und mehreren Isolatoren",
+  "M0": "Typischer griechischer Strommast"
+ },
+ "PT": {
+  "K6": "Portugiesisches Kennzeichen mit gelbem Streifen rechts",
+  "K0": "Blauer Streifen links, gelber rechts",
+  "R1": "Kopfsteinpflaster aus hellen Steinen"
+ },
+ "PT-MA": {
+  "M2": "Steile Hänge mit Terrassen an der Küste",
+  "M4": "Tunnel – auf Madeira sehr häufig"
+ },
+ "ES": {
+  "K0": "Spanisches Kennzeichen mit E-Feld",
+  "M1": "Betonmast mit „französischem“ Mastkopf",
+  "S5": "Kilometerstein mit gelber Kappe"
+ },
+ "JP": {
+  "K1": "Kei-Car-Kennzeichen: gelb mit schwarzer Schrift",
+  "K5": "Normales Kennzeichen: weiß mit grüner Schrift",
+  "P2": "Gelb-schwarze Leitpfosten mit Reflektoren"
+ },
+ "PL": {
+  "S0": "Kilometerpfosten mit rotem Band",
+  "P0": "Weißer Pfosten mit rotem Band an der Landstraße",
+  "M5": "Betonmast mit Storchennest"
+ },
+ "FI": {
+  "K7": "Finnisches Kennzeichen (kürzer) mit FIN-Feld",
+  "M6": "Holzmasten im Kiefernwald",
+  "R7": "Durchgezogene weiße Randlinien"
+ },
+ "HU": {
+  "K2": "Ungarisches Kennzeichen mit H-Feld",
+  "M4": "Dorfstraße mit Betonmasten und roten Ziegeldächern"
+ },
+ "EE": {
+  "K6": "Estnisches Kennzeichen mit EST-Feld",
+  "S6": "Straßenschild mit „tee“ (= Weg)"
+ },
+ "PH": {
+  "K2": "Philippinische Kennzeichen (weiß und gelb)",
+  "S1": "Gelber Kilometerstein mit „K“",
+  "R0": "Gelbe Mittellinie, weiße Ränder"
+ },
+ "MN": {
+  "K0": "Mongolisches Kennzeichen mit rotem Sojombo-Symbol",
+  "M4": "Holzmasten in der Steppe"
+ },
+ "EC": {
+  "K4": "Orange Kennzeichen für Gewerbefahrzeuge",
+  "S1": "Straßenschild aus Kacheln in Quito"
+ },
+ "PE": {
+  "K7": "Peruanisches Kennzeichen „PE“",
+  "S0": "Andenpiste mit Holzwegweiser"
+ },
+ "DO": {
+  "K6": "Kennzeichen „República Dominicana“",
+  "S2": "Kachel-Straßenschild in Santo Domingo"
+ },
+ "PR": {
+  "K6": "Kennzeichen „Puerto Rico – Isla del Encanto“",
+  "R0": "Gelbe Mittellinie, Schilder im US-Stil",
+  "S1": "US-Highwayschilder mit PR-Nummer"
+ },
+ "SN": {
+  "K0": "Altes, komplett blaues Kennzeichen",
+  "K5": "Neues Kennzeichen im EU-Stil (weiß, Feld links)",
+  "S0": "Blaues Straßenschild auf Französisch"
+ },
+ "PK": {
+  "K4": "Punjab-Kennzeichen mit grünem Streifen links",
+  "M7": "Holzmast an der Gilgit-Straße"
  }
 }

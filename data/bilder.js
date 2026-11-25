@@ -1078,5 +1078,765 @@ window.BILDER = {
 "src": "https://commons.wikimedia.org/wiki/File:B%C3%BAcs09.JPG"
 }
 ]
+},
+"CZ": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/CZ-CBudejovice-new.jpg/330px-CZ-CBudejovice-new.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/53/CZ-CBudejovice-new.jpg",
+"cap": "Tschechisches Kennzeichen mit CZ-Feld",
+"by": "User:Eino81",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:CZ-CBudejovice-new.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg/330px-Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg/1280px-Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg",
+"cap": "Betonmast mit kurzen Metallarmen für die Isolatoren",
+"by": "cs:ŠJů",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cesta_z_Okrouhlice_na_Petroupim.JPG/330px-Cesta_z_Okrouhlice_na_Petroupim.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cesta_z_Okrouhlice_na_Petroupim.JPG/1280px-Cesta_z_Okrouhlice_na_Petroupim.JPG",
+"cap": "Feldweg mit Betonmasten",
+"by": "cs:ŠJů",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Cesta_z_Okrouhlice_na_Petroupim.JPG"
+}
+]
+},
+"RO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Romanian_AB_new.jpg/330px-Romanian_AB_new.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/4/45/Romanian_AB_new.jpg",
+"cap": "Rumänisches Kennzeichen mit RO-Feld",
+"by": "Jeroen Coninx",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Romanian_AB_new.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/N%C4%83vodari%2C_kilometro%C5%9Dtono%2C_1.jpeg/330px-N%C4%83vodari%2C_kilometro%C5%9Dtono%2C_1.jpeg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/N%C4%83vodari%2C_kilometro%C5%9Dtono%2C_1.jpeg/1280px-N%C4%83vodari%2C_kilometro%C5%9Dtono%2C_1.jpeg",
+"cap": "Kilometerstein mit blauer Kappe",
+"by": "Aisano",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:N%C4%83vodari,_kilometro%C5%9Dtono,_1.jpeg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/ROM_Axente_Sever_Principala_02.jpg/330px-ROM_Axente_Sever_Principala_02.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/ROM_Axente_Sever_Principala_02.jpg/1280px-ROM_Axente_Sever_Principala_02.jpg",
+"cap": "Kilometerstein mit roter Kappe",
+"by": "-wuppertaler",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:ROM_Axente_Sever_Principala_02.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cigognes_Vladeni_Roumanie.jpg/330px-Cigognes_Vladeni_Roumanie.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cigognes_Vladeni_Roumanie.jpg/1280px-Cigognes_Vladeni_Roumanie.jpg",
+"cap": "Betonmast mit Storchennest",
+"by": "Myrabella",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Cigognes_Vladeni_Roumanie.jpg"
+}
+]
+},
+"VN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Vietnamese_plate_for_Ho_Chi_Minh_City.jpg/330px-Vietnamese_plate_for_Ho_Chi_Minh_City.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Vietnamese_plate_for_Ho_Chi_Minh_City.jpg",
+"cap": "Vietnamesisches Kennzeichen",
+"by": "EurovisionNim",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Vietnamese_plate_for_Ho_Chi_Minh_City.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2023-12-10_Junction_of_Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard_and_L%C3%AA_Th%C3%A1nh_T%C3%B4n_Street%2C_Ho_Chi_Minh_City.jpg/330px-2023-12-10_Junction_of_Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard_and_L%C3%AA_Th%C3%A1nh_T%C3%B4n_Street%2C_Ho_Chi_Minh_City.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2023-12-10_Junction_of_Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard_and_L%C3%AA_Th%C3%A1nh_T%C3%B4n_Street%2C_Ho_Chi_Minh_City.jpg/1280px-2023-12-10_Junction_of_Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard_and_L%C3%AA_Th%C3%A1nh_T%C3%B4n_Street%2C_Ho_Chi_Minh_City.jpg",
+"cap": "Blaue Straßenschilder an rot-weiß gestreiftem Pfosten",
+"by": "源義信",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:2023-12-10_Junction_of_Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard_and_L%C3%AA_Th%C3%A1nh_T%C3%B4n_Street,_Ho_Chi_Minh_City.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Hoa_Hung%2C_tt_Nha_bang%2C_tinh_bien_%2C_angiang_-_panoramio.jpg/330px-Hoa_Hung%2C_tt_Nha_bang%2C_tinh_bien_%2C_angiang_-_panoramio.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/09/Hoa_Hung%2C_tt_Nha_bang%2C_tinh_bien_%2C_angiang_-_panoramio.jpg",
+"cap": "Dorfstraße mit Betonmasten und vielen Kabeln",
+"by": "trungydang",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Hoa_Hung,_tt_Nha_bang,_tinh_bien_,_angiang_-_panoramio.jpg"
+}
+]
+},
+"CR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Costa_Rica_-_Private_Vehicle_2013.png/330px-Costa_Rica_-_Private_Vehicle_2013.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/8/88/Costa_Rica_-_Private_Vehicle_2013.png",
+"cap": "Kennzeichen „Costa Rica“ mit blauer Schrift",
+"by": "Zcarstvnz",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Costa_Rica_-_Private_Vehicle_2013.png"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Abandoned_Telephone_pole.jpg/330px-Abandoned_Telephone_pole.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Abandoned_Telephone_pole.jpg/1280px-Abandoned_Telephone_pole.jpg",
+"cap": "Holzmast mit Querträgern",
+"by": "HighVoltage 5576",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Abandoned_Telephone_pole.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Milestone_in_Costa_Rica.jpg/330px-Milestone_in_Costa_Rica.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Milestone_in_Costa_Rica.jpg/1280px-Milestone_in_Costa_Rica.jpg",
+"cap": "Gelber Kilometerstein",
+"by": "Bernard Gagnon",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Milestone_in_Costa_Rica.jpg"
+}
+]
+},
+"MK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/License_plate_Macedonia_new_02.JPG/330px-License_plate_Macedonia_new_02.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/License_plate_Macedonia_new_02.JPG/1280px-License_plate_Macedonia_new_02.JPG",
+"cap": "Nordmazedonisches Kennzeichen mit rotem Block links",
+"by": "Dickelbers",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plate_Macedonia_new_02.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Vidu%C5%A1a_sign.JPG/330px-Vidu%C5%A1a_sign.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Vidu%C5%A1a_sign.JPG/1280px-Vidu%C5%A1a_sign.JPG",
+"cap": "Gelber Wegweiser, zweischriftig (Kyrillisch und Latein)",
+"by": "This illustration was made by Rašo. An email to Rašo would be appreciated too.",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Vidu%C5%A1a_sign.JPG"
+}
+]
+},
+"OM": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Oman_license_plate_2001_series.jpg/330px-Oman_license_plate_2001_series.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Oman_license_plate_2001_series.jpg/1280px-Oman_license_plate_2001_series.jpg",
+"cap": "Gelbes Kennzeichen mit arabischer Schrift",
+"by": "Ji-Elle",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Oman_license_plate_2001_series.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Hajar_Mountains%2C_Musandam%2C_Oman_-_panoramio.jpg/330px-Hajar_Mountains%2C_Musandam%2C_Oman_-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Hajar_Mountains%2C_Musandam%2C_Oman_-_panoramio.jpg/1280px-Hajar_Mountains%2C_Musandam%2C_Oman_-_panoramio.jpg",
+"cap": "Blauer Wegweiser auf Arabisch und Englisch",
+"by": "Toppazz",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Hajar_Mountains,_Musandam,_Oman_-_panoramio.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Dibba_Al-Bayah%2C_Oman_-_panoramio.jpg/330px-Dibba_Al-Bayah%2C_Oman_-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Dibba_Al-Bayah%2C_Oman_-_panoramio.jpg/1280px-Dibba_Al-Bayah%2C_Oman_-_panoramio.jpg",
+"cap": "Schwarz-weiß gestreifte Schilderpfosten",
+"by": "Toppazz",
+"lic": "CC BY 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Dibba_Al-Bayah,_Oman_-_panoramio.jpg"
+}
+]
+},
+"QA": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Qatar_Taxi.JPG/330px-Qatar_Taxi.JPG",
+"big": "https://upload.wikimedia.org/wikipedia/commons/4/48/Qatar_Taxi.JPG",
+"cap": "Katarisches Kennzeichen",
+"by": "Peter in s",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Qatar_Taxi.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Bilingual_traffic_sign_qatar.jpg/330px-Bilingual_traffic_sign_qatar.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bilingual_traffic_sign_qatar.jpg",
+"cap": "Zweisprachiges Straßenschild Arabisch/Englisch",
+"by": "Martin Belam",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:Bilingual_traffic_sign_qatar.jpg"
+}
+]
+},
+"CW": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/CURACAO_1989_license_plate_-_Flickr_-_woody1778a.jpg/330px-CURACAO_1989_license_plate_-_Flickr_-_woody1778a.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/CURACAO_1989_license_plate_-_Flickr_-_woody1778a.jpg/1280px-CURACAO_1989_license_plate_-_Flickr_-_woody1778a.jpg",
+"cap": "Kennzeichen „Curaçao – Bon Bini“",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:CURACAO_1989_license_plate_-_Flickr_-_woody1778a.jpg"
+}
+]
+},
+"RE": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Rallye-Rivi%C3%A8re-2512.JPG/330px-Rallye-Rivi%C3%A8re-2512.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Rallye-Rivi%C3%A8re-2512.JPG/1280px-Rallye-Rivi%C3%A8re-2512.JPG",
+"cap": "Französische Wegweiser mit roter D-Straßennummer",
+"by": "Méry-Anne Techer pour Thierry Caro et le magazine 2512.",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Rallye-Rivi%C3%A8re-2512.JPG"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Reunion_RF2_borne_dsc00299.jpg/330px-Reunion_RF2_borne_dsc00299.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Reunion_RF2_borne_dsc00299.jpg/1280px-Reunion_RF2_borne_dsc00299.jpg",
+"cap": "Kilometerstein im französischen Stil",
+"by": "unbekannt",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Reunion_RF2_borne_dsc00299.jpg"
+}
+]
+},
+"UG": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/UG_Kampala_%28108%29_%2817078918410%29.jpg/330px-UG_Kampala_%28108%29_%2817078918410%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/0/0f/UG_Kampala_%28108%29_%2817078918410%29.jpg",
+"cap": "Kennzeichen „UAG“ mit Flagge, vorne weiß",
+"by": "Diego Tirira from Quito, Ecuador",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:UG_Kampala_(108)_(17078918410).jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/50km_to_go.jpg/330px-50km_to_go.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/50km_to_go.jpg/1280px-50km_to_go.jpg",
+"cap": "Weißer Kilometerstein",
+"by": "Tibasiima",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:50km_to_go.jpg"
+}
+]
+},
+"ML": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Sevare_panneau.jpg/330px-Sevare_panneau.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Sevare_panneau.jpg/1280px-Sevare_panneau.jpg",
+"cap": "Wegweiser in der trockenen Sahel-Landschaft",
+"by": "Laurent Schaffar",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Sevare_panneau.jpg"
+}
+]
+},
+"DK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Europlate_Denmark.jpg/330px-Europlate_Denmark.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Europlate_Denmark.jpg",
+"cap": "Dänisches Kennzeichen mit rotem Rand und DK-Feld",
+"by": "Denmark_europlates.jpg: Dima1 derivative work: TheFlyingDutchman (talk)",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Europlate_Denmark.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Rumleriller2.png/330px-Rumleriller2.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/34/Rumleriller2.png",
+"cap": "Randlinie aus kleinen weißen Blöcken",
+"by": "Lcl",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Rumleriller2.png"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Krystalgade%2C_R%C3%B8nne_01.jpg/330px-Krystalgade%2C_R%C3%B8nne_01.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Krystalgade%2C_R%C3%B8nne_01.jpg/1280px-Krystalgade%2C_R%C3%B8nne_01.jpg",
+"cap": "Rote Backsteinhäuser auf Bornholm",
+"by": "Rodejong",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Krystalgade,_R%C3%B8nne_01.jpg"
+}
+]
+},
+"GR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Greecelicenseplate.jpg/330px-Greecelicenseplate.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/23/Greecelicenseplate.jpg",
+"cap": "Griechisches Kennzeichen mit GR-Feld",
+"by": "User:Dantadd",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Greecelicenseplate.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg/330px-Electric_composition_Eretria_Euboea_Greece.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg/1280px-Electric_composition_Eretria_Euboea_Greece.jpg",
+"cap": "Holzmast mit Metallrahmen und mehreren Isolatoren",
+"by": "Jebulon",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Electric_composition_Eretria_Euboea_Greece.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Athens_electricity_pole_old_style.jpg/330px-Athens_electricity_pole_old_style.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Athens_electricity_pole_old_style.jpg/1280px-Athens_electricity_pole_old_style.jpg",
+"cap": "Typischer griechischer Strommast",
+"by": "Badseed",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Athens_electricity_pole_old_style.jpg"
+}
+]
+},
+"PT": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Chapa_quadriciclo.jpg/330px-Chapa_quadriciclo.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Chapa_quadriciclo.jpg/1280px-Chapa_quadriciclo.jpg",
+"cap": "Portugiesisches Kennzeichen mit gelbem Streifen rechts",
+"by": "Jsobral",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Chapa_quadriciclo.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Placapt2007.jpg/330px-Placapt2007.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Placapt2007.jpg/1280px-Placapt2007.jpg",
+"cap": "Blauer Streifen links, gelber rechts",
+"by": "User:Dantadd",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Placapt2007.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/EsgotoPintado%28urbF760%29.jpg/330px-EsgotoPintado%28urbF760%29.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/d/d4/EsgotoPintado%28urbF760%29.jpg",
+"cap": "Kopfsteinpflaster aus hellen Steinen",
+"by": "Tuvalkin (talk · contribs)",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:EsgotoPintado(urbF760).jpg"
+}
+]
+},
+"PT-MA": {
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Madeira_2018._En_route_from_Porto_Moniz_to_Funchal._Our_route_back._%2845416105942%29.jpg/330px-Madeira_2018._En_route_from_Porto_Moniz_to_Funchal._Our_route_back._%2845416105942%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Madeira_2018._En_route_from_Porto_Moniz_to_Funchal._Our_route_back._%2845416105942%29.jpg/1280px-Madeira_2018._En_route_from_Porto_Moniz_to_Funchal._Our_route_back._%2845416105942%29.jpg",
+"cap": "Steile Hänge mit Terrassen an der Küste",
+"by": "Anne and David from Kent, England UK",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Madeira_2018._En_route_from_Porto_Moniz_to_Funchal._Our_route_back._(45416105942).jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Levada_do_Cani%C3%A7al%2C_Parque_Natural_da_Madeira_-_2018-04-08_-_IMG_3312.jpg/330px-Levada_do_Cani%C3%A7al%2C_Parque_Natural_da_Madeira_-_2018-04-08_-_IMG_3312.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Levada_do_Cani%C3%A7al%2C_Parque_Natural_da_Madeira_-_2018-04-08_-_IMG_3312.jpg/1280px-Levada_do_Cani%C3%A7al%2C_Parque_Natural_da_Madeira_-_2018-04-08_-_IMG_3312.jpg",
+"cap": "Tunnel – auf Madeira sehr häufig",
+"by": "Paulo SP/ Wikimedia",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Levada_do_Cani%C3%A7al,_Parque_Natural_da_Madeira_-_2018-04-08_-_IMG_3312.jpg"
+}
+]
+},
+"ES": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Matr%C3%ADcula_automovil%C3%ADstica_Espa%C3%B1a_2000_MMA_02815.jpg/330px-Matr%C3%ADcula_automovil%C3%ADstica_Espa%C3%B1a_2000_MMA_02815.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Matr%C3%ADcula_automovil%C3%ADstica_Espa%C3%B1a_2000_MMA_02815.jpg/1280px-Matr%C3%ADcula_automovil%C3%ADstica_Espa%C3%B1a_2000_MMA_02815.jpg",
+"cap": "Spanisches Kennzeichen mit E-Feld",
+"by": "Grez",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Matr%C3%ADcula_automovil%C3%ADstica_Espa%C3%B1a_2000_MMA_02815.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Concrete_pylon_in_Spain.jpg/330px-Concrete_pylon_in_Spain.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/19/Concrete_pylon_in_Spain.jpg",
+"cap": "Betonmast mit „französischem“ Mastkopf",
+"by": "Nineleven (talk)",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Concrete_pylon_in_Spain.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Se%C3%B1al_%282%29.jpg/330px-Se%C3%B1al_%282%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Se%C3%B1al_%282%29.jpg/1280px-Se%C3%B1al_%282%29.jpg",
+"cap": "Kilometerstein mit gelber Kappe",
+"by": "Labola",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Se%C3%B1al_(2).jpg"
+}
+]
+},
+"JP": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Japanese_black_on_yellow_license_plate.png/330px-Japanese_black_on_yellow_license_plate.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/6/61/Japanese_black_on_yellow_license_plate.png",
+"cap": "Kei-Car-Kennzeichen: gelb mit schwarzer Schrift",
+"by": "Strela290",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Japanese_black_on_yellow_license_plate.png"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/U.S._FORCES_JAPAN_1990%27S_-_Flickr_-_woody1778a.jpg/330px-U.S._FORCES_JAPAN_1990%27S_-_Flickr_-_woody1778a.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/e/e4/U.S._FORCES_JAPAN_1990%27S_-_Flickr_-_woody1778a.jpg",
+"cap": "Normales Kennzeichen: weiß mit grüner Schrift",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:U.S._FORCES_JAPAN_1990%27S_-_Flickr_-_woody1778a.jpg"
+}
+],
+"poller": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%E5%B7%A6%E5%8F%B3_%288452388567%29.jpg/330px-%E5%B7%A6%E5%8F%B3_%288452388567%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%E5%B7%A6%E5%8F%B3_%288452388567%29.jpg/1280px-%E5%B7%A6%E5%8F%B3_%288452388567%29.jpg",
+"cap": "Gelb-schwarze Leitpfosten mit Reflektoren",
+"by": "Tamaki Sono",
+"lic": "CC BY 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:%E5%B7%A6%E5%8F%B3_(8452388567).jpg"
+}
+]
+},
+"PL": {
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Droga933-Oswiecim-Chrzanow90.0km.jpg/330px-Droga933-Oswiecim-Chrzanow90.0km.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/19/Droga933-Oswiecim-Chrzanow90.0km.jpg",
+"cap": "Kilometerpfosten mit rotem Band",
+"by": "unbekannt",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Droga933-Oswiecim-Chrzanow90.0km.jpg"
+}
+],
+"poller": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dk9_o2.jpg/330px-Dk9_o2.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/2/24/Dk9_o2.jpg",
+"cap": "Weißer Pfosten mit rotem Band an der Landstraße",
+"by": "Yayek (Yayek)",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Dk9_o2.jpg"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bocianie_gniazdo_Zawada.jpg/330px-Bocianie_gniazdo_Zawada.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bocianie_gniazdo_Zawada.jpg/1280px-Bocianie_gniazdo_Zawada.jpg",
+"cap": "Betonmast mit Storchennest",
+"by": "Miklobit",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Bocianie_gniazdo_Zawada.jpg"
+}
+]
+},
+"FI": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Finland_licenseplate_EU.JPG/330px-Finland_licenseplate_EU.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Finland_licenseplate_EU.JPG/1280px-Finland_licenseplate_EU.JPG",
+"cap": "Finnisches Kennzeichen (kürzer) mit FIN-Feld",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Finland_licenseplate_EU.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Utility_poles_in_Finland_04.jpg/330px-Utility_poles_in_Finland_04.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Utility_poles_in_Finland_04.jpg/1280px-Utility_poles_in_Finland_04.jpg",
+"cap": "Holzmasten im Kiefernwald",
+"by": "Paasikivi",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Finland_04.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Nuijamaantien_kaksoiskeskiviiva_1.JPG/330px-Nuijamaantien_kaksoiskeskiviiva_1.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Nuijamaantien_kaksoiskeskiviiva_1.JPG/1280px-Nuijamaantien_kaksoiskeskiviiva_1.JPG",
+"cap": "Durchgezogene weiße Randlinien",
+"by": "MKFI",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Nuijamaantien_kaksoiskeskiviiva_1.JPG"
+}
+]
+},
+"HU": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hungarian_registration_2135.JPG/330px-Hungarian_registration_2135.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hungarian_registration_2135.JPG/1280px-Hungarian_registration_2135.JPG",
+"cap": "Ungarisches Kennzeichen mit H-Feld",
+"by": "Krokodyl",
+"lic": "CC BY 2.5",
+"src": "https://commons.wikimedia.org/wiki/File:Hungarian_registration_2135.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/D%C3%A9l-Kom%C3%A1rom121.JPG/330px-D%C3%A9l-Kom%C3%A1rom121.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/D%C3%A9l-Kom%C3%A1rom121.JPG/1280px-D%C3%A9l-Kom%C3%A1rom121.JPG",
+"cap": "Dorfstraße mit Betonmasten und roten Ziegeldächern",
+"by": "Szeder László",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:D%C3%A9l-Kom%C3%A1rom121.JPG"
+}
+]
+},
+"EE": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Estonia_licenseplate_motorcycle.JPG/330px-Estonia_licenseplate_motorcycle.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Estonia_licenseplate_motorcycle.JPG/1280px-Estonia_licenseplate_motorcycle.JPG",
+"cap": "Estnisches Kennzeichen mit EST-Feld",
+"by": "Dickelbers",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Estonia_licenseplate_motorcycle.JPG"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Masti_tee.jpg/330px-Masti_tee.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Masti_tee.jpg/1280px-Masti_tee.jpg",
+"cap": "Straßenschild mit „tee“ (= Weg)",
+"by": "Pablo000, Paweł Zaręba",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Masti_tee.jpg"
+}
+]
+},
+"PH": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/2013_Philippine_Standardized_registration_plate.png/330px-2013_Philippine_Standardized_registration_plate.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/a/ab/2013_Philippine_Standardized_registration_plate.png",
+"cap": "Philippinische Kennzeichen (weiß und gelb)",
+"by": "Land Transportation Office of the Philippines",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:2013_Philippine_Standardized_registration_plate.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/K_monument_Para%C3%B1aque.jpg/330px-K_monument_Para%C3%B1aque.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/K_monument_Para%C3%B1aque.jpg/1280px-K_monument_Para%C3%B1aque.jpg",
+"cap": "Gelber Kilometerstein mit „K“",
+"by": "Jidanni",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:K_monument_Para%C3%B1aque.jpg"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/01049jfSan_Nicolas_Roque_Bamban_Highway_Tarlacfvf_03.JPG/330px-01049jfSan_Nicolas_Roque_Bamban_Highway_Tarlacfvf_03.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/01049jfSan_Nicolas_Roque_Bamban_Highway_Tarlacfvf_03.JPG/1280px-01049jfSan_Nicolas_Roque_Bamban_Highway_Tarlacfvf_03.JPG",
+"cap": "Gelbe Mittellinie, weiße Ränder",
+"by": "Judgefloro",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:01049jfSan_Nicolas_Roque_Bamban_Highway_Tarlacfvf_03.JPG"
+}
+]
+},
+"MN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Plaque_mongole.JPG/330px-Plaque_mongole.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Plaque_mongole.JPG/1280px-Plaque_mongole.JPG",
+"cap": "Mongolisches Kennzeichen mit rotem Sojombo-Symbol",
+"by": "Bouette.",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Plaque_mongole.JPG"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG/330px-Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG/1280px-Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG",
+"cap": "Holzmasten in der Steppe",
+"by": "Marcin Konsek",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG"
+}
+]
+},
+"EC": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Ecuador_Commercial_License_Plate_1989-2014.jpg/330px-Ecuador_Commercial_License_Plate_1989-2014.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Ecuador_Commercial_License_Plate_1989-2014.jpg/1280px-Ecuador_Commercial_License_Plate_1989-2014.jpg",
+"cap": "Orange Kennzeichen für Gewerbefahrzeuge",
+"by": "Zcarstvnz",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Ecuador_Commercial_License_Plate_1989-2014.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Convento_de_San_Agust%C3%ADn_%28antique_street_sign%29.JPG/330px-Convento_de_San_Agust%C3%ADn_%28antique_street_sign%29.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Convento_de_San_Agust%C3%ADn_%28antique_street_sign%29.JPG/1280px-Convento_de_San_Agust%C3%ADn_%28antique_street_sign%29.JPG",
+"cap": "Straßenschild aus Kacheln in Quito",
+"by": "David Adam Kess",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Convento_de_San_Agust%C3%ADn_(antique_street_sign).JPG"
+}
+]
+},
+"PE": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/License_plates_of_Peru_001.jpg/330px-License_plates_of_Peru_001.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/License_plates_of_Peru_001.jpg/1280px-License_plates_of_Peru_001.jpg",
+"cap": "Peruanisches Kennzeichen „PE“",
+"by": "19petra",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:License_plates_of_Peru_001.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Caminho_Laguna_Par%C3%B3n_%28Cordillera_Blanca%29_-_panoramio.jpg/330px-Caminho_Laguna_Par%C3%B3n_%28Cordillera_Blanca%29_-_panoramio.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Caminho_Laguna_Par%C3%B3n_%28Cordillera_Blanca%29_-_panoramio.jpg/1280px-Caminho_Laguna_Par%C3%B3n_%28Cordillera_Blanca%29_-_panoramio.jpg",
+"cap": "Andenpiste mit Holzwegweiser",
+"by": "TMbux",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Caminho_Laguna_Par%C3%B3n_(Cordillera_Blanca)_-_panoramio.jpg"
+}
+]
+},
+"DO": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Detail_of_Rear_of_Land_Rover_-_San_Jose_de_Ocoa_-_Dominican_Republic.jpg/330px-Detail_of_Rear_of_Land_Rover_-_San_Jose_de_Ocoa_-_Dominican_Republic.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Detail_of_Rear_of_Land_Rover_-_San_Jose_de_Ocoa_-_Dominican_Republic.jpg/1280px-Detail_of_Rear_of_Land_Rover_-_San_Jose_de_Ocoa_-_Dominican_Republic.jpg",
+"cap": "Kennzeichen „República Dominicana“",
+"by": "Adam Jones, Ph.D.",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Detail_of_Rear_of_Land_Rover_-_San_Jose_de_Ocoa_-_Dominican_Republic.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/DOM_Santo_Domingo%2C_Ciudad_Colonial%2C_Calle_19_de_Marzo_0005.jpg/330px-DOM_Santo_Domingo%2C_Ciudad_Colonial%2C_Calle_19_de_Marzo_0005.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/DOM_Santo_Domingo%2C_Ciudad_Colonial%2C_Calle_19_de_Marzo_0005.jpg/1280px-DOM_Santo_Domingo%2C_Ciudad_Colonial%2C_Calle_19_de_Marzo_0005.jpg",
+"cap": "Kachel-Straßenschild in Santo Domingo",
+"by": "-wuppertaler",
+"lic": "CC BY 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:DOM_Santo_Domingo,_Ciudad_Colonial,_Calle_19_de_Marzo_0005.jpg"
+}
+]
+},
+"PR": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Puerto_Rico_%E2%80%94_License_plate_%22Mayag%C3%BCez_2010%22.JPG/330px-Puerto_Rico_%E2%80%94_License_plate_%22Mayag%C3%BCez_2010%22.JPG",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Puerto_Rico_%E2%80%94_License_plate_%22Mayag%C3%BCez_2010%22.JPG/1280px-Puerto_Rico_%E2%80%94_License_plate_%22Mayag%C3%BCez_2010%22.JPG",
+"cap": "Kennzeichen „Puerto Rico – Isla del Encanto“",
+"by": "User:Mattes",
+"lic": "Public domain",
+"src": "https://commons.wikimedia.org/wiki/File:Puerto_Rico_%E2%80%94_License_plate_%22Mayag%C3%BCez_2010%22.JPG"
+}
+],
+"markierungen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Carretera_n%C3%BAmero_2_%28PR-2%29_03.jpg/330px-Carretera_n%C3%BAmero_2_%28PR-2%29_03.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Carretera_n%C3%BAmero_2_%28PR-2%29_03.jpg/1280px-Carretera_n%C3%BAmero_2_%28PR-2%29_03.jpg",
+"cap": "Gelbe Mittellinie, Schilder im US-Stil",
+"by": "Moebiusuibeom-en",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Carretera_n%C3%BAmero_2_(PR-2)_03.jpg"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Carretera_PR-14%2C_intersecci%C3%B3n_con_la_carretera_PR-5559%2C_Coamo%2C_Puerto_Rico_%281%29.jpg/330px-Carretera_PR-14%2C_intersecci%C3%B3n_con_la_carretera_PR-5559%2C_Coamo%2C_Puerto_Rico_%281%29.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Carretera_PR-14%2C_intersecci%C3%B3n_con_la_carretera_PR-5559%2C_Coamo%2C_Puerto_Rico_%281%29.jpg/1280px-Carretera_PR-14%2C_intersecci%C3%B3n_con_la_carretera_PR-5559%2C_Coamo%2C_Puerto_Rico_%281%29.jpg",
+"cap": "US-Highwayschilder mit PR-Nummer",
+"by": "Yarfpr",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Carretera_PR-14,_intersecci%C3%B3n_con_la_carretera_PR-5559,_Coamo,_Puerto_Rico_(1).jpg"
+}
+]
+},
+"SN": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/SENEGAL_temporary_c.1970%27s_-_Flickr_-_woody1778a.jpg/330px-SENEGAL_temporary_c.1970%27s_-_Flickr_-_woody1778a.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/SENEGAL_temporary_c.1970%27s_-_Flickr_-_woody1778a.jpg/1280px-SENEGAL_temporary_c.1970%27s_-_Flickr_-_woody1778a.jpg",
+"cap": "Altes, komplett blaues Kennzeichen",
+"by": "Jerry \"Woody\" from Edmonton, Canada",
+"lic": "CC BY-SA 2.0",
+"src": "https://commons.wikimedia.org/wiki/File:SENEGAL_temporary_c.1970%27s_-_Flickr_-_woody1778a.jpg"
+},
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Plaque_d%27immatriculation_du_S%C3%A9n%C3%A9gal_-_Automobile_Priv%C3%A9e.png/330px-Plaque_d%27immatriculation_du_S%C3%A9n%C3%A9gal_-_Automobile_Priv%C3%A9e.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/1/16/Plaque_d%27immatriculation_du_S%C3%A9n%C3%A9gal_-_Automobile_Priv%C3%A9e.png",
+"cap": "Neues Kennzeichen im EU-Stil (weiß, Feld links)",
+"by": "BasilLeaf",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Plaque_d%27immatriculation_du_S%C3%A9n%C3%A9gal_-_Automobile_Priv%C3%A9e.png"
+}
+],
+"schilder": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Rue_Galandou_Diouf_-_Siant-Louis%2C_Senegal.jpg/330px-Rue_Galandou_Diouf_-_Siant-Louis%2C_Senegal.jpg",
+"big": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rue_Galandou_Diouf_-_Siant-Louis%2C_Senegal.jpg",
+"cap": "Blaues Straßenschild auf Französisch",
+"by": "Pavetto",
+"lic": "CC BY-SA 4.0",
+"src": "https://commons.wikimedia.org/wiki/File:Rue_Galandou_Diouf_-_Siant-Louis,_Senegal.jpg"
+}
+]
+},
+"PK": {
+"kennzeichen": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Pakistan_-_License_Plate_-_Punjab.png/330px-Pakistan_-_License_Plate_-_Punjab.png",
+"big": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Pakistan_-_License_Plate_-_Punjab.png",
+"cap": "Punjab-Kennzeichen mit grünem Streifen links",
+"by": "Nima Farid",
+"lic": "CC0",
+"src": "https://commons.wikimedia.org/wiki/File:Pakistan_-_License_Plate_-_Punjab.png"
+}
+],
+"masten": [
+{
+"th": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gilgit_Road.jpg/330px-Gilgit_Road.jpg",
+"big": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gilgit_Road.jpg/1280px-Gilgit_Road.jpg",
+"cap": "Holzmast an der Gilgit-Straße",
+"by": "Ahmed Zohair",
+"lic": "CC BY-SA 3.0",
+"src": "https://commons.wikimedia.org/wiki/File:Gilgit_Road.jpg"
+}
+]
 }
 };
