@@ -11,6 +11,9 @@
 <script>
   // Fehler sichtbar machen, statt dass die Seite still nicht reagiert
   window.addEventListener('error', e => {
+    // Nur Skript-Fehler und fehlende Skript-/Stil-Dateien melden – keine Fotos
+    const t = e.target;
+    if (t && t.tagName && !/^(SCRIPT|LINK)$/.test(t.tagName)) return;
     const box = document.getElementById('errBox');
     if (box) { box.style.display = 'block'; box.textContent += '⚠ ' + (e.message || 'Datei konnte nicht geladen werden: ' + (e.target && e.target.src)) + '\n'; }
   }, true);
@@ -286,9 +289,9 @@ const KONTINENTE = {
 };
 
 // Version – wird bei jedem Update hochgezählt, damit man sieht, ob die neue Version online ist
-const APP_VERSION = '1.6';
+const APP_VERSION = '1.7';
 const APP_DATE = '24.11.2026';
-const APP_CHANGES = 'Fotos für alle 134 Länder';
+const APP_CHANGES = 'Fehlermeldung beim Vergrößern behoben';
 document.getElementById('verBadge').textContent = 'BETA v' + APP_VERSION;
 document.getElementById('verBadge').title = 'Stand ' + APP_DATE + ' · Neu: ' + APP_CHANGES;
 document.getElementById('introVer').textContent = 'BETA v' + APP_VERSION + ' · Stand ' + APP_DATE + ' · Neu: ' + APP_CHANGES;
@@ -560,7 +563,7 @@ function openLightbox(i) {
   $('lbPrev').style.display = $('lbNext').style.display = multi ? '' : 'none';
   $('lightbox').classList.add('open');
 }
-function closeLightbox() { $('lightbox').classList.remove('open'); $('lbImg').src = ''; }
+function closeLightbox() { $('lightbox').classList.remove('open'); $('lbImg').removeAttribute('src'); }
 const lbOpen = () => $('lightbox').classList.contains('open');
 $('lbClose').onclick = closeLightbox;
 $('lbPrev').onclick = e => { e.stopPropagation(); openLightbox(lbIndex - 1); };
